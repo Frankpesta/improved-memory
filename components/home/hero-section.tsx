@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, LineChart, Shield, Bot } from "lucide-react";
+import Link from "next/link";
 
 interface StatItemProps {
 	value: string;
@@ -17,6 +19,9 @@ const StatItem: React.FC<StatItemProps> = ({ value, label }) => (
 );
 
 const HeroSection = () => {
+	const handleLogin = () => {
+		window.location.href = "https://app.fidelitytradesai.com/login";
+	};
 	return (
 		<div className="relative overflow-hidden bg-gradient-to-b from-neutral-50 to-neutral-100 dark:from-dark-300 dark:to-dark-400">
 			{/* Background Gradient Orbs */}
@@ -60,17 +65,20 @@ const HeroSection = () => {
 							{/* CTA Buttons */}
 							<div className="flex flex-col sm:flex-row gap-4">
 								<Button
+									onClick={handleLogin}
 									size="lg"
 									className="bg-primary-600 hover:bg-primary-700 text-white">
 									Start Trading Now
 									<ArrowRight className="ml-2 h-5 w-5" />
 								</Button>
-								<Button
-									size="lg"
-									variant="outline"
-									className="border-primary-600 text-primary-600 hover:bg-primary-50">
-									Learn More
-								</Button>
+								<Link href={"/services"}>
+									<Button
+										size="lg"
+										variant="outline"
+										className="border-primary-600 text-primary-600 hover:bg-primary-50">
+										Learn More
+									</Button>
+								</Link>
 							</div>
 						</div>
 

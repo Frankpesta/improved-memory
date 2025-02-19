@@ -26,6 +26,10 @@ const planTiers: PlanTier[] = [
 	{ minInvestment: 100000, maxInvestment: 1000000, dailyReturn: 2.5 },
 ];
 
+const handleLogin = () => {
+	window.location.href = "https://app.fidelitytradesai.com/login";
+};
+
 const InvestmentPlanCard: React.FC<PlanTier> = ({
 	minInvestment,
 	maxInvestment,
@@ -67,7 +71,7 @@ const InvestmentPlanCard: React.FC<PlanTier> = ({
 						<span className="font-semibold">100%</span>
 					</div>
 				</div>
-				<Button className="w-full">
+				<Button className="w-full" onClick={handleLogin}>
 					Invest Now
 					<ArrowRight className="ml-2 h-4 w-4" />
 				</Button>

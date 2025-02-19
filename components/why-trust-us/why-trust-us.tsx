@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -190,6 +191,10 @@ const WhyTrustUs = () => {
 		},
 	];
 
+	const handleLogin = () => {
+		window.location.href = "https://app.fidelitytradesai.com/login";
+	};
+
 	return (
 		<div className="space-y-12 px-4 py-6">
 			{/* Metrics Section */}
@@ -288,7 +293,9 @@ const WhyTrustUs = () => {
 						Join 18,000+ investors worldwide and start earning passive income
 						with our AI-powered trading platform.
 					</p>
-					<Button className="group bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg">
+					<Button
+						onClick={handleLogin}
+						className="group bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg">
 						Start Investing Now
 						<ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
 					</Button>

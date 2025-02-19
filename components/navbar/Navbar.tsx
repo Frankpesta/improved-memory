@@ -7,15 +7,21 @@ import MobileNav from "./MobileNav";
 import { ModeToggle } from "../ToggleTheme";
 
 const Navbar = () => {
+	const handleLogin = () => {
+		window.location.href = "https://app.fidelitytradesai.com/login";
+	};
+	const handleRegister = () => {
+		window.location.href = "https://app.fidelitytradesai.com/register";
+	};
 	return (
 		<header className="w-full border-b bg-white dark:bg-gray-800">
 			<div className="wrapper flex items-center justify-between">
-				<Link href={"/"} className="w-36">
+				<Link href={"/"} className="w-52">
 					<Image
-						src={"/assets/images/logo.png"}
-						width={58}
-						height={10}
-						alt="BFL logo"
+						src={"/assets/aifav.png"}
+						width={100}
+						height={60}
+						alt="Fidelity Trades Ai Logo"
 					/>
 				</Link>
 
@@ -26,8 +32,20 @@ const Navbar = () => {
 				<div className="flex w-full justify-end items-center  gap-3">
 					<ModeToggle />
 					<MobileNav />
-					<Button>Get Started</Button>
-					<Button>Account</Button>
+					<div className="hidden md:flex gap-3">
+						<Button
+							onClick={handleLogin}
+							size={"sm"}
+							className="bg-primary-600 text-white">
+							Sign In
+						</Button>
+						<Button
+							onClick={handleRegister}
+							size={"sm"}
+							className="bg-secondary-500 text-white">
+							Sign Up
+						</Button>
+					</div>
 				</div>
 			</div>
 		</header>
