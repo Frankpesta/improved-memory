@@ -44,7 +44,8 @@ export async function generateMetadata({
 			}
 		);
 		const data = await response.json();
-		const blog = data?.data;
+		console.log(data);
+		const blog = data?.blog;
 
 		if (!blog) {
 			return {
@@ -84,7 +85,7 @@ async function fetchBlogData(id: string) {
 		}
 
 		const data = await response.json();
-		return data?.data || null;
+		return data?.blog || null;
 	} catch (error) {
 		console.error("Error fetching blog data:", error);
 		return null;

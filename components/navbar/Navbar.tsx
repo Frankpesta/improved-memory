@@ -18,7 +18,7 @@ const Navbar = () => {
 			<div className="wrapper flex items-center justify-between">
 				<Link href={"/"} className="w-52">
 					<Image
-						src={"/assets/aifav.png"}
+						src={"/logo.png"}
 						width={100}
 						height={60}
 						alt="Credix AI Logo"
