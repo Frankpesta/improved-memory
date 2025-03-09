@@ -54,7 +54,7 @@ export default function Blogs({
 		<div className="container mx-auto px-4 py-12">
 			{/* Hero Header Section */}
 			<div className="mb-12 text-center">
-				<h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent dark:from-primary dark:to-purple-400">
+				<h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-500 to-green-600 bg-clip-text text-transparent dark:from-primary-500 dark:to-green-400">
 					Insights & Perspectives
 				</h1>
 				<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -76,10 +76,10 @@ export default function Blogs({
 						{blogs.map((blog) => (
 							<Card
 								key={blog.id}
-								className="overflow-hidden border border-border/40 transition-all duration-200 hover:shadow-md hover:border-primary/20 dark:hover:shadow-lg dark:hover:shadow-primary/5 dark:hover:border-primary/30 dark:bg-card">
+								className="overflow-hidden border border-border/40 transition-all duration-200 hover:shadow-md hover:border-primary-500/20 dark:hover:shadow-lg dark:hover:shadow-primary-500/5 dark:hover:border-primary-500/30 dark:bg-card">
 								<div className="relative h-52 overflow-hidden border-b border-border/10 dark:border-border/20">
 									<img
-										src={blog.cover || "/placeholder.svg?height=208&width=400"}
+										src={`https://app.credixai.com/assets/${blog.cover}`}
 										alt={blog.title}
 										className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
 									/>

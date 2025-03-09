@@ -98,7 +98,7 @@ export default function BlogDetail({
 			{blog.cover && (
 				<div className="mb-8 rounded-lg overflow-hidden">
 					<img
-						src={blog.cover || "/placeholder.svg"}
+						src={`https://app.credixai.com/assets/${blog.cover}`}
 						alt={blog.title}
 						className="w-full h-auto object-cover max-h-[500px]"
 					/>

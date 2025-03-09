@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 	title: "Credix AI",
 	description: "AI trading platform | Maximizing your profits",
 	icons: {
-		icon: "/assets/ailogo.png", // Path to favicon in the public folder
-		shortcut: "/assets/ailogo.png", // Path to shortcut icon in the public folder
-		apple: "/assets/ailogo.png", // Optional for Apple devices
+		icon: "/fav.png", // Path to favicon in the public folder
+		shortcut: "/fav.png", // Path to shortcut icon in the public folder
+		apple: "/fav.png", // Optional for Apple devices
 	},
 };
 
