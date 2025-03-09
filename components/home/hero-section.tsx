@@ -71,7 +71,7 @@ const HeroSection = () => {
 									Start Trading Now
 									<ArrowRight className="ml-2 h-5 w-5" />
 								</Button>
-								<Link href={"/services"}>
+								<Link href={"/our-services"}>
 									<Button
 										size="lg"
 										variant="outline"
