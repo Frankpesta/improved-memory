@@ -23,11 +23,11 @@ const TradingSection = () => {
 
 					<div className="space-y-6">
 						<p className="text-foreground/90 leading-relaxed">
-							Fidelity Trades AI has developed a state-of-the-art AI BOT that is
-							trained to navigate the cryptocurrency market with over 94%
-							accuracy. The BOT continuously scans market trends, predicts
-							profitable opportunities, and executes trades, ensuring optimal
-							returns for investors.
+							Credix AI has developed a state-of-the-art AI BOT that is trained
+							to navigate the cryptocurrency market with over 94% accuracy. The
+							BOT continuously scans market trends, predicts profitable
+							opportunities, and executes trades, ensuring optimal returns for
+							investors.
 						</p>
 
 						<div className="space-y-3">
@@ -88,8 +88,8 @@ const SecuritySection = () => {
 						</h2>
 						<p className="text-foreground/90 leading-relaxed">
 							We understand that security is a top priority for our investors.
-							That's why Fidelity Trades AI ensures your capital is protected
-							through multiple security measures, including:
+							That's why Credix AI ensures your capital is protected through
+							multiple security measures, including:
 						</p>
 					</div>
 
@@ -111,8 +111,8 @@ const SecuritySection = () => {
 
 					<div className="text-center">
 						<p className="text-lg font-medium text-primary">
-							With Fidelity Trades AI, your capital is safe, and your returns
-							are guaranteed.
+							With Credix AI, your capital is safe, and your returns are
+							guaranteed.
 						</p>
 					</div>
 				</div>

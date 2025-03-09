@@ -126,7 +126,7 @@ const WhyTrustUs = () => {
 			title: "A Vision for Long-Term Success",
 			icon: ScanEye,
 			points: [
-				"At Fidelity Trades AI, our mission is to:",
+				"At Credix AI, our mission is to:",
 
 				"🚀 Revolutionize AI trading – Making passive income accessible to everyone.",
 				"🔒 Ensure investor security – Through insured investments and risk-free trading strategies.",
@@ -159,7 +159,7 @@ const WhyTrustUs = () => {
 			location: "UK",
 			investment: "$10,000",
 			quote:
-				"Fidelity Trades AI is the best AI trading platform I've used. The 1% daily return is steady, and I've already reinvested for another 90-day cycle!",
+				"Credix AI is the best AI trading platform I've used. The 1% daily return is steady, and I've already reinvested for another 90-day cycle!",
 		},
 		{
 			name: "Carlos R.",
@@ -180,7 +180,7 @@ const WhyTrustUs = () => {
 			location: "Canada",
 			investment: "$15,000",
 			quote:
-				"I’ve tried other AI trading platforms, but Fidelity Trades AI is the real deal. Withdrawals are fast, and the customer support is always there to help.",
+				"I’ve tried other AI trading platforms, but Credix AI is the real deal. Withdrawals are fast, and the customer support is always there to help.",
 		},
 		{
 			name: "Hassan O.",
@@ -192,7 +192,7 @@ const WhyTrustUs = () => {
 	];
 
 	const handleLogin = () => {
-		window.location.href = "https://app.fidelitytradesai.com/login";
+		window.location.href = "https://app.credixai.com/login";
 	};
 
 	return (

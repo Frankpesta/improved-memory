@@ -4,7 +4,7 @@ export const headerLinks = [
 	{ label: "Services", route: "/our-services" },
 	{ label: "Why Trust Us", route: "/why-trust-us" },
 	{ label: "Portfolio", route: "/our-portfolio" },
-	// { label: "Blog", route: "/our-blog" },
+	{ label: "Blog", route: "/blogs" },
 	{ label: "Trading Plans", route: "/trading-plans" },
 	{ label: "FAQ", route: "/faq" },
 	{ label: "Refer & Earn", route: "/refer-and-earn" },

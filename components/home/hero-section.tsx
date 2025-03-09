@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, LineChart, Shield, Bot } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface StatItemProps {
 	value: string;
@@ -20,7 +21,7 @@ const StatItem: React.FC<StatItemProps> = ({ value, label }) => (
 
 const HeroSection = () => {
 	const handleLogin = () => {
-		window.location.href = "https://app.fidelitytradesai.com/login";
+		window.location.href = "https://app.credixai.com/login";
 	};
 	return (
 		<div className="relative overflow-hidden bg-gradient-to-b from-neutral-50 to-neutral-100 dark:from-dark-300 dark:to-dark-400">
@@ -35,8 +36,7 @@ const HeroSection = () => {
 						<div className="space-y-8">
 							<div className="space-y-6">
 								<h1 className="text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-50">
-									Welcome to{" "}
-									<span className="text-primary-600">Fidelity Trades AI</span>
+									Welcome to <span className="text-primary-600">Credix AI</span>
 								</h1>
 								<h2 className="text-2xl lg:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
 									The Future of AI-Driven Crypto Trading
@@ -47,7 +47,7 @@ const HeroSection = () => {
 							</div>
 
 							<p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-								At Fidelity Trades AI, we have harnessed the power of artificial
+								At Credix AI, we have harnessed the power of artificial
 								intelligence to transform cryptocurrency trading into a seamless
 								and highly profitable experience for our investors. Our
 								state-of-the-art AI trading BOT, trained with vast market data,
@@ -81,6 +81,16 @@ const HeroSection = () => {
 								</Link>
 							</div>
 						</div>
+
+						{/* image to show only on small screens */}
+
+						<Image
+							src={"/assets/p10.jpg"}
+							alt="ai-trading"
+							width={100}
+							height={100}
+							className="py-2 flex lg:hidden w-full h-full"
+						/>
 
 						{/* Right Content - Feature Cards */}
 						<div className="grid gap-6">

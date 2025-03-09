@@ -8,10 +8,10 @@ import { ModeToggle } from "../ToggleTheme";
 
 const Navbar = () => {
 	const handleLogin = () => {
-		window.location.href = "https://app.fidelitytradesai.com/login";
+		window.location.href = "https://app.credixai.com/login";
 	};
 	const handleRegister = () => {
-		window.location.href = "https://app.fidelitytradesai.com/register";
+		window.location.href = "https://app.credixai.com/register";
 	};
 	return (
 		<header className="w-full border-b bg-white dark:bg-gray-800">
@@ -21,12 +21,12 @@ const Navbar = () => {
 						src={"/assets/aifav.png"}
 						width={100}
 						height={60}
-						alt="Fidelity Trades Ai Logo"
+						alt="Credix AI Logo"
 					/>
 				</Link>
 
 				<nav className="md:flex-between hidden w-full max-w-xs">
-					<NavItems />
+					<NavItems closeSheet={() => {}} />
 				</nav>
 
 				<div className="flex w-full justify-end items-center  gap-3">

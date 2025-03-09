@@ -12,7 +12,7 @@ const nunitoSans = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-	title: "Fidelity Trades AI",
+	title: "Credix AI",
 	description: "AI trading platform | Maximizing your profits",
 	icons: {
 		icon: "/assets/ailogo.png", // Path to favicon in the public folder

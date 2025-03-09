@@ -35,7 +35,7 @@ export default function ServicesPage() {
 		<div className="container mx-auto px-4">
 			<PageHeader
 				title="Our Services"
-				description="At Fidelity Trades AI, we provide cutting-edge AI-powered trading services designed to help investors grow their wealth effortlessly."
+				description="At Credix AI, we provide cutting-edge AI-powered trading services designed to help investors grow their wealth effortlessly."
 				align="center"
 			/>
 

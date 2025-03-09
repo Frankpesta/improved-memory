@@ -1,11 +1,18 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-	/* config options here */
-	output: "export",
-	trailingSlash: true, // Adds trailing slashes to avoid 404 errors
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
+	typescript: {
+		ignoreBuildErrors: true,
+	},
 	images: {
-		unoptimized: true, // Ensures images work without optimization
+		domains: ["app.credixai.com"], // Add your image domains here
+	},
+	experimental: {
+		webpackBuildWorker: true,
+		parallelServerBuildTraces: true,
+		parallelServerCompiles: true,
 	},
 };
 

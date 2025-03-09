@@ -40,7 +40,7 @@ const LeadershipSection = () => {
 			name: "Robert Chan",
 			title: "CTO",
 			description: "AI architect with 10+ years in algorithmic trading",
-			imagePath: "/assets/p4.jpg",
+			imagePath: "/assets/p7.jpg",
 		},
 		{
 			name: "Emma Lewis",
@@ -135,7 +135,7 @@ const BenefitsSection = () => {
 			<div className="space-y-8">
 				<div className="text-center space-y-4">
 					<h2 className="text-3xl font-bold tracking-tight">
-						Why You Should Invest with Fidelity Trades AI
+						Why You Should Invest with Credix AI
 					</h2>
 				</div>
 

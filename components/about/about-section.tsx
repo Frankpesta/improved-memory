@@ -60,7 +60,7 @@ const AboutUs = () => {
 			<div className="container mx-auto px-4">
 				<div className="max-w-4xl mx-auto text-center space-y-8">
 					<h1 className="text-4xl font-bold tracking-tight text-primary-900 dark:text-primary-100">
-						About Us – Fidelity Trades AI
+						About Us – Credix AI
 					</h1>
 
 					<div className="space-y-6">
@@ -70,11 +70,11 @@ const AboutUs = () => {
 
 						<div className="space-y-4 text-black dark:text-primary-300">
 							<p className="leading-relaxed">
-								At Fidelity Trades AI, we are revolutionizing the way people
-								invest in cryptocurrency trading. Our AI-powered trading BOT is
-								designed to analyze, predict, and execute trades with precision,
-								ensuring that investors earn passive income daily without
-								needing any trading experience.
+								At Credix AI, we are revolutionizing the way people invest in
+								cryptocurrency trading. Our AI-powered trading BOT is designed
+								to analyze, predict, and execute trades with precision, ensuring
+								that investors earn passive income daily without needing any
+								trading experience.
 							</p>
 
 							<p className="leading-relaxed">

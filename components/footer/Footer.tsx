@@ -47,7 +47,7 @@ const Footer = () => {
 
 			{/* Copyright Section */}
 			<div className="mt-4 text-center text-xs text-muted-foreground">
-				© {new Date().getFullYear()} Fidelity Trades AI. All rights reserved.
+				© {new Date().getFullYear()} Credix AI. All rights reserved.
 			</div>
 		</footer>
 	);
