@@ -90,8 +90,8 @@ const EarningsGuarantee = () => {
 
 								<div className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-lg border border-primary-100 dark:border-primary-800">
 									<p className="text-lg font-semibold text-primary-900 dark:text-primary-100">
-										With Fidelity Trades AI, your capital is secure, and your
-										profits are guaranteed.
+										With Credix AI, your capital is secure, and your profits are
+										guaranteed.
 									</p>
 								</div>
 							</div>

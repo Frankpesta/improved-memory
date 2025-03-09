@@ -11,9 +11,9 @@ import { Check, Mail, MessageCircle } from "lucide-react";
 const FAQAccordion = () => {
 	const faqs = [
 		{
-			question: "What is Fidelity Trades AI?",
+			question: "What is Credix AI?",
 			answer:
-				"Fidelity Trades AI is an AI-powered trading platform that trades the crypto market on behalf of investors. Our highly trained AI BOT, with a 94%+ accuracy rate, executes trades daily, generating consistent returns for investors over a 90-day investment period.",
+				"Credix AI is an AI-powered trading platform that trades the crypto market on behalf of investors. Our highly trained AI BOT, with a 94%+ accuracy rate, executes trades daily, generating consistent returns for investors over a 90-day investment period.",
 		},
 		{
 			question: "How does the AI BOT trading system work?",
@@ -107,7 +107,7 @@ const FAQAccordion = () => {
 						Withdrawals are processed instantly to your crypto wallet. Simply:
 					</p>
 					<ol className="list-decimal pl-5 space-y-1">
-						<li>Log into your Fidelity Trades AI account.</li>
+						<li>Log into your Credix AI account.</li>
 						<li>Go to the withdrawal section.</li>
 						<li>Enter your crypto wallet details.</li>
 						<li>Withdraw your profits anytime.</li>
@@ -116,9 +116,9 @@ const FAQAccordion = () => {
 			),
 		},
 		{
-			question: "Is Fidelity Trades AI available worldwide?",
+			question: "Is Credix AI available worldwide?",
 			answer:
-				"Yes! Fidelity Trades AI is a global investment platform with over 18,000 investors worldwide and more than $7 million invested.",
+				"Yes! Credix AI is a global investment platform with over 18,000 investors worldwide and more than $7 million invested.",
 		},
 		{
 			question: "Are there any hidden fees?",
@@ -136,8 +136,7 @@ const FAQAccordion = () => {
 				"We implement advanced security protocols, including encryption, two-factor authentication (2FA), and wallet security, to keep your account safe.",
 		},
 		{
-			question:
-				"What makes Fidelity Trades AI different from other trading platforms?",
+			question: "What makes Credix AI different from other trading platforms?",
 			answer: (
 				<div className="space-y-2">
 					<ul className="space-y-2">
@@ -169,7 +168,7 @@ const FAQAccordion = () => {
 					<div className="space-y-2">
 						<div className="flex items-center">
 							<Mail className="w-4 h-4 mr-2 text-primary" />
-							<span>Email Support – support@fidelitytradesai.com</span>
+							<span>Email Support – support@credixai.com</span>
 						</div>
 						<div className="flex items-center">
 							<MessageCircle className="w-4 h-4 mr-2 text-primary" />

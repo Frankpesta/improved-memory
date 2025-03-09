@@ -27,7 +27,7 @@ const planTiers: PlanTier[] = [
 ];
 
 const handleLogin = () => {
-	window.location.href = "https://app.fidelitytradesai.com/login";
+	window.location.href = "https://app.credixai.com/login";
 };
 
 const InvestmentPlanCard: React.FC<PlanTier> = ({
@@ -163,11 +163,10 @@ const InvestmentPlans = () => {
 							Investment Plans
 						</h2>
 						<p className="max-w-3xl mx-auto text-neutral-600 dark:text-neutral-400">
-							At Fidelity Trades AI, we offer a range of investment plans
-							designed to suit all levels of investors. Your investment earns
-							daily returns for 90 days, and at the end of the cycle, you
-							receive your full capital back along with your accumulated
-							profits.
+							At Credix AI, we offer a range of investment plans designed to
+							suit all levels of investors. Your investment earns daily returns
+							for 90 days, and at the end of the cycle, you receive your full
+							capital back along with your accumulated profits.
 						</p>
 					</div>
 

@@ -65,7 +65,7 @@ const FeaturesSection = () => {
 			icon: <Users className="h-6 w-6 text-primary-600" />,
 			title: "Trust & Transparency",
 			description:
-				"With over $7 million invested and millions paid out, Fidelity Trades AI is trusted by thousands of investors worldwide.",
+				"With over $7 million invested and millions paid out, Credix AI is trusted by thousands of investors worldwide.",
 		},
 	];
 
@@ -75,7 +75,7 @@ const FeaturesSection = () => {
 				<div className="max-w-7xl mx-auto">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
-							Why Choose Fidelity Trades AI?
+							Why Choose Credix AI?
 						</h2>
 						<div className="w-20 h-1 bg-primary-600 mx-auto"></div>
 					</div>

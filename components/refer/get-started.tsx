@@ -28,7 +28,7 @@ export const GetStartedSection: React.FC = () => {
 		{
 			title: "Log in to your account",
 			description:
-				"Log in to your Fidelity Trades AI account or sign up if you haven't.",
+				"Log in to your Credix AI account or sign up if you haven't.",
 		},
 		{
 			title: "Copy your unique referral link",

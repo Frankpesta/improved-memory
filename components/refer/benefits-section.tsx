@@ -38,7 +38,7 @@ export const BenefitsSection: React.FC = () => {
 		{
 			title: "Help Others Earn",
 			description:
-				"By referring people to Fidelity Trades AI, you're helping them gain access to a safe, automated, and highly profitable crypto trading opportunity.",
+				"By referring people to Credix AI, you're helping them gain access to a safe, automated, and highly profitable crypto trading opportunity.",
 		},
 		{
 			title: "No Investment Required to Earn",

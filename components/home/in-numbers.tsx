@@ -218,7 +218,7 @@ const CapitalProtectionStats = () => {
 								Capital Protection & Insurance
 							</h2>
 							<p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-								At Fidelity Trades AI, your investment is insured and protected.
+								At Credix AI, your investment is insured and protected.
 							</p>
 						</div>
 
@@ -240,12 +240,12 @@ const CapitalProtectionStats = () => {
 					<div>
 						<div className="text-center mb-12">
 							<h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
-								Fidelity Trades AI in Numbers
+								Credix AI in Numbers
 							</h2>
 							<div className="w-20 h-1 bg-primary-600 mx-auto"></div>
 						</div>
 
-						<div className="grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 gap-6">
+						<div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 gap-6">
 							{statistics.map((stat, index) => (
 								<StatCard key={index} {...stat} />
 							))}

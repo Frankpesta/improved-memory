@@ -10,8 +10,8 @@ const Page = () => {
 	return (
 		<div className="container mx-auto bg-gradient-to-b from-primary-50 to-white dark:from-primary-950/50 dark:to-background">
 			<PageHeader
-				title="Refer & Earn – Grow Your Wealth with Fidelity Trades AI"
-				description="At Fidelity Trades AI, we believe in rewarding our investors not just through daily returns but also by offering an exciting referral program. Our Refer & Earn program allows you to earn additional income by inviting others to invest with us. It's simple, rewarding, and a great way to maximize your earnings while helping others benefit from AI-powered crypto trading."
+				title="Refer & Earn – Grow Your Wealth with Credix AI"
+				description="At Credix AI, we believe in rewarding our investors not just through daily returns but also by offering an exciting referral program. Our Refer & Earn program allows you to earn additional income by inviting others to invest with us. It's simple, rewarding, and a great way to maximize your earnings while helping others benefit from AI-powered crypto trading."
 				align="center"
 			/>
 			<HowItWorksSection />

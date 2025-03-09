@@ -140,9 +140,7 @@ const ServiceList = () => {
 			{/* Why Choose Us Section */}
 			<Card className="border-none bg-gradient-to-br from-indigo-50/50 to-purple-50/50 dark:from-indigo-950/30 dark:to-purple-950/30">
 				<CardHeader>
-					<CardTitle className="text-xl">
-						Why Choose Fidelity Trades AI?
-					</CardTitle>
+					<CardTitle className="text-xl">Why Choose Credix AI?</CardTitle>
 				</CardHeader>
 				<CardContent>
 					<div className="grid gap-4 md:grid-cols-2">

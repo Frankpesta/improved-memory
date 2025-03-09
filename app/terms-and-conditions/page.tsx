@@ -16,7 +16,7 @@ const TermsAndConditionsPage: React.FC = () => {
 			id: "acceptance",
 			title: "1. Acceptance of Terms",
 			content:
-				"By using Fidelity Trades AI, you acknowledge that you have read, understood, and agreed to these terms and conditions. If you do not agree, please refrain from using our services.",
+				"By using Credix AI, you acknowledge that you have read, understood, and agreed to these terms and conditions. If you do not agree, please refrain from using our services.",
 		},
 		{
 			id: "eligibility",
@@ -124,7 +124,7 @@ const TermsAndConditionsPage: React.FC = () => {
 							account security.
 						</li>
 						<li>
-							Fidelity Trades AI is not responsible for losses resulting from
+							Credix AI is not responsible for losses resulting from
 							unauthorized access due to weak passwords or user negligence.
 						</li>
 					</ul>
@@ -156,9 +156,7 @@ const TermsAndConditionsPage: React.FC = () => {
 						</li>
 						<li className="flex items-start">
 							<span className="text-red-500 mr-2">🚫</span>
-							<span>
-								Post false or misleading information about Fidelity Trades AI.
-							</span>
+							<span>Post false or misleading information about Credix AI.</span>
 						</li>
 					</ul>
 					<p className="mt-2">
@@ -250,8 +248,7 @@ const TermsAndConditionsPage: React.FC = () => {
 				<div className="space-y-2">
 					<ul className="list-disc pl-5 space-y-1">
 						<li>
-							Fidelity Trades AI is not liable for losses due to market
-							volatility.
+							Credix AI is not liable for losses due to market volatility.
 						</li>
 						<li>
 							We are not responsible for technical failures, hacks, or
@@ -292,8 +289,7 @@ const TermsAndConditionsPage: React.FC = () => {
 				<div className="space-y-2">
 					<ul className="list-disc pl-5 space-y-1">
 						<li>
-							Fidelity Trades AI reserves the right to modify these terms at any
-							time.
+							Credix AI reserves the right to modify these terms at any time.
 						</li>
 						<li>
 							Updates will be posted on our website, and users are responsible
@@ -311,7 +307,7 @@ const TermsAndConditionsPage: React.FC = () => {
 			id: "governing",
 			title: "12. Governing Law",
 			content:
-				"These Terms and Conditions shall be governed by and interpreted in accordance with the laws of [Insert Jurisdiction]. Any disputes shall be resolved through arbitration in [Insert Location].",
+				"These Terms and Conditions shall be governed by and interpreted in accordance with the laws of the United States of America. Any disputes shall be resolved through arbitration in the United States of America.",
 		},
 		{
 			id: "contact",
@@ -324,11 +320,11 @@ const TermsAndConditionsPage: React.FC = () => {
 					</p>
 					<p className="flex items-center">
 						<span className="mr-2">📩</span>
-						<span>Email: [Insert Support Email]</span>
+						<span>Email: support@credixai.com</span>
 					</p>
 					<p className="mt-2">
-						By using Fidelity Trades AI, you agree to these Terms and Conditions
-						and accept the responsibilities outlined above.
+						By using Credix AI, you agree to these Terms and Conditions and
+						accept the responsibilities outlined above.
 					</p>
 				</div>
 			),
@@ -336,75 +332,79 @@ const TermsAndConditionsPage: React.FC = () => {
 	];
 
 	return (
-		<div className="container py-8 mx-auto">
+		<div className="container py-8 mx-auto px-4">
 			<div className="flex justify-between items-center mb-6">
 				<h1 className="text-3xl font-bold">Terms and Conditions</h1>
 			</div>
 
 			<Card className="mb-6">
 				<CardHeader>
-					<CardTitle>Effective Date: [Insert ]</CardTitle>
+					<CardTitle>Effective Date: 2024</CardTitle>
 				</CardHeader>
 				<CardContent>
 					<p>
-						Welcome to Fidelity Trades AI. By accessing and using our website
-						and services, you agree to comply with the terms and conditions
-						outlined below. Please read them carefully before investing or using
-						our platform.
+						Welcome to Credix AI. By accessing and using our website and
+						services, you agree to comply with the terms and conditions outlined
+						below. Please read them carefully before investing or using our
+						platform.
 					</p>
 				</CardContent>
 			</Card>
 
 			<div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-				<div className="md:col-span-3">
-					<Card className="sticky top-4">
-						<CardHeader>
-							<CardTitle className="text-lg">Sections</CardTitle>
-						</CardHeader>
-						<CardContent className="p-0">
-							<Tabs>
-								<TabsList className="flex flex-col w-full h-auto rounded-none">
-									{sections.map((section) => (
-										<TabsTrigger
-											key={section.id}
-											value={section.id}
-											className="justify-start py-2 px-4 w-full">
-											{section.title}
-										</TabsTrigger>
-									))}
-								</TabsList>
-							</Tabs>
-						</CardContent>
-					</Card>
-				</div>
-
 				<div className="md:col-span-9">
 					<Tabs defaultValue="acceptance" className="w-full">
-						<Card>
-							<CardContent className="p-6">
-								<ScrollArea className="h-[60vh]">
-									{sections.map((section) => (
-										<TabsContent
-											key={section.id}
-											value={section.id}
-											className="mt-0">
-											<div className="mb-8">
-												<h2 className="text-2xl font-semibold mb-4">
+						<div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+							{/* Sidebar */}
+							<div className="md:col-span-3">
+								<Card className="sticky top-4">
+									<CardHeader>
+										<CardTitle className="text-lg">Sections</CardTitle>
+									</CardHeader>
+									<CardContent className="p-0">
+										<TabsList className="flex flex-col w-full h-auto rounded-none">
+											{sections.map((section) => (
+												<TabsTrigger
+													key={section.id}
+													value={section.id}
+													className="justify-start py-2 px-4 w-full">
 													{section.title}
-												</h2>
-												<div className="prose dark:prose-invert max-w-none">
-													{typeof section.content === "string" ? (
-														<p>{section.content}</p>
-													) : (
-														section.content
-													)}
-												</div>
-											</div>
-										</TabsContent>
-									))}
-								</ScrollArea>
-							</CardContent>
-						</Card>
+												</TabsTrigger>
+											))}
+										</TabsList>
+									</CardContent>
+								</Card>
+							</div>
+
+							{/* Main Content */}
+							<div className="md:col-span-9">
+								<Card>
+									<CardContent className="p-6">
+										<ScrollArea className="h-[60vh]">
+											{sections.map((section) => (
+												<TabsContent
+													key={section.id}
+													value={section.id}
+													className="mt-0">
+													<div className="mb-8">
+														<h2 className="text-2xl font-semibold mb-4">
+															{section.title}
+														</h2>
+														<div className="prose dark:prose-invert max-w-none">
+															{typeof section.content === "string" ? (
+																<p>{section.content}</p>
+															) : (
+																section.content
+															)}
+														</div>
+													</div>
+												</TabsContent>
+											))}
+										</ScrollArea>
+									</CardContent>
+								</Card>
+							</div>
+						</div>
 					</Tabs>
 				</div>
 			</div>

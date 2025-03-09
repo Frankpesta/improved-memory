@@ -85,7 +85,7 @@ const PortfolioPage = () => {
 	];
 
 	const handleLogin = () => {
-		window.location.href = "https://app.fidelitytradesai.com/login";
+		window.location.href = "https://app.credixai.com/login";
 	};
 
 	return (

@@ -15,7 +15,7 @@ import Link from "next/link";
 export default function PrivacyPolicyPage() {
 	// You'd replace this with the actual date or fetch from an API
 	const effectiveDate = "February 1, 2024";
-	const supportEmail = "support@fidelitytradesai.com";
+	const supportEmail = "support@credixai.com";
 
 	return (
 		<div className="min-h-screen bg-background text-foreground">
@@ -31,11 +31,11 @@ export default function PrivacyPolicyPage() {
 						<Card className="w-full max-w-3xl shadow-md">
 							<CardContent className="p-6">
 								<p className="text-lg">
-									Welcome to Fidelity Trades AI. Your privacy is important to
-									us, and we are committed to protecting the personal and
-									financial information you share with us. This Privacy Policy
-									outlines how we collect, use, store, and safeguard your
-									information when you use our website and services.
+									Welcome to Credix AI. Your privacy is important to us, and we
+									are committed to protecting the personal and financial
+									information you share with us. This Privacy Policy outlines
+									how we collect, use, store, and safeguard your information
+									when you use our website and services.
 								</p>
 							</CardContent>
 						</Card>
@@ -54,8 +54,8 @@ export default function PrivacyPolicyPage() {
 							</AccordionTrigger>
 							<AccordionContent className="px-4 pb-6">
 								<p className="mb-4">
-									When you register and use Fidelity Trades AI, we collect the
-									following types of information:
+									When you register and use Credix AI, we collect the following
+									types of information:
 								</p>
 
 								<h3 className="text-lg font-semibold mt-6 mb-2">

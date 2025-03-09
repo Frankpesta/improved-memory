@@ -26,7 +26,7 @@ export const TipsSection: React.FC = () => {
 		{
 			title: "Use Social Media",
 			description:
-				"Post about Fidelity Trades AI on platforms like Facebook, Twitter, LinkedIn, Instagram, and Telegram. Share your success stories and earnings screenshots.",
+				"Post about Credix AI on platforms like Facebook, Twitter, LinkedIn, Instagram, and Telegram. Share your success stories and earnings screenshots.",
 		},
 		{
 			title: "Educate Potential Investors",
@@ -46,7 +46,7 @@ export const TipsSection: React.FC = () => {
 		{
 			title: "Network with Investors",
 			description:
-				"Join crypto investment groups and introduce them to Fidelity Trades AI.",
+				"Join crypto investment groups and introduce them to Credix AI.",
 		},
 		{
 			title: "Stay Consistent",
