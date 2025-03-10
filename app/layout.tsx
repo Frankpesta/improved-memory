@@ -12,8 +12,44 @@ const nunitoSans = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-	title: "Credix AI",
+	metadataBase: new URL("https://app.credixai.com/api/blogs"),
+	title: {
+		default: "Credixai",
+		template: "%s | Credixai",
+	},
 	description: "AI trading platform | Maximizing your profits",
+	openGraph: {
+		type: "website",
+		locale: "en_US",
+		url: "https://credixai.com/blogs",
+		siteName: "Credixai",
+		images: [
+			{
+				url: "/logo.png",
+				width: 1200,
+				height: 630,
+				alt: "CredixAI Blog",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "CredixAI | Ai powered trading at its best",
+		description:
+			"Discover expert insights, trends, and in-depth analysis on topics that matter to you.",
+		images: ["/logo.png"],
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			"max-video-preview": -1,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+		},
+	},
 	icons: {
 		icon: "/fav.png", // Path to favicon in the public folder
 		shortcut: "/fav.png", // Path to shortcut icon in the public folder
@@ -28,6 +64,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<link rel="preconnect" href="https://app.credixai.com/api/blogs" />
+			<link rel="dns-prefetch" href="https://app.credixai.com/api/bogs" />
 			<body className={`${nunitoSans.variable}  antialiased`}>
 				<ThemeProvider
 					attribute="class"
