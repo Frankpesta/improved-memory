@@ -1,12 +1,40 @@
+import { Metadata } from "next";
+
+interface Blog {
+	id: string;
+	title: string;
+	details: string;
+	cover: string;
+}
 import { Suspense } from "react";
 import Blogs from "@/components/blogs";
 import { Skeleton } from "@/components/ui/skeleton";
+
+export const metadata: Metadata = {
+	title: "Blog Articles | CredixAI Insights",
+	description:
+		"Explore our collection of expert articles, insights, and analysis on the latest trends and topics.",
+	openGraph: {
+		title: "Blog Articles | CredixAI Insights",
+		description:
+			"Explore our collection of expert articles, insights, and analysis on the latest trends and topics.",
+		type: "website",
+		images: [
+			{
+				url: "/logo.png",
+				width: 1200,
+				height: 630,
+				alt: "CredixAI Blog Articles",
+			},
+		],
+	},
+};
 
 // Fetch blogs with ISR
 async function fetchBlogs() {
 	try {
 		const response = await fetch("https://app.credixai.com/api/blogs", {
-			next: { revalidate: 3600 }, // Revalidate every hour
+			next: { revalidate: 600 }, // Revalidate ten minutes
 		});
 
 		if (!response.ok) {
@@ -14,7 +42,6 @@ async function fetchBlogs() {
 		}
 
 		const data = await response.json();
-		console.log(data?.data);
 		return data?.data || [];
 	} catch (error) {
 		console.error("Error fetching blogs:", error);
@@ -27,9 +54,35 @@ export default async function BlogsPage() {
 	const blogs = await fetchBlogs();
 
 	return (
-		<Suspense fallback={<BlogsLoading />}>
-			<Blogs initialBlogs={blogs} />
-		</Suspense>
+		<main>
+			<Suspense fallback={<BlogsLoading />}>
+				<Blogs initialBlogs={blogs} />
+
+				{/* Add structured data for blog listing */}
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							"@context": "https://schema.org",
+							"@type": "CollectionPage",
+							name: "Blog Articles | CredixAI Insights",
+							description:
+								"Explore our collection of expert articles, insights, and analysis on the latest trends and topics.",
+							url: "https://app.credixai.com/blogs",
+							mainEntity: {
+								"@type": "ItemList",
+								itemListElement: blogs.map((blog: Blog, index: number) => ({
+									"@type": "ListItem",
+									position: index + 1,
+									url: `https://app.credixai.com/blog/${blog.id}`,
+									name: blog.title,
+								})),
+							},
+						}),
+					}}
+				/>
+			</Suspense>
+		</main>
 	);
 }
 
