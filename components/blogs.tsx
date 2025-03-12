@@ -90,7 +90,7 @@ export default function Blogs({
 										/>
 									</div>
 									<CardHeader className="pb-2">
-										<CardTitle className="text-xl line-clamp-2">
+										<CardTitle className="text-xl">
 											<Link
 												href={`/blog/${blog.id}`}
 												className="hover:text-primary transition-colors"
