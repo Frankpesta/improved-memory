@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, User, Tag, Clock, Share2 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
+import parse from "html-react-parser";
 
 interface Blog {
 	id: number;
@@ -229,11 +230,9 @@ export default function BlogDetail({
 				{/* Blog content with semantic HTML */}
 				<section
 					className="prose dark:prose-invert max-w-none"
-					itemProp="articleBody"
-					dangerouslySetInnerHTML={{
-						__html: cleanContent,
-					}}
-				/>
+					itemProp="articleBody">
+					{parse(blog.details)}
+				</section>
 
 				{/* Author bio section for E-A-T signals */}
 				{blog.author && (
