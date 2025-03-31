@@ -12,9 +12,9 @@ import {
 	CheckCircle2,
 	DollarSign,
 } from "lucide-react";
-import InvestmentPlans from "../home/pricing";
+import TradingPlans from "../home/pricing";
 
-interface InvestmentPlan {
+interface TradingPlan {
 	range: string;
 	daily: string;
 	duration: string;
@@ -38,13 +38,13 @@ const ServiceList = () => {
 			title: "Capital Protection & Insurance",
 			icon: Shield,
 			features: [
-				"Capital Insurance – All investments are insured against unexpected risks",
+				"Capital Insurance – All tradings are insured against unexpected risks",
 				"Extra Trading Days Guarantee – Coverage for any losing days",
 				"Liquidity Reserve Fund – Supporting continuous withdrawals",
 				"Advanced Risk Management – Minimizing risks while maximizing profits",
 			],
 			description:
-				"Your investment is secure, insured, and continuously generating profits.",
+				"Your trading is secure, insured, and continuously generating profits.",
 		},
 		{
 			title: "24/7 Automated Trading & Earnings",
@@ -67,13 +67,13 @@ const ServiceList = () => {
 				"No withdrawal limits – Withdraw as often as you like",
 			],
 			description:
-				"We ensure that your profits are always accessible, giving you full control over your investment.",
+				"We ensure that your profits are always accessible, giving you full control over your trading.",
 		},
 		{
-			title: "Transparent & Secure Investment Platform",
+			title: "Transparent & Secure Trading Platform",
 			icon: Lock,
 			features: [
-				"Real-time investment tracking – See your earnings and transactions instantly",
+				"Real-time trading tracking – See your earnings and transactions instantly",
 				"Encrypted security system – Protecting your data and funds from cyber threats",
 				"No hidden charges – What you see is what you get",
 			],
@@ -96,7 +96,7 @@ const ServiceList = () => {
 	const highlights = [
 		"94%+ AI Trading Accuracy – Maximizing your earnings daily",
 		"Passive Income Without Effort – AI BOT trades for you",
-		"Secure & Insured Investment – Protecting your capital",
+		"Secure & Insured Trading – Protecting your capital",
 		"Fast & Easy Withdrawals – Anytime, anywhere",
 		"Extra Trading Days for Losses – We ensure you get your full returns",
 		"Proven Track Record – Over $12 million paid out to investors",
@@ -135,7 +135,7 @@ const ServiceList = () => {
 				))}
 			</div>
 
-			<InvestmentPlans />
+			<TradingPlans />
 
 			{/* Why Choose Us Section */}
 			<Card className="border-none bg-gradient-to-br from-indigo-50/50 to-purple-50/50 dark:from-indigo-950/30 dark:to-purple-950/30">

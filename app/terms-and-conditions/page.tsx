@@ -54,18 +54,18 @@ const TermsAndConditionsPage: React.FC = () => {
 			),
 		},
 		{
-			id: "investment",
-			title: "3. Investment and Returns",
+			id: "trading",
+			title: "3. Trading and Returns",
 			content: (
 				<div className="space-y-4">
 					<div>
-						<h4 className="text-lg font-medium mb-2">3.1 Investment Plans</h4>
+						<h4 className="text-lg font-medium mb-2">3.1 Trading Plans</h4>
 						<ul className="list-disc pl-5 space-y-1">
 							<li>
 								Investors deposit funds into our AI trading system, and our AI
 								BOT trades on their behalf.
 							</li>
-							<li>Daily returns are based on the selected investment plan.</li>
+							<li>Daily returns are based on the selected trading plan.</li>
 							<li>Returns are credited daily for a 90-day period.</li>
 							<li>
 								If the AI BOT experiences a loss on any trading day, an
@@ -80,7 +80,7 @@ const TermsAndConditionsPage: React.FC = () => {
 						<ul className="list-disc pl-5 space-y-1">
 							<li>
 								Investors can withdraw their profits at any time during the
-								investment period.
+								trading period.
 							</li>
 							<li>
 								The initial capital is released at the end of the 90-day cycle.
@@ -183,7 +183,7 @@ const TermsAndConditionsPage: React.FC = () => {
 						</li>
 						<li>
 							Our risk management strategy includes automated stop-loss
-							mechanisms to safeguard investments.
+							mechanisms to safeguard tradings.
 						</li>
 					</ul>
 				</div>
@@ -255,7 +255,7 @@ const TermsAndConditionsPage: React.FC = () => {
 							blockchain network delays.
 						</li>
 						<li>
-							Investors acknowledge that all investments carry potential risks.
+							Investors acknowledge that all tradings carry potential risks.
 						</li>
 					</ul>
 				</div>

@@ -41,7 +41,7 @@ const FeaturesSection = () => {
 			icon: <TrendingUp className="h-6 w-6 text-primary-600" />,
 			title: "Daily Returns",
 			description:
-				"Earn between 0.5% to 2.5% daily, depending on your investment amount, for a period of 90 days.",
+				"Earn between 0.5% to 2.5% daily, depending on your trading amount, for a period of 90 days.",
 		},
 		{
 			icon: <Shield className="h-6 w-6 text-primary-600" />,
@@ -53,7 +53,7 @@ const FeaturesSection = () => {
 			icon: <Clock className="h-6 w-6 text-primary-600" />,
 			title: "Extra Trading Days for Losses",
 			description:
-				"On rare days when the AI BOT encounters losses, we extend your investment period, ensuring you don't lose out on any profits.",
+				"On rare days when the AI BOT encounters losses, we extend your trading period, ensuring you don't lose out on any profits.",
 		},
 		{
 			icon: <Wallet className="h-6 w-6 text-primary-600" />,

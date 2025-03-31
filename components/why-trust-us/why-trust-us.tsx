@@ -36,10 +36,10 @@ const WhyTrustUs = () => {
 				"from-blue-500 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30",
 		},
 		{
-			title: "Capital Protection & Investment Insurance",
+			title: "Capital Protection & Trading Insurance",
 			icon: Shield,
 			points: [
-				"Capital Insurance – Your investment is insured",
+				"Capital Insurance – Your trading is insured",
 				"Liquidity Reserve Fund for timely withdrawals",
 				"Extra Trading Days Guarantee",
 				"Advanced Risk Management with stop-loss mechanisms",
@@ -51,7 +51,7 @@ const WhyTrustUs = () => {
 			title: "Transparent & Reliable Payouts",
 			icon: Lock,
 			points: [
-				"Real-time investment tracking – See your profits accumulate daily",
+				"Real-time trading tracking – See your profits accumulate daily",
 				"Fast and easy withdrawals – Request payouts anytime, with instant processing within hours",
 				"No hidden fees or charges – What you see is what you get.",
 				"Fully automated earnings distribution – Your profits are credited to your account every day",
@@ -67,28 +67,28 @@ const WhyTrustUs = () => {
 				"💰 Over $7 million invested",
 				"💵 Over $12 million paid out in returns",
 				"✅ 90-day profitable cycles with consistent daily earnings",
-				"Our growing investor base and high retention rate prove that we are a trusted and profitable investment platform.",
+				"Our growing investor base and high retention rate prove that we are a trusted and profitable trading platform.",
 			],
 			gradient:
 				"from-secondary-500 to-secondary-900 dark:from-secondary-950/30 dark:to-secondary-950/30",
 		},
 		{
-			title: "Flexible & Profitable Investment Plans",
+			title: "Flexible & Profitable Trading Plans",
 			icon: DollarSignIcon,
 			points: [
-				"💰 $100 – $4,999 Investment → 0.5% daily for 90 days",
-				"💰 $5,000 – $9,999 Investment → 0.8% daily for 90 days",
-				"💰 $10,000 – $19,999 Investment → 1% daily for 90 days",
-				"💰 $20,000 – $29,999 Investment → 1.5% daily for 90 days",
-				"💰 $30,000 – $49,999 Investment → 1.8% daily for 90 days",
-				"💰 $50,000 – $99,999 Investment → 2% daily for 90 days",
-				"💰 $100,000 – $1,000,000 Investment → 2.5% daily for 90 days",
+				"💰 $100 – $4,999 Trading → 0.5% daily for 90 days",
+				"💰 $5,000 – $9,999 Trading → 0.8% daily for 90 days",
+				"💰 $10,000 – $19,999 Trading → 1% daily for 90 days",
+				"💰 $20,000 – $29,999 Trading → 1.5% daily for 90 days",
+				"💰 $30,000 – $49,999 Trading → 1.8% daily for 90 days",
+				"💰 $50,000 – $99,999 Trading → 2% daily for 90 days",
+				"💰 $100,000 – $1,000,000 Trading → 2.5% daily for 90 days",
 			],
 			gradient:
 				"from-secondary-200 to-secondary-400 dark:from-secondary-950/30 dark:to-secondary-950/30",
 		},
 		{
-			title: "Secure & Regulated Investment Platform",
+			title: "Secure & Regulated Trading Platform",
 			icon: Key,
 			points: [
 				"Encrypted transactions – All investor data and transactions are secured with military-grade encryption.",
@@ -96,7 +96,7 @@ const WhyTrustUs = () => {
 				"Multi-layer authentication – To prevent unauthorized access and ensure account security.",
 				"Secure crypto & fiat transactions – We support secure deposits and withdrawals through trusted payment processors.",
 
-				"We operate transparently and legally, ensuring that your investment is protected at all times.",
+				"We operate transparently and legally, ensuring that your trading is protected at all times.",
 			],
 			gradient:
 				"from-danger-500 to-danger-900 dark:from-danger-950/30 dark:to-danger-950/30",
@@ -112,12 +112,12 @@ const WhyTrustUs = () => {
 
 				"Our 24/7 investor support team is always available to assist you with:",
 
-				"Investment guidance",
+				"Trading guidance",
 				" Withdrawal processing",
 				"Technical assistance",
 				" Trading updates & reports",
 
-				"You are never alone – our expert team is here to ensure a smooth and profitable investment journey.",
+				"You are never alone – our expert team is here to ensure a smooth and profitable trading journey.",
 			],
 			gradient:
 				"from-neutral-500 to-neutral-900 dark:from-neutral-950/30 dark:to-neutral-950/30",
@@ -129,10 +129,10 @@ const WhyTrustUs = () => {
 				"At Credix AI, our mission is to:",
 
 				"🚀 Revolutionize AI trading – Making passive income accessible to everyone.",
-				"🔒 Ensure investor security – Through insured investments and risk-free trading strategies.",
+				"🔒 Ensure investor security – Through insured tradings and risk-free trading strategies.",
 				"💵 Deliver sustainable returns – With proven AI technology and market expertise.",
 
-				"Our goal is to help you grow your wealth effortlessly, providing a stable and secure investment environment.",
+				"Our goal is to help you grow your wealth effortlessly, providing a stable and secure trading environment.",
 			],
 			gradient:
 				"from-secondary-900 to-secondary-300 dark:from-secondary-600/30 dark:to-secondary-500/30",
@@ -150,44 +150,44 @@ const WhyTrustUs = () => {
 		{
 			name: "James L.",
 			location: "USA",
-			investment: "$25,000",
+			trading: "$25,000",
 			quote:
-				"I started with $25,000, and in 90 days, I had earned over $11,000 in profits. The extra trading day guarantee gave me confidence in my investment. Withdrawals are smooth and fast!",
+				"I started with $25,000, and in 90 days, I had earned over $11,000 in profits. The extra trading day guarantee gave me confidence in my trading. Withdrawals are smooth and fast!",
 		},
 		{
 			name: "Sophia M.",
 			location: "UK",
-			investment: "$10,000",
+			trading: "$10,000",
 			quote:
 				"Credix AI is the best AI trading platform I've used. The 1% daily return is steady, and I've already reinvested for another 90-day cycle!",
 		},
 		{
 			name: "Carlos R.",
 			location: "Spain",
-			investment: "$50,000",
+			trading: "$50,000",
 			quote:
-				"I was skeptical at first, but after receiving my first payout, I increased my investment to $50,000. Best decision ever – the returns are amazing!",
+				"I was skeptical at first, but after receiving my first payout, I increased my trading to $50,000. Best decision ever – the returns are amazing!",
 		},
 		{
 			name: "Anita D.",
 			location: "Australia",
-			investment: "$7,500",
+			trading: "$7,500",
 			quote:
 				"What I love most is the transparency and security. My funds are insured, and I see my earnings grow daily. I recommend this to anyone looking for passive income!",
 		},
 		{
 			name: "David W.",
 			location: "Canada",
-			investment: "$15,000",
+			trading: "$15,000",
 			quote:
 				"I’ve tried other AI trading platforms, but Credix AI is the real deal. Withdrawals are fast, and the customer support is always there to help.",
 		},
 		{
 			name: "Hassan O.",
 			location: "UAE",
-			investment: "$100,000",
+			trading: "$100,000",
 			quote:
-				"The 2.5% daily return on my investment has been life-changing. I’ve already reinvested for another 90-day cycle!",
+				"The 2.5% daily return on my trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
 		},
 	];
 
@@ -268,7 +268,7 @@ const WhyTrustUs = () => {
 								<Badge
 									variant="secondary"
 									className="group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-									{testimonial.investment}
+									{testimonial.trading}
 								</Badge>
 								<span className="text-sm text-muted-foreground">
 									({testimonial.location})
@@ -287,7 +287,7 @@ const WhyTrustUs = () => {
 				<CardContent className="p-8 text-center space-y-6">
 					<Rocket className="h-12 w-12 text-primary mx-auto animate-bounce" />
 					<h3 className="text-2xl font-bold">
-						Start Your Investment Journey Today
+						Start Your Trading Journey Today
 					</h3>
 					<p className="text-muted-foreground max-w-2xl mx-auto">
 						Join 18,000+ investors worldwide and start earning passive income

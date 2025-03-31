@@ -77,13 +77,13 @@ const EarningsGuarantee = () => {
 							<div className="space-y-4">
 								<p className="text-lg text-neutral-700 dark:text-neutral-300">
 									If there's ever a day where the AI BOT experiences an
-									unprofitable trade, we extend your investment period by one
-									extra day, ensuring that you never miss a day of earnings.
+									unprofitable trade, we extend your trading period by one extra
+									day, ensuring that you never miss a day of earnings.
 								</p>
 
 								<p className="text-lg text-neutral-700 dark:text-neutral-300">
 									This means if you were supposed to earn for 90 days and there
-									was one unprofitable day, your investment period automatically
+									was one unprofitable day, your trading period automatically
 									extends to 91 days, so you always receive the full expected
 									returns.
 								</p>

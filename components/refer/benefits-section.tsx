@@ -41,7 +41,7 @@ export const BenefitsSection: React.FC = () => {
 				"By referring people to Credix AI, you're helping them gain access to a safe, automated, and highly profitable crypto trading opportunity.",
 		},
 		{
-			title: "No Investment Required to Earn",
+			title: "No Trading Required to Earn",
 			description:
 				"Even if you haven't invested, you can still earn by referring others to our platform.",
 		},

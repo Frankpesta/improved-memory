@@ -33,7 +33,7 @@ const LeadershipSection = () => {
 		{
 			name: "Linda Carter",
 			title: "COO",
-			description: "Specialist in investment security and risk management",
+			description: "Specialist in trading security and risk management",
 			imagePath: "/assets/p6.jpg",
 		},
 		{
@@ -59,7 +59,7 @@ const LeadershipSection = () => {
 				<p className="text-muted-foreground max-w-2xl mx-auto">
 					Our company is led by a team of experienced financial experts and AI
 					developers dedicated to ensuring the success and security of your
-					investments.
+					tradings.
 				</p>
 			</div>
 

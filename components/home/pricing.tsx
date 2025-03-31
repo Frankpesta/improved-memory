@@ -11,28 +11,28 @@ import {
 } from "@/components/ui/card";
 
 interface PlanTier {
-	minInvestment: number;
-	maxInvestment: number;
+	minTrading: number;
+	maxTrading: number;
 	dailyReturn: number;
 }
 
 const planTiers: PlanTier[] = [
-	{ minInvestment: 100, maxInvestment: 4999, dailyReturn: 0.5 },
-	{ minInvestment: 5000, maxInvestment: 9999, dailyReturn: 0.8 },
-	{ minInvestment: 10000, maxInvestment: 19999, dailyReturn: 1.0 },
-	{ minInvestment: 20000, maxInvestment: 29999, dailyReturn: 1.5 },
-	{ minInvestment: 30000, maxInvestment: 49999, dailyReturn: 1.8 },
-	{ minInvestment: 50000, maxInvestment: 99999, dailyReturn: 2.0 },
-	{ minInvestment: 100000, maxInvestment: 1000000, dailyReturn: 2.5 },
+	{ minTrading: 100, maxTrading: 4999, dailyReturn: 0.5 },
+	{ minTrading: 5000, maxTrading: 9999, dailyReturn: 0.8 },
+	{ minTrading: 10000, maxTrading: 19999, dailyReturn: 1.0 },
+	{ minTrading: 20000, maxTrading: 29999, dailyReturn: 1.5 },
+	{ minTrading: 30000, maxTrading: 49999, dailyReturn: 1.8 },
+	{ minTrading: 50000, maxTrading: 99999, dailyReturn: 2.0 },
+	{ minTrading: 100000, maxTrading: 1000000, dailyReturn: 2.5 },
 ];
 
 const handleLogin = () => {
 	window.location.href = "https://app.credixai.com/login";
 };
 
-const InvestmentPlanCard: React.FC<PlanTier> = ({
-	minInvestment,
-	maxInvestment,
+const TradingPlanCard: React.FC<PlanTier> = ({
+	minTrading,
+	maxTrading,
 	dailyReturn,
 }) => (
 	<Card className="hover:shadow-lg transition-shadow">
@@ -44,9 +44,9 @@ const InvestmentPlanCard: React.FC<PlanTier> = ({
 				<DollarSign className="h-6 w-6 text-primary-600" />
 			</CardTitle>
 			<CardDescription>
-				{minInvestment === 100000
+				{minTrading === 100000
 					? "$100K+"
-					: `$${minInvestment.toLocaleString()} - $${maxInvestment.toLocaleString()}`}
+					: `$${minTrading.toLocaleString()} - $${maxTrading.toLocaleString()}`}
 			</CardDescription>
 		</CardHeader>
 		<CardContent>
@@ -81,23 +81,22 @@ const InvestmentPlanCard: React.FC<PlanTier> = ({
 );
 
 const ProfitCalculator: React.FC = () => {
-	const [investment, setInvestment] = useState<number>(10000);
+	const [trading, setTrading] = useState<number>(10000);
 	const [dailyReturn, setDailyReturn] = useState<number>(1.0);
 	const [dailyProfit, setDailyProfit] = useState<number>(0);
 	const [totalProfit, setTotalProfit] = useState<number>(0);
 
 	useEffect(() => {
 		const tier = planTiers.find(
-			(tier) =>
-				investment >= tier.minInvestment && investment <= tier.maxInvestment
+			(tier) => trading >= tier.minTrading && trading <= tier.maxTrading
 		);
 		if (tier) {
 			setDailyReturn(tier.dailyReturn);
-			const daily = (investment * tier.dailyReturn) / 100;
+			const daily = (trading * tier.dailyReturn) / 100;
 			setDailyProfit(daily);
 			setTotalProfit(daily * 90);
 		}
-	}, [investment]);
+	}, [trading]);
 
 	return (
 		<Card className="bg-primary-50 dark:bg-dark-200">
@@ -111,14 +110,14 @@ const ProfitCalculator: React.FC = () => {
 				<div className="space-y-6">
 					<div>
 						<label className="block text-sm font-medium mb-2">
-							Investment Amount ($)
+							Trading Amount ($)
 						</label>
 						<input
 							type="number"
 							min="100"
 							max="1000000"
-							value={investment}
-							onChange={(e) => setInvestment(Number(e.target.value))}
+							value={trading}
+							onChange={(e) => setTrading(Number(e.target.value))}
 							className="w-full p-2 border rounded-md dark:bg-dark-300 dark:border-dark-100"
 						/>
 					</div>
@@ -153,26 +152,26 @@ const ProfitCalculator: React.FC = () => {
 	);
 };
 
-const InvestmentPlans = () => {
+const TradingPlans = () => {
 	return (
 		<section className="py-16 bg-neutral-50 dark:bg-dark-300">
 			<div className="container mx-auto px-4">
 				<div className="max-w-7xl mx-auto">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
-							Investment Plans
+							Trading Plans
 						</h2>
 						<p className="max-w-3xl mx-auto text-neutral-600 dark:text-neutral-400">
-							At Credix AI, we offer a range of investment plans designed to
-							suit all levels of investors. Your investment earns daily returns
-							for 90 days, and at the end of the cycle, you receive your full
-							capital back along with your accumulated profits.
+							At Credix AI, we offer a range of trading plans designed to suit
+							all levels of investors. Your trading earns daily returns for 90
+							days, and at the end of the cycle, you receive your full capital
+							back along with your accumulated profits.
 						</p>
 					</div>
 
 					<div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mb-12">
 						{planTiers.map((tier, index) => (
-							<InvestmentPlanCard key={index} {...tier} />
+							<TradingPlanCard key={index} {...tier} />
 						))}
 					</div>
 
@@ -185,4 +184,4 @@ const InvestmentPlans = () => {
 	);
 };
 
-export default InvestmentPlans;
+export default TradingPlans;

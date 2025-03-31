@@ -48,8 +48,8 @@ const HeroSection = () => {
 
 							<p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
 								At Credix AI, we have harnessed the power of artificial
-								intelligence to transform cryptocurrency trading into a seamless
-								and highly profitable experience for our investors. Our
+								intelligence to transform trading trading into a seamless and
+								highly profitable experience for our investors. Our
 								state-of-the-art AI trading BOT, trained with vast market data,
 								executes trades with over 94% accuracy, ensuring consistent
 								daily returns for our investors.
@@ -118,7 +118,7 @@ const HeroSection = () => {
 									Secure & Reliable
 								</h3>
 								<p className="text-neutral-600 dark:text-neutral-400">
-									Enterprise-grade security protecting your investments
+									Enterprise-grade security protecting your tradings
 								</p>
 							</div>
 						</div>

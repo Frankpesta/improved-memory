@@ -218,7 +218,7 @@ const CapitalProtectionStats = () => {
 								Capital Protection & Insurance
 							</h2>
 							<p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto">
-								At Credix AI, your investment is insured and protected.
+								At Credix AI, your trading is insured and protected.
 							</p>
 						</div>
 

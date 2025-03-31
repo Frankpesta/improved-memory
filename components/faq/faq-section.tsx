@@ -13,7 +13,7 @@ const FAQAccordion = () => {
 		{
 			question: "What is Credix AI?",
 			answer:
-				"Credix AI is an AI-powered trading platform that trades the crypto market on behalf of investors. Our highly trained AI BOT, with a 94%+ accuracy rate, executes trades daily, generating consistent returns for investors over a 90-day investment period.",
+				"Credix AI is an AI-powered trading platform that trades the crypto market on behalf of investors. Our highly trained AI BOT, with a 94%+ accuracy rate, executes trades daily, generating consistent returns for investors over a 90-day trading period.",
 		},
 		{
 			question: "How does the AI BOT trading system work?",
@@ -21,13 +21,13 @@ const FAQAccordion = () => {
 				"Our AI BOT is designed to analyze the crypto market, detect profitable trading opportunities, and execute trades automatically with precision and speed. Investors deposit funds, and the AI BOT trades daily, earning them passive income without requiring manual effort.",
 		},
 		{
-			question: "What are the investment plans?",
+			question: "What are the trading plans?",
 			answer: (
 				<div className="space-y-4">
 					<p>
-						We offer multiple investment plans to suit different investor
-						levels. Each plan earns a fixed daily percentage for 90 days, plus
-						the return of your full capital at the end of the cycle.
+						We offer multiple trading plans to suit different investor levels.
+						Each plan earns a fixed daily percentage for 90 days, plus the
+						return of your full capital at the end of the cycle.
 					</p>
 					<ul className="space-y-2">
 						<li>$100 - $4,999 earns 0.5% daily for 90 days, plus capital.</li>
@@ -59,7 +59,7 @@ const FAQAccordion = () => {
 					<p>We prioritize capital security through:</p>
 					<ul className="space-y-2">
 						{[
-							"Capital Insurance – Your investment is insured, ensuring your principal remains protected.",
+							"Capital Insurance – Your trading is insured, ensuring your principal remains protected.",
 							"Advanced AI Risk Management – The AI adjusts trades dynamically to reduce exposure.",
 							"Reserve Liquidity Fund – We maintain a secure liquidity reserve to handle withdrawals.",
 							"Extra Trading Days Guarantee – Losses are covered by additional trading days.",
@@ -76,7 +76,7 @@ const FAQAccordion = () => {
 		{
 			question: "Can I withdraw my profits before the 90-day period ends?",
 			answer:
-				"Yes, you can withdraw your daily earnings anytime. However, your initial capital is locked in until the end of the 90-day investment cycle, after which it is returned in full.",
+				"Yes, you can withdraw your daily earnings anytime. However, your initial capital is locked in until the end of the 90-day trading cycle, after which it is returned in full.",
 		},
 		{
 			question: "How do I deposit funds?",
@@ -85,7 +85,7 @@ const FAQAccordion = () => {
 					<p>To get started:</p>
 					<ol className="list-decimal pl-5 space-y-1">
 						<li>Register on our platform.</li>
-						<li>Choose an investment plan.</li>
+						<li>Choose an trading plan.</li>
 						<li>
 							Deposit crypto funds securely (Bitcoin, Ethereum, USDT, etc.).
 						</li>
@@ -118,17 +118,17 @@ const FAQAccordion = () => {
 		{
 			question: "Is Credix AI available worldwide?",
 			answer:
-				"Yes! Credix AI is a global investment platform with over 18,000 investors worldwide and more than $7 million invested.",
+				"Yes! Credix AI is a global trading platform with over 18,000 investors worldwide and more than $7 million invested.",
 		},
 		{
 			question: "Are there any hidden fees?",
 			answer:
-				"No, we do not charge any hidden fees. Deposits, withdrawals, and investment management are 100% transparent.",
+				"No, we do not charge any hidden fees. Deposits, withdrawals, and trading management are 100% transparent.",
 		},
 		{
 			question: "How do I reinvest my earnings?",
 			answer:
-				"You can choose to withdraw your profits or reinvest them into a new investment cycle to continue compounding your returns.",
+				"You can choose to withdraw your profits or reinvest them into a new trading cycle to continue compounding your returns.",
 		},
 		{
 			question: "How secure is my account?",

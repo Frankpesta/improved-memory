@@ -48,7 +48,7 @@ const HowItWorks = () => {
 			icon: <UserPlus className="h-6 w-6 text-white" />,
 			title: "Register & Deposit",
 			description:
-				"Create an account and deposit your investment in crypto (BTC, ETH, USDT, etc.).",
+				"Create an account and deposit your trading in crypto (BTC, ETH, USDT, etc.).",
 		},
 		{
 			icon: <Bot className="h-6 w-6 text-white" />,
