@@ -21,7 +21,7 @@ const StatItem: React.FC<StatItemProps> = ({ value, label }) => (
 
 const HeroSection = () => {
 	const handleLogin = () => {
-		window.location.href = "https://app.credixai.com/login";
+		window.location.href = "https://app.credixhub.com/login";
 	};
 	return (
 		<div className="relative overflow-hidden bg-gradient-to-b from-neutral-50 to-neutral-100 dark:from-dark-300 dark:to-dark-400">

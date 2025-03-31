@@ -83,7 +83,7 @@ const ContactPage: React.FC = () => {
 					{
 						icon: <Mail className="h-6 w-6" />,
 						title: "Email",
-						details: "support@credixai.com",
+						details: "support@credixhub.com",
 					},
 					{
 						icon: <Building className="h-6 w-6" />,

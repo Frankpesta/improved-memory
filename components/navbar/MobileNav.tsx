@@ -11,11 +11,11 @@ const MobileNav = () => {
 	const [open, setOpen] = useState(false);
 
 	const handleLogin = () => {
-		window.location.href = "https://app.credixai.com/login";
+		window.location.href = "https://app.credixhub.com/login";
 	};
 
 	const handleRegister = () => {
-		window.location.href = "https://app.credixai.com/register";
+		window.location.href = "https://app.credixhub.com/register";
 	};
 
 	const closeSheet = () => setOpen(false);

@@ -30,11 +30,11 @@ const StepItem = ({
 	</div>
 );
 
-const TradingPlansProcess = () => {
+const TradingPlans = () => {
 	const steps = [
 		{
 			icon: <DollarSign className="w-5 h-5" />,
-			title: "Invest your crypto",
+			title: "Invest",
 			description: "Choose a plan that suits your budget and financial goals.",
 		},
 		{
@@ -106,4 +106,4 @@ const TradingPlansProcess = () => {
 	);
 };
 
-export default TradingPlansProcess;
+export default TradingPlans;

@@ -320,7 +320,7 @@ const TermsAndConditionsPage: React.FC = () => {
 					</p>
 					<p className="flex items-center">
 						<span className="mr-2">📩</span>
-						<span>Email: support@credixai.com</span>
+						<span>Email: support@credixhub.com</span>
 					</p>
 					<p className="mt-2">
 						By using Credix AI, you agree to these Terms and Conditions and

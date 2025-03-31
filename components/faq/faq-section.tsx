@@ -168,7 +168,7 @@ const FAQAccordion = () => {
 					<div className="space-y-2">
 						<div className="flex items-center">
 							<Mail className="w-4 h-4 mr-2 text-primary" />
-							<span>Email Support – support@credixai.com</span>
+							<span>Email Support – support@credixhub.com</span>
 						</div>
 						<div className="flex items-center">
 							<MessageCircle className="w-4 h-4 mr-2 text-primary" />

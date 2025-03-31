@@ -15,7 +15,7 @@ import Link from "next/link";
 export default function PrivacyPolicyPage() {
 	// You'd replace this with the actual date or fetch from an API
 	const effectiveDate = "February 1, 2024";
-	const supportEmail = "support@credixai.com";
+	const supportEmail = "support@credixhub.com";
 
 	return (
 		<div className="min-h-screen bg-background text-foreground">

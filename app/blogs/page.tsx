@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 // Fetch blogs with ISR
 async function fetchBlogs() {
 	try {
-		const response = await fetch("https://app.credixai.com/api/blogs", {
+		const response = await fetch("https://app.credixhub.com/api/blogs", {
 			next: { revalidate: 600 }, // Revalidate ten minutes
 		});
 
@@ -68,13 +68,13 @@ export default async function BlogsPage() {
 							name: "Blog Articles | CredixAI Insights",
 							description:
 								"Explore our collection of expert articles, insights, and analysis on the latest trends and topics.",
-							url: "https://app.credixai.com/blogs",
+							url: "https://app.credixhub.com/blogs",
 							mainEntity: {
 								"@type": "ItemList",
 								itemListElement: blogs.map((blog: Blog, index: number) => ({
 									"@type": "ListItem",
 									position: index + 1,
-									url: `https://app.credixai.com/blog/${blog.id}`,
+									url: `https://app.credixhub.com/blog/${blog.id}`,
 									name: blog.title,
 								})),
 							},
