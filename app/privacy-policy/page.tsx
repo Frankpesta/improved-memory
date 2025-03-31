@@ -15,7 +15,7 @@ import Link from "next/link";
 export default function PrivacyPolicyPage() {
 	// You'd replace this with the actual date or fetch from an API
 	const effectiveDate = "February 1, 2024";
-	const supportEmail = "support@credixai.com";
+	const supportEmail = "support@credixhub.com";
 
 	return (
 		<div className="min-h-screen bg-background text-foreground">
@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
 									1.2 Financial Information
 								</h3>
 								<ul className="list-disc pl-5 space-y-1">
-									<li>Cryptocurrency wallet addresses</li>
+									<li>trading wallet addresses</li>
 									<li>Transaction details (deposits, withdrawals, earnings)</li>
 								</ul>
 
@@ -107,7 +107,7 @@ export default function PrivacyPolicyPage() {
 								<ul className="space-y-2">
 									<li className="flex items-start">
 										<span className="text-primary mr-2">✓</span>
-										<span>Provide and manage your investment account</span>
+										<span>Provide and manage your trading account</span>
 									</li>
 									<li className="flex items-start">
 										<span className="text-primary mr-2">✓</span>

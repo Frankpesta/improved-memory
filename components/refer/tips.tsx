@@ -46,7 +46,7 @@ export const TipsSection: React.FC = () => {
 		{
 			title: "Network with Investors",
 			description:
-				"Join crypto investment groups and introduce them to Credix AI.",
+				"Join crypto trading groups and introduce them to Credix AI.",
 		},
 		{
 			title: "Stay Consistent",

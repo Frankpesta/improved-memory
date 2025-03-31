@@ -24,8 +24,8 @@ const TradingSection = () => {
 					<div className="space-y-6">
 						<p className="text-foreground/90 leading-relaxed">
 							Credix AI has developed a state-of-the-art AI BOT that is trained
-							to navigate the cryptocurrency market with over 94% accuracy. The
-							BOT continuously scans market trends, predicts profitable
+							to navigate the trading market with over 94% accuracy. The BOT
+							continuously scans market trends, predicts profitable
 							opportunities, and executes trades, ensuring optimal returns for
 							investors.
 						</p>
@@ -39,9 +39,9 @@ const TradingSection = () => {
 						</div>
 
 						<p className="text-foreground/90 leading-relaxed">
-							Our investment plans are designed for investors of all levels,
+							Our trading plans are designed for investors of all levels,
 							offering daily returns between 0.5% – 2.5% for 90 days, depending
-							on the investment amount.
+							on the trading amount.
 						</p>
 					</div>
 				</div>

@@ -12,7 +12,7 @@ const nunitoSans = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://app.credixai.com/api/blogs"),
+	metadataBase: new URL("https://app.credixhub.com/api/blogs"),
 	title: {
 		default: "Credixai",
 		template: "%s | Credixai",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://credixai.com/blogs",
+		url: "https://credixhub.com/blogs",
 		siteName: "Credixai",
 		images: [
 			{
@@ -63,9 +63,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<link rel="preconnect" href="https://app.credixai.com/api/blogs" />
-			<link rel="dns-prefetch" href="https://app.credixai.com/api/bogs" />
+		<html lang="en" suppressHydrationWarning>
+			<link rel="preconnect" href="https://app.credixhub.com/api/blogs" />
+			<link rel="dns-prefetch" href="https://app.credixhub.com/api/bogs" />
 			<body className={`${nunitoSans.variable}  antialiased`}>
 				<ThemeProvider
 					attribute="class"

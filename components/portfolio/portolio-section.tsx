@@ -43,7 +43,7 @@ const PortfolioPage = () => {
 		{ name: "Arbitrage Trading", value: 20, color: "#06B6D4" },
 		{ name: "Liquidity Pool Staking", value: 10, color: "#10B981" },
 		{ name: "DeFi & NFT", value: 5, color: "#8B5CF6" },
-		{ name: "Other Investments", value: 5, color: "#EC4899" },
+		{ name: "Other Tradings", value: 5, color: "#EC4899" },
 	];
 
 	const historicalReturns = [
@@ -85,7 +85,7 @@ const PortfolioPage = () => {
 	];
 
 	const handleLogin = () => {
-		window.location.href = "https://app.credixai.com/login";
+		window.location.href = "https://app.credixhub.com/login";
 	};
 
 	return (
@@ -231,7 +231,7 @@ const PortfolioPage = () => {
 			<Card className="text-center border-none bg-gradient-to-br from-indigo-100/50 to-blue-100/50 dark:from-indigo-900/30 dark:to-blue-900/30">
 				<CardContent className="p-8 space-y-6">
 					<h3 className="text-2xl font-bold">
-						Start Your Investment Journey Today
+						Start Your Trading Journey Today
 					</h3>
 					<Button
 						onClick={handleLogin}

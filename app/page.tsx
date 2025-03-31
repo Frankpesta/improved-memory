@@ -4,7 +4,7 @@ import HowItWorks from "@/components/home/how-it-works";
 import CapitalProtectionStats from "@/components/home/in-numbers";
 import LeadershipTeam from "@/components/home/leadership-team";
 import MissionVisionSection from "@/components/home/misson-vision";
-import InvestmentPlans from "@/components/home/pricing";
+import TradingPlans from "@/components/home/pricing";
 import FeaturesSection from "@/components/home/why-choose-us";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 			<HeroSection />
 			<FeaturesSection />
 			<MissionVisionSection />
-			<InvestmentPlans />
+			<TradingPlans />
 			<EarningsGuarantee />
 			<HowItWorks />
 			<CapitalProtectionStats />

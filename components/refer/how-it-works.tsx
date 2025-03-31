@@ -46,7 +46,7 @@ export const HowItWorksSection: React.FC = () => {
 		{
 			title: "Earn Referral Bonuses",
 			description:
-				"Each time someone registers using your link and makes a deposit, you earn a percentage of their investment as a referral bonus.",
+				"Each time someone registers using your link and makes a deposit, you earn a percentage of their trading as a referral bonus.",
 		},
 		{
 			title: "Withdraw or Reinvest",

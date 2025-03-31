@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const CTASection: React.FC = () => {
 	const handleLogin = () => {
-		window.location.href = "https://app.credixai.com/login";
+		window.location.href = "https://app.credixhub.com/login";
 	};
 
 	return (

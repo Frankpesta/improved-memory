@@ -41,7 +41,7 @@ export default function BlogDetail({
 		const fetchBlog = async () => {
 			try {
 				const response = await fetch(
-					`https://app.credixai.com/api/blogs/${id}`
+					`https://app.credixhub.com/api/blogs/${id}`
 				);
 				const data = await response.json();
 				setBlog(data?.blog || null);
@@ -137,7 +137,7 @@ export default function BlogDetail({
 							name: "Your Blog Name",
 							logo: {
 								"@type": "ImageObject",
-								url: "https://credixai.com/logo.png",
+								url: "https://credixhub.com/logo.png",
 							},
 						},
 						description: blog.details
@@ -145,7 +145,7 @@ export default function BlogDetail({
 							.substring(0, 160),
 						mainEntityOfPage: {
 							"@type": "WebPage",
-							"@id": `https://credixai.com/blog/${blog.id}`,
+							"@id": `https://credixhub.com/blog/${blog.id}`,
 						},
 						keywords: keywords,
 					}),
@@ -216,7 +216,7 @@ export default function BlogDetail({
 				{blog.cover && (
 					<figure className="mb-8 rounded-lg overflow-hidden">
 						<img
-							src={`https://app.credixai.com/assets/${blog.cover}`}
+							src={`https://app.credixhub.com/assets/${blog.cover}`}
 							alt={`${blog.title} - Featured Image`}
 							className="w-full h-auto object-cover max-h-[500px]"
 							itemProp="image"

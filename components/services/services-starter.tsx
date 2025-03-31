@@ -26,7 +26,7 @@ export default function ServicesPage() {
 		{
 			title: "Secure Platform",
 			description:
-				"Enterprise-grade security measures to protect your investments and personal information.",
+				"Enterprise-grade security measures to protect your tradings and personal information.",
 			icon: Shield,
 		},
 	];

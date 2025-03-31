@@ -30,11 +30,11 @@ const StepItem = ({
 	</div>
 );
 
-const InvestmentPlansProcess = () => {
+const TradingPlansProcess = () => {
 	const steps = [
 		{
 			icon: <DollarSign className="w-5 h-5" />,
-			title: "Invest your crypto",
+			title: "Invest",
 			description: "Choose a plan that suits your budget and financial goals.",
 		},
 		{
@@ -58,7 +58,7 @@ const InvestmentPlansProcess = () => {
 		{
 			icon: <DollarSign className="w-5 h-5" />,
 			title: "Receive your full capital at the end of 90 days",
-			description: "Your initial investment is returned to you.",
+			description: "Your initial trading is returned to you.",
 		},
 	];
 
@@ -70,7 +70,7 @@ const InvestmentPlansProcess = () => {
 						<div className="max-w-3xl mx-auto space-y-8">
 							<div className="space-y-2 text-center">
 								<h2 className="text-3xl font-bold tracking-tight dark:text-primary-200">
-									How Our Investment Plans Work
+									How Our Trading Plans Work
 								</h2>
 							</div>
 
@@ -106,4 +106,4 @@ const InvestmentPlansProcess = () => {
 	);
 };
 
-export default InvestmentPlansProcess;
+export default TradingPlansProcess;
