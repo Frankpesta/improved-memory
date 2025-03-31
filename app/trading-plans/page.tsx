@@ -1,6 +1,6 @@
 import TradingPlans from "@/components/home/pricing";
 import PageHeader from "@/components/page-header";
-import TradingPlansProcess from "@/components/trading-plans/trading-process";
+import TradingPlansProcess from "@/components/trading-plans/investment-plans";
 
 const Page = () => {
 	return (

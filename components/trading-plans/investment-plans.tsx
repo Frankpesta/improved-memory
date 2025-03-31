@@ -30,7 +30,7 @@ const StepItem = ({
 	</div>
 );
 
-const TradingPlans = () => {
+const TradingPlansProcess = () => {
 	const steps = [
 		{
 			icon: <DollarSign className="w-5 h-5" />,
@@ -106,4 +106,4 @@ const TradingPlans = () => {
 	);
 };
 
-export default TradingPlans;
+export default TradingPlansProcess;
