@@ -35,7 +35,7 @@ const HeroSection = () => {
 						{/* Left Content */}
 						<div className="space-y-8">
 							<div className="space-y-6">
-								<h1 className="text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-50">
+								<h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-50">
 									Welcome to <span className="text-primary-600">Credix AI</span>
 								</h1>
 								<h2 className="text-2xl lg:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">

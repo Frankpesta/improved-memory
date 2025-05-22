@@ -25,6 +25,34 @@ interface Benefit {
 const LeadershipSection = () => {
 	const leaders: LeadershipMember[] = [
 		{
+			name: "Eva Engel",
+			title: "Co-Founder | PhD in Artificial Intelligence | Lead AI Developer",
+			description:
+				"Eva brings over a decade of experience in machine learning and deep neural networks. She played a key role in designing the core architecture of the AI trading BOT powering Credix Hub.",
+			imagePath: "/w.jpg",
+		},
+		{
+			name: "James Scott",
+			title: "Co-Founder | PhD in Artificial Intelligence | AI Developer",
+			description:
+				"With a strong background in algorithmic trading systems and predictive modeling, James helped train and optimize the AI BOT to achieve its 94%+ accuracy in real-time crypto trading.",
+			imagePath: "/mm.jpg",
+		},
+		{
+			name: "Lewis Susan",
+			title: "Co-Founder | PhD in Artificial Intelligence | AI Developer",
+			description:
+				"Lewis specializes in reinforcement learning and real-time data analysis. His work ensures that the BOT continuously adapts to changing market conditions to protect investor capital and maximize returns.",
+			imagePath: "/ww.jpg",
+		},
+		{
+			name: "David Brown",
+			title: "Co-Founder | PhD in Artificial Intelligence | AI Developer",
+			description:
+				"David has extensive experience in financial modeling and risk assessment. He ensures that the AI BOT adheres to strict risk management protocols, safeguarding investors' capital.",
+			imagePath: "/assets/p1.jpg",
+		},
+		{
 			name: "Michael Evans",
 			title: "CEO",
 			description: "Expert in AI-driven trading and financial management",
