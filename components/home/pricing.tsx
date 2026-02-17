@@ -17,13 +17,12 @@ interface PlanTier {
 }
 
 const planTiers: PlanTier[] = [
-	{ minTrading: 100, maxTrading: 4999, dailyReturn: 0.5 },
-	{ minTrading: 5000, maxTrading: 9999, dailyReturn: 0.8 },
-	{ minTrading: 10000, maxTrading: 19999, dailyReturn: 1.0 },
-	{ minTrading: 20000, maxTrading: 29999, dailyReturn: 1.5 },
-	{ minTrading: 30000, maxTrading: 49999, dailyReturn: 1.8 },
-	{ minTrading: 50000, maxTrading: 99999, dailyReturn: 2.0 },
-	{ minTrading: 100000, maxTrading: 1000000, dailyReturn: 2.5 },
+	{ minTrading: 100, maxTrading: 4999, dailyReturn: 1.0 },
+	{ minTrading: 5000, maxTrading: 9999, dailyReturn: 1.5 },
+	{ minTrading: 10000, maxTrading: 29999, dailyReturn: 2.0 },
+	{ minTrading: 30000, maxTrading: 49999, dailyReturn: 2.5 },
+	{ minTrading: 50000, maxTrading: 99999, dailyReturn: 3 },
+	{ minTrading: 100000, maxTrading: 1000000, dailyReturn: 4 },
 ];
 
 const handleLogin = () => {
