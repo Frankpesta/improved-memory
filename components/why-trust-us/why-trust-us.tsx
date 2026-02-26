@@ -63,8 +63,8 @@ const WhyTrustUs = () => {
 			title: "Strong Track Record & Growing Investor Base",
 			icon: TrainTrack,
 			points: [
-				"📈 18,000+ active investors worldwide",
-				"💰 Over $7 million invested",
+				"📈 250M+ active users worldwide",
+				"💰 Over $70 million invested",
 				"💵 Over $12 million paid out in returns",
 				"✅ 90-day profitable cycles with consistent daily earnings",
 				"Our growing investor base and high retention rate prove that we are a trusted and profitable trading platform.",
@@ -76,13 +76,12 @@ const WhyTrustUs = () => {
 			title: "Flexible & Profitable Trading Plans",
 			icon: DollarSignIcon,
 			points: [
-				"💰 $100 – $4,999 Trading → 0.5% daily for 90 days",
-				"💰 $5,000 – $9,999 Trading → 0.8% daily for 90 days",
-				"💰 $10,000 – $19,999 Trading → 1% daily for 90 days",
-				"💰 $20,000 – $29,999 Trading → 1.5% daily for 90 days",
-				"💰 $30,000 – $49,999 Trading → 1.8% daily for 90 days",
-				"💰 $50,000 – $99,999 Trading → 2% daily for 90 days",
-				"💰 $100,000 – $1,000,000 Trading → 2.5% daily for 90 days",
+				"💰 $100 – $4,999 → 1% daily for 90 days",
+				"💰 $5,000 – $9,999 → 1.5% daily for 90 days",
+				"💰 $10,000 – $29,999 → 2% daily for 90 days",
+				"💰 $30,000 – $49,999 → 2.5% daily for 90 days",
+				"💰 $50,000 – $99,999 → 3% daily for 90 days",
+				"💰 $100,000+ → 4% daily for 90 days",
 			],
 			gradient:
 				"from-secondary-200 to-secondary-400 dark:from-secondary-950/30 dark:to-secondary-950/30",
@@ -140,8 +139,8 @@ const WhyTrustUs = () => {
 	];
 
 	const metrics = [
-		{ label: "Active Investors", value: "18,000+", icon: Users },
-		{ label: "Invested", value: "$7M+", icon: DollarSign },
+		{ label: "Active Users", value: "250M+", icon: Users },
+		{ label: "Invested", value: "$70M+", icon: DollarSign },
 		{ label: "Paid Out", value: "$12M+", icon: LineChart },
 		{ label: "Success Rate", value: "94%", icon: CheckCircle2 },
 	];
@@ -159,7 +158,7 @@ const WhyTrustUs = () => {
 			location: "UK",
 			trading: "$10,000",
 			quote:
-				"Credix AI is the best AI trading platform I've used. The 1% daily return is steady, and I've already reinvested for another 90-day cycle!",
+				"Credix AI is the best AI trading platform I've used. The 2% daily return is steady, and I've already reinvested for another 90-day cycle!",
 		},
 		{
 			name: "Carlos R.",
@@ -187,7 +186,7 @@ const WhyTrustUs = () => {
 			location: "UAE",
 			trading: "$100,000",
 			quote:
-				"The 2.5% daily return on my trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
+				"The 4% daily return on my trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
 		},
 	];
 
@@ -290,7 +289,7 @@ const WhyTrustUs = () => {
 						Start Your Trading Journey Today
 					</h3>
 					<p className="text-muted-foreground max-w-2xl mx-auto">
-						Join 18,000+ investors worldwide and start earning passive income
+						Join 250M+ users worldwide and start earning passive income
 						with our AI-powered trading platform.
 					</p>
 					<Button

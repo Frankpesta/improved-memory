@@ -30,18 +30,15 @@ const FAQAccordion = () => {
 						return of your full capital at the end of the cycle.
 					</p>
 					<ul className="space-y-2">
-						<li>$100 - $4,999 earns 0.5% daily for 90 days, plus capital.</li>
-						<li>$5,000 - $9,999 earns 0.8% daily for 90 days, plus capital.</li>
-						<li>$10,000 - $19,999 earns 1% daily for 90 days, plus capital.</li>
+						<li>$100 - $4,999 earns 1% daily for 90 days, plus capital.</li>
+						<li>$5,000 - $9,999 earns 1.5% daily for 90 days, plus capital.</li>
+						<li>$10,000 - $29,999 earns 2% daily for 90 days, plus capital.</li>
 						<li>
-							$20,000 - $29,999 earns 1.5% daily for 90 days, plus capital.
+							$30,000 - $49,999 earns 2.5% daily for 90 days, plus capital.
 						</li>
+						<li>$50,000 - $99,999 earns 3% daily for 90 days, plus capital.</li>
 						<li>
-							$30,000 - $49,999 earns 1.8% daily for 90 days, plus capital.
-						</li>
-						<li>$50,000 - $99,999 earns 2% daily for 90 days, plus capital.</li>
-						<li>
-							$100,000 - $1,000,000 earns 2.5% daily for 90 days, plus capital.
+							$100,000+ earns 4% daily for 90 days, plus capital.
 						</li>
 					</ul>
 				</div>
@@ -118,7 +115,7 @@ const FAQAccordion = () => {
 		{
 			question: "Is Credix AI available worldwide?",
 			answer:
-				"Yes! Credix AI is a global trading platform with over 18,000 investors worldwide and more than $7 million invested.",
+				"Yes! Credix AI is a global trading platform with over 250 million users worldwide and more than $70 million invested.",
 		},
 		{
 			question: "Are there any hidden fees?",
@@ -145,7 +142,7 @@ const FAQAccordion = () => {
 							"Daily Passive Income with guaranteed extra trading days.",
 							"Full Capital Protection through insurance.",
 							"Fast & Secure Withdrawals.",
-							"Over 18,000+ Investors & $7M+ Invested.",
+							"Over 250M+ Users & $70M+ Invested.",
 							"24/7 Customer Support.",
 						].map((item, index) => (
 							<li key={index} className="flex items-start">

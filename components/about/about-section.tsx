@@ -6,13 +6,13 @@ const Stats = () => {
 	const stats = [
 		{
 			icon: <Users className="w-6 h-6 text-primary-600" />,
-			value: "18,000+",
-			label: "Active Investors",
+			value: "250M+",
+			label: "Active Users",
 			description: "Trusted by thousands worldwide",
 		},
 		{
 			icon: <DollarSign className="w-6 h-6 text-primary-600" />,
-			value: "$7M+",
+			value: "$70M+",
 			label: "Total Trading",
 			description: "Invested and managed securely",
 		},
@@ -71,14 +71,14 @@ const AboutUs = () => {
 						<div className="space-y-4 text-black dark:text-primary-300">
 							<p className="leading-relaxed">
 								At Credix AI, we are revolutionizing the way people invest in
-								trading trading. Our AI-powered trading BOT is designed to
+								trading. Our AI-powered trading BOT is designed to
 								analyze, predict, and execute trades with precision, ensuring
 								that investors earn passive income daily without needing any
 								trading experience.
 							</p>
 
 							<p className="leading-relaxed">
-								With over 18,000+ active investors and more than $7 million
+								With over 250 million+ active users and more than $70 million
 								invested, we have built a trusted and transparent trading
 								platform that offers secure and profitable AI-driven trading
 								solutions. Our commitment to innovation, risk management, and

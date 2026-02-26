@@ -177,15 +177,15 @@ const CapitalProtectionStats = () => {
 	const statistics = [
 		{
 			icon: <Users className="h-6 w-6 text-primary-600" />,
-			value: "18,000+",
-			label: "Investors Worldwide",
-			animationValue: { end: 18000, suffix: "+" },
+			value: "250M+",
+			label: "Users Worldwide",
+			animationValue: { end: 250, suffix: "M+", prefix: "" },
 		},
 		{
 			icon: <Building2 className="h-6 w-6 text-primary-600" />,
-			value: "$7M+",
+			value: "$70M+",
 			label: "Total Invested",
-			animationValue: { end: 7, suffix: "M+", prefix: "$" },
+			animationValue: { end: 70, suffix: "M+", prefix: "$" },
 		},
 		{
 			icon: <Banknote className="h-6 w-6 text-primary-600" />,

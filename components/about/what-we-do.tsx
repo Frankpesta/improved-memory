@@ -40,7 +40,7 @@ const TradingSection = () => {
 
 						<p className="text-foreground/90 leading-relaxed">
 							Our trading plans are designed for investors of all levels,
-							offering daily returns between 0.5% – 2.5% for 90 days, depending
+							offering daily returns between 1% – 4% for 90 days, depending
 							on the trading amount.
 						</p>
 					</div>

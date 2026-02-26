@@ -128,7 +128,7 @@ const BenefitsSection = () => {
 	const benefits: Benefit[] = [
 		{
 			title: "High Daily Returns",
-			description: "Earn up to 2.5% daily for 90 days",
+			description: "Earn up to 4% daily for 90 days",
 			icon: <TrendingUp className="w-6 h-6 text-primary-500" />,
 		},
 		{
@@ -148,7 +148,7 @@ const BenefitsSection = () => {
 		},
 		{
 			title: "Trusted & Transparent",
-			description: "18,000+ investors and millions paid out",
+			description: "250M+ users and millions paid out",
 			icon: <Check className="w-6 h-6 text-primary-500" />,
 		},
 		{

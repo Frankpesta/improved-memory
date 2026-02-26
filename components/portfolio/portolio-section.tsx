@@ -203,9 +203,9 @@ const PortfolioPage = () => {
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						<div className="text-center space-y-2">
 							<Users className="h-8 w-8 mx-auto text-primary" />
-							<div className="text-2xl font-bold">18,000+</div>
+							<div className="text-2xl font-bold">250M+</div>
 							<div className="text-sm text-muted-foreground">
-								Active Investors
+								Active Users
 							</div>
 						</div>
 						<div className="text-center space-y-2">

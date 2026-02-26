@@ -41,7 +41,7 @@ const FeaturesSection = () => {
 			icon: <TrendingUp className="h-6 w-6 text-primary-600" />,
 			title: "Daily Returns",
 			description:
-				"Earn between 0.5% to 2.5% daily, depending on your trading amount, for a period of 90 days.",
+				"Earn between 1% to 4% daily, depending on your trading amount, for a period of 90 days.",
 		},
 		{
 			icon: <Shield className="h-6 w-6 text-primary-600" />,
@@ -65,7 +65,7 @@ const FeaturesSection = () => {
 			icon: <Users className="h-6 w-6 text-primary-600" />,
 			title: "Trust & Transparency",
 			description:
-				"With over $7 million invested and millions paid out, Credix AI is trusted by thousands of investors worldwide.",
+				"With over $70 million invested and millions paid out, Credix AI is trusted by thousands of users worldwide.",
 		},
 	];
 
