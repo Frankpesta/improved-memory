@@ -1,5 +1,6 @@
 import PageHeader from "@/components/page-header";
 import WhyTrustUs from "@/components/why-trust-us/why-trust-us";
+import TowerResearchCard from "@/components/shared/tower-research-card";
 
 const Page = () => {
 	return (
@@ -10,6 +11,7 @@ const Page = () => {
 				align="center"
 			/>
 			<WhyTrustUs />
+			<TowerResearchCard />
 		</div>
 	);
 };

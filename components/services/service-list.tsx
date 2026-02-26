@@ -99,7 +99,7 @@ const ServiceList = () => {
 		"Secure & Insured Trading – Protecting your capital",
 		"Fast & Easy Withdrawals – Anytime, anywhere",
 		"Extra Trading Days for Losses – We ensure you get your full returns",
-		"Proven Track Record – Over $12 million paid out to investors",
+		"Proven Track Record – Trusted by investors worldwide",
 	];
 
 	return (

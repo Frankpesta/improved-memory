@@ -6,6 +6,7 @@ import LeadershipTeam from "@/components/home/leadership-team";
 import MissionVisionSection from "@/components/home/misson-vision";
 import TradingPlans from "@/components/home/pricing";
 import FeaturesSection from "@/components/home/why-choose-us";
+import TowerResearchCard from "@/components/shared/tower-research-card";
 
 export default function Home() {
 	return (
@@ -18,6 +19,7 @@ export default function Home() {
 			<HowItWorks />
 			<CapitalProtectionStats />
 			<LeadershipTeam />
+			<TowerResearchCard />
 		</div>
 	);
 }

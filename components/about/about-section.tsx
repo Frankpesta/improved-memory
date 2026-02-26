@@ -1,20 +1,14 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Bot, Users, DollarSign } from "lucide-react";
+import { Bot, Users } from "lucide-react";
 
 const Stats = () => {
 	const stats = [
 		{
 			icon: <Users className="w-6 h-6 text-primary-600" />,
-			value: "250M+",
-			label: "Active Users",
+			value: "250K+",
+			label: "Active Investors",
 			description: "Trusted by thousands worldwide",
-		},
-		{
-			icon: <DollarSign className="w-6 h-6 text-primary-600" />,
-			value: "$70M+",
-			label: "Total Trading",
-			description: "Invested and managed securely",
 		},
 		{
 			icon: <Bot className="w-6 h-6 text-primary-600" />,
@@ -78,8 +72,7 @@ const AboutUs = () => {
 							</p>
 
 							<p className="leading-relaxed">
-								With over 250 million+ active users and more than $70 million
-								invested, we have built a trusted and transparent trading
+								With over 250,000+ active investors, we have built a trusted and transparent trading
 								platform that offers secure and profitable AI-driven trading
 								solutions. Our commitment to innovation, risk management, and
 								investor success sets us apart as a leader in AI trading.

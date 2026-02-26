@@ -65,7 +65,7 @@ const FeaturesSection = () => {
 			icon: <Users className="h-6 w-6 text-primary-600" />,
 			title: "Trust & Transparency",
 			description:
-				"With over $70 million invested and millions paid out, Credix AI is trusted by thousands of users worldwide.",
+				"Credix AI is trusted by thousands of investors worldwide.",
 		},
 	];
 

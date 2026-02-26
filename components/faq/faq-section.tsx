@@ -115,7 +115,7 @@ const FAQAccordion = () => {
 		{
 			question: "Is Credix AI available worldwide?",
 			answer:
-				"Yes! Credix AI is a global trading platform with over 250 million users worldwide and more than $70 million invested.",
+				"Yes! Credix AI is a global trading platform with over 250,000 investors worldwide.",
 		},
 		{
 			question: "Are there any hidden fees?",
@@ -142,7 +142,7 @@ const FAQAccordion = () => {
 							"Daily Passive Income with guaranteed extra trading days.",
 							"Full Capital Protection through insurance.",
 							"Fast & Secure Withdrawals.",
-							"Over 250M+ Users & $70M+ Invested.",
+							"Over 250K+ Investors.",
 							"24/7 Customer Support.",
 						].map((item, index) => (
 							<li key={index} className="flex items-start">

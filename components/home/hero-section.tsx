@@ -32,8 +32,8 @@ const HeroSection = () => {
 			<div className="relative container mx-auto px-4 py-16 lg:py-24">
 				<div className="max-w-7xl mx-auto">
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
-						{/* Left Content */}
-						<div className="space-y-8">
+						{/* Left Content – second on mobile (order-2), first on desktop */}
+						<div className="space-y-8 order-2 lg:order-1">
 							<div className="space-y-6">
 								<h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-50">
 									Welcome to <span className="text-primary-600">Credix AI</span>
@@ -57,8 +57,8 @@ const HeroSection = () => {
 
 							{/* Stats Grid */}
 							<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-								<StatItem value="250M+" label="Active Users" />
-								<StatItem value="$70M+" label="Total Invested" />
+								<StatItem value="250K+" label="Active Investors" />
+								<StatItem value="70B+" label="Trading Volume" />
 								<StatItem value="94%" label="Trading Accuracy" />
 							</div>
 
@@ -80,20 +80,8 @@ const HeroSection = () => {
 									</Button>
 								</Link>
 							</div>
-						</div>
 
-						{/* image to show only on small screens */}
-
-						<Image
-							src={"/assets/p10.jpg"}
-							alt="ai-trading"
-							width={100}
-							height={100}
-							className="py-2 flex lg:hidden w-full h-full"
-						/>
-
-						{/* Right Content - Feature Cards */}
-						<div className="grid gap-6">
+							{/* Feature Cards – in same column as content */}
 							<div className="grid sm:grid-cols-2 gap-6">
 								<div className="p-6 rounded-xl bg-white dark:bg-dark-200 shadow-lg">
 									<Bot className="h-12 w-12 text-primary-600 mb-4" />
@@ -120,6 +108,39 @@ const HeroSection = () => {
 								<p className="text-neutral-600 dark:text-neutral-400">
 									Enterprise-grade security protecting your tradings
 								</p>
+							</div>
+						</div>
+
+						{/* Right column: hero image (first on mobile order-1), second on desktop */}
+						<div className="space-y-6 order-1 lg:order-2">
+							<div
+								className="relative rounded-2xl overflow-hidden p-[2px]"
+								style={{
+									background:
+										"linear-gradient(135deg, rgba(139, 92, 246, 0.6) 0%, rgba(59, 130, 246, 0.6) 100%)",
+									boxShadow:
+										"0 0 24px rgba(139, 92, 246, 0.25), 0 0 48px rgba(59, 130, 246, 0.15)",
+								}}>
+								<div className="rounded-2xl bg-background/40 dark:bg-background/20 backdrop-blur-sm overflow-hidden">
+									<div className="relative aspect-[4/3] w-full min-h-[200px]">
+										<Image
+											src="/assets/ai-hero.jpeg"
+											alt="AI-driven crypto trading – Credix AI"
+											fill
+											className="object-cover"
+											sizes="(max-width: 1024px) 100vw, 50vw"
+											priority
+										/>
+									</div>
+								</div>
+							</div>
+							<div className="flex justify-center">
+								<div className="inline-flex items-center gap-3 rounded-full border border-primary-500/30 dark:border-primary-400/30 bg-primary-500/5 dark:bg-primary-950/40 px-6 py-3 backdrop-blur-sm">
+									<span className="h-2 w-2 rounded-full bg-primary-500 dark:bg-primary-400 shrink-0" />
+									<span className="text-sm font-medium text-foreground dark:text-primary-200">
+										Trusted By Crypto Investors Since 2020
+									</span>
+								</div>
 							</div>
 						</div>
 					</div>

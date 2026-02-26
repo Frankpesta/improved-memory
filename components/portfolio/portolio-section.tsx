@@ -203,15 +203,15 @@ const PortfolioPage = () => {
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						<div className="text-center space-y-2">
 							<Users className="h-8 w-8 mx-auto text-primary" />
-							<div className="text-2xl font-bold">250M+</div>
+							<div className="text-2xl font-bold">250K+</div>
 							<div className="text-sm text-muted-foreground">
-								Active Users
+								Active Investors
 							</div>
 						</div>
 						<div className="text-center space-y-2">
 							<Wallet className="h-8 w-8 mx-auto text-primary" />
-							<div className="text-2xl font-bold">$12M+</div>
-							<div className="text-sm text-muted-foreground">Total Payouts</div>
+							<div className="text-2xl font-bold">70B+</div>
+							<div className="text-sm text-muted-foreground">Trading Volume</div>
 						</div>
 						<div className="text-center space-y-2">
 							<Trophy className="h-8 w-8 mx-auto text-primary" />
