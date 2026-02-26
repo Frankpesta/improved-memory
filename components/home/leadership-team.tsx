@@ -79,7 +79,7 @@ const LeadershipSection = () => {
 	];
 
 	return (
-		<section className="py-12 space-y-8">
+		<section className="py-8 md:py-10 lg:py-12 space-y-5 md:space-y-6 lg:space-y-8">
 			<div className="text-center space-y-4">
 				<h2 className="text-3xl font-bold tracking-tight">
 					Meet Our Leadership Team
@@ -159,8 +159,8 @@ const BenefitsSection = () => {
 	];
 
 	return (
-		<section className="py-12 bg-secondary/5">
-			<div className="space-y-8">
+		<section className="py-8 md:py-10 lg:py-12 bg-secondary/5">
+			<div className="space-y-5 md:space-y-6 lg:space-y-8">
 				<div className="text-center space-y-4">
 					<h2 className="text-3xl font-bold tracking-tight">
 						Why You Should Invest with Credix AI

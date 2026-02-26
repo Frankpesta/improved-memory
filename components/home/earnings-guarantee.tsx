@@ -4,10 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const EarningsGuarantee = () => {
 	return (
-		<section className="py-16 bg-gradient-to-b from-white to-neutral-50 dark:from-dark-400 dark:to-dark-300">
+		<section className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-white to-neutral-50 dark:from-dark-400 dark:to-dark-300">
 			<div className="container mx-auto px-4">
 				<div className="max-w-7xl mx-auto">
-					<div className="grid lg:grid-cols-2 gap-12 items-center">
+					<div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
 						{/* Left side - Visual representation */}
 						<div className="relative">
 							<Card className="bg-white dark:bg-dark-200 overflow-hidden">

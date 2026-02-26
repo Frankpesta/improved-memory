@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+	/* Modern rounded sans-serif – clean hierarchy */
+	body {
+		@apply font-sans text-foreground;
+	}
 	:root {
 		--background: 0 0% 100%;
 		--foreground: 222.2 84% 4.9%;
@@ -179,6 +183,10 @@
 		@apply text-[12px] font-medium leading-[20px];
 	}
 
+	/* Brand gradient text (e.g. Credix AI) */
+	.text-gradient-brand {
+		@apply bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 bg-clip-text text-transparent dark:from-primary-400 dark:via-primary-500 dark:to-primary-600;
+	}
 	/* SHADCN OVERRIDES */
 	.select-field {
 		@apply w-full bg-gray-50 h-[54px] placeholder:text-gray-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;

@@ -50,9 +50,9 @@ const Stats = () => {
 
 const AboutUs = () => {
 	return (
-		<section className="py-16 bg-gradient-to-b from-primary-50 to-white dark:from-primary-950/50 dark:to-background">
+		<section className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-primary-50 to-white dark:from-primary-950/50 dark:to-background">
 			<div className="container mx-auto px-4">
-				<div className="max-w-4xl mx-auto text-center space-y-8">
+				<div className="max-w-4xl mx-auto text-center space-y-5 md:space-y-6 lg:space-y-8">
 					<h1 className="text-4xl font-bold tracking-tight text-primary-900 dark:text-primary-100">
 						About Us – Credix AI
 					</h1>

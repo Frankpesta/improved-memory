@@ -29,14 +29,14 @@ const HeroSection = () => {
 			<div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
 			<div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary-500/10 rounded-full blur-3xl" />
 
-			<div className="relative container mx-auto px-4 py-16 lg:py-24">
+			<div className="relative container mx-auto px-4 py-8 md:py-12 lg:py-24">
 				<div className="max-w-7xl mx-auto">
-					<div className="grid lg:grid-cols-2 gap-12 items-center">
+					<div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
 						{/* Left Content – second on mobile (order-2), first on desktop */}
-						<div className="space-y-8 order-2 lg:order-1">
-							<div className="space-y-6">
+						<div className="space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1">
+							<div className="space-y-3 md:space-y-4 lg:space-y-6">
 								<h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-50">
-									Welcome to <span className="text-primary-600">Credix AI</span>
+									Welcome to <span className="text-gradient-brand">Credix AI</span>
 								</h1>
 								<h2 className="text-2xl lg:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
 									The Future of AI-Driven Crypto Trading
@@ -124,7 +124,7 @@ const HeroSection = () => {
 						</div>
 
 						{/* Right column: hero image (first on mobile order-1), second on desktop */}
-						<div className="space-y-6 order-1 lg:order-2">
+						<div className="space-y-4 md:space-y-5 lg:space-y-6 order-1 lg:order-2">
 							<div
 								className="relative rounded-2xl overflow-hidden p-[2px]"
 								style={{

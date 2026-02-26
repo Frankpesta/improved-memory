@@ -65,10 +65,10 @@ const HowItWorks = () => {
 	];
 
 	return (
-		<section className="py-16 bg-neutral-50 dark:bg-dark-300">
+		<section className="py-8 md:py-12 lg:py-16 bg-neutral-50 dark:bg-dark-300">
 			<div className="container mx-auto px-4">
 				<div className="max-w-3xl mx-auto">
-					<div className="text-center mb-12">
+					<div className="text-center mb-6 md:mb-8 lg:mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
 							How It Works
 						</h2>

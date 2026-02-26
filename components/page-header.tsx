@@ -17,7 +17,7 @@ const PageHeader = ({
 	return (
 		<div
 			className={cn(
-				"py-16 bg-gradient-to-b from-primary-50 to-white dark:from-primary-950/50 dark:to-background",
+				"py-8 md:py-12 lg:py-16 bg-gradient-to-b from-primary-50 to-white dark:from-primary-950/50 dark:to-background",
 				align === "center" && "text-center",
 				className
 			)}>

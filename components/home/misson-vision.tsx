@@ -49,7 +49,7 @@ const VisionCard: React.FC<VisionCardProps> = ({
 
 const MissionVisionSection = () => {
 	return (
-		<section className="py-16 bg-gradient-to-b from-white to-neutral-50 dark:from-dark-400 dark:to-dark-300">
+		<section className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-white to-neutral-50 dark:from-dark-400 dark:to-dark-300">
 			<div className="container mx-auto px-4">
 				<div className="max-w-7xl mx-auto">
 					<div className="grid md:grid-cols-2 gap-8">

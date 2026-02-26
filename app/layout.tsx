@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto_Condensed } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
-const nunitoSans = Roboto_Condensed({
-	variable: "--font-nunitp-sans",
+const plusJakartaSans = Plus_Jakarta_Sans({
+	variable: "--font-sans",
 	subsets: ["latin"],
 	weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
@@ -66,7 +66,7 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<link rel="preconnect" href="https://app.credixhub.com/api/blogs" />
 			<link rel="dns-prefetch" href="https://app.credixhub.com/api/bogs" />
-			<body className={`${nunitoSans.variable}  antialiased`}>
+			<body className={`${plusJakartaSans.variable} font-sans antialiased`}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

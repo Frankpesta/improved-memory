@@ -153,10 +153,10 @@ const ProfitCalculator: React.FC = () => {
 
 const TradingPlans = () => {
 	return (
-		<section className="py-16 bg-neutral-50 dark:bg-dark-300">
+		<section className="py-8 md:py-12 lg:py-16 bg-neutral-50 dark:bg-dark-300">
 			<div className="container mx-auto px-4">
 				<div className="max-w-7xl mx-auto">
-					<div className="text-center mb-12">
+					<div className="text-center mb-6 md:mb-8 lg:mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
 							Trading Plans
 						</h2>
@@ -168,7 +168,7 @@ const TradingPlans = () => {
 						</p>
 					</div>
 
-					<div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mb-12">
+					<div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8 lg:mb-12">
 						{planTiers.map((tier, index) => (
 							<TradingPlanCard key={index} {...tier} />
 						))}

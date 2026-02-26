@@ -70,17 +70,17 @@ const FeaturesSection = () => {
 	];
 
 	return (
-		<section className="py-16 bg-neutral-50 dark:bg-dark-300">
+		<section className="py-8 md:py-12 lg:py-16 bg-neutral-50 dark:bg-dark-300">
 			<div className="container mx-auto px-4">
 				<div className="max-w-7xl mx-auto">
-					<div className="text-center mb-12">
+					<div className="text-center mb-6 md:mb-8 lg:mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
 							Why Choose Credix AI?
 						</h2>
 						<div className="w-20 h-1 bg-primary-600 mx-auto"></div>
 					</div>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 						{features.map((feature, index) => (
 							<FeatureCard
 								key={index}
