@@ -62,7 +62,7 @@ const WhyTrustUs = () => {
 			title: "Strong Track Record & Growing Investor Base",
 			icon: TrainTrack,
 			points: [
-				"📈 250K+ active investors worldwide",
+				"📈 250K+ active users worldwide",
 				"✅ 90-day profitable cycles with consistent daily earnings",
 				"Our growing investor base and high retention rate prove that we are a trusted and profitable trading platform.",
 			],
@@ -136,7 +136,7 @@ const WhyTrustUs = () => {
 	];
 
 	const metrics = [
-		{ label: "Active Investors", value: "250K+", icon: Users },
+		{ label: "Active Users", value: "250K+", icon: Users },
 		{ label: "Trading Volume", value: "70B+", icon: LineChart },
 		{ label: "Success Rate", value: "94%", icon: CheckCircle2 },
 	];
@@ -285,7 +285,7 @@ const WhyTrustUs = () => {
 						Start Your Trading Journey Today
 					</h3>
 					<p className="text-muted-foreground max-w-2xl mx-auto">
-						Join 250K+ investors worldwide and start earning passive income
+						Join 250K+ users worldwide and start earning passive income
 						with our AI-powered trading platform.
 					</p>
 					<Button

@@ -178,7 +178,7 @@ const CapitalProtectionStats = () => {
 		{
 			icon: <Users className="h-6 w-6 text-primary-600" />,
 			value: "250K+",
-			label: "Investors Worldwide",
+			label: "Users Worldwide",
 			animationValue: { end: 250, suffix: "K+", prefix: "" },
 		},
 		{

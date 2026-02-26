@@ -148,7 +148,7 @@ const BenefitsSection = () => {
 		},
 		{
 			title: "Trusted & Transparent",
-			description: "250K+ investors",
+			description: "250K+ users",
 			icon: <Check className="w-6 h-6 text-primary-500" />,
 		},
 		{

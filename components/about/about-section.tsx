@@ -7,7 +7,7 @@ const Stats = () => {
 		{
 			icon: <Users className="w-6 h-6 text-primary-600" />,
 			value: "250K+",
-			label: "Active Investors",
+			label: "Active Users",
 			description: "Trusted by thousands worldwide",
 		},
 		{
@@ -72,7 +72,7 @@ const AboutUs = () => {
 							</p>
 
 							<p className="leading-relaxed">
-								With over 250,000+ active investors, we have built a trusted and transparent trading
+								With over 250,000+ active users, we have built a trusted and transparent trading
 								platform that offers secure and profitable AI-driven trading
 								solutions. Our commitment to innovation, risk management, and
 								investor success sets us apart as a leader in AI trading.
