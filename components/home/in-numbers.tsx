@@ -183,9 +183,9 @@ const CapitalProtectionStats = () => {
 		},
 		{
 			icon: <Banknote className="h-6 w-6 text-primary-600" />,
-			value: "1.3B+",
+			value: "$1.3B+",
 			label: "Trading Volume",
-			animationValue: { end: 1.3, suffix: "B+", prefix: "" },
+			animationValue: { end: 1.3, suffix: "B+", prefix: "$" },
 		},
 		{
 			icon: <BarChart2 className="h-6 w-6 text-primary-600" />,

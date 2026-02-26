@@ -210,7 +210,7 @@ const PortfolioPage = () => {
 						</div>
 						<div className="text-center space-y-2">
 							<Wallet className="h-8 w-8 mx-auto text-primary" />
-							<div className="text-2xl font-bold">1.3B+</div>
+							<div className="text-2xl font-bold">$1.3B+</div>
 							<div className="text-sm text-muted-foreground">Trading Volume</div>
 						</div>
 						<div className="text-center space-y-2">
