@@ -5,7 +5,8 @@
 @layer base {
 	/* Modern rounded sans-serif – clean hierarchy */
 	body {
-		@apply font-sans text-foreground;
+		@apply font-sans antialiased;
+		color: hsl(var(--foreground));
 	}
 	:root {
 		--background: 0 0% 100%;
