@@ -78,7 +78,7 @@ const ContactPage: React.FC = () => {
 					{
 						icon: <Phone className="h-6 w-6" />,
 						title: "Phone",
-						details: "+17869418750",
+						details: "+44 7481736986",
 					},
 					{
 						icon: <Mail className="h-6 w-6" />,
@@ -88,7 +88,7 @@ const ContactPage: React.FC = () => {
 					{
 						icon: <Building className="h-6 w-6" />,
 						title: "Office",
-						details: "55 Water St, Peck Slip, NY 10038, USA",
+						details: "The Minster Building, 21 Mincing Lane, London, United Kingdom, EC3R 7AG",
 					},
 				].map((method, index) => (
 					<Card key={index}>
