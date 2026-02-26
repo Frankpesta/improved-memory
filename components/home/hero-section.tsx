@@ -46,6 +46,18 @@ const HeroSection = () => {
 								</p>
 							</div>
 
+							{/* Tower Research – subtle, below gateway line */}
+							<div className="rounded-lg border border-primary-200/60 dark:border-primary-800/50 bg-primary-50/40 dark:bg-primary-950/30 backdrop-blur-sm px-4 py-2.5 inline-block">
+								<p className="text-xs text-neutral-600 dark:text-primary-300/80 leading-snug">
+									Developed and operated by{" "}
+									<span className="font-medium text-primary-700 dark:text-primary-400">
+										TOWER RESEARCH CAPITAL
+									</span>{" "}
+									a UK-registered research and technology company (Company Reg No.
+									06005750)
+								</p>
+							</div>
+
 							<p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
 								At Credix AI, we have harnessed the power of artificial
 								intelligence to transform trading into a seamless and

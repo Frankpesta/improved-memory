@@ -18,7 +18,6 @@ export default function Home() {
 			<EarningsGuarantee />
 			<HowItWorks />
 			<CapitalProtectionStats />
-			<TowerResearchCard />
 			<LeadershipTeam />
 			<TowerResearchCard />
 		</div>
