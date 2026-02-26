@@ -58,7 +58,7 @@ const HeroSection = () => {
 							{/* Stats Grid */}
 							<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
 								<StatItem value="250K+" label="Active Users" />
-								<StatItem value="70B+" label="Trading Volume" />
+								<StatItem value="1.3B+" label="Trading Volume" />
 								<StatItem value="94%" label="Trading Accuracy" />
 							</div>
 

@@ -137,7 +137,7 @@ const WhyTrustUs = () => {
 
 	const metrics = [
 		{ label: "Active Users", value: "250K+", icon: Users },
-		{ label: "Trading Volume", value: "70B+", icon: LineChart },
+		{ label: "Trading Volume", value: "1.3B+", icon: LineChart },
 		{ label: "Success Rate", value: "94%", icon: CheckCircle2 },
 	];
 
