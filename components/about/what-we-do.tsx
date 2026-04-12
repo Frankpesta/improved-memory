@@ -23,7 +23,7 @@ const TradingSection = () => {
 
 					<div className="space-y-6">
 						<p className="text-foreground/90 leading-relaxed">
-							Credix AI has developed a state-of-the-art AI BOT that is trained
+							Zelox AI has developed a state-of-the-art AI BOT that is trained
 							to navigate the trading market with over 94% accuracy. The BOT
 							continuously scans market trends, predicts profitable
 							opportunities, and executes trades, ensuring optimal returns for
@@ -88,7 +88,7 @@ const SecuritySection = () => {
 						</h2>
 						<p className="text-foreground/90 leading-relaxed">
 							We understand that security is a top priority for our investors.
-							That's why Credix AI ensures your capital is protected through
+							That's why Zelox AI ensures your capital is protected through
 							multiple security measures, including:
 						</p>
 					</div>
@@ -111,8 +111,8 @@ const SecuritySection = () => {
 
 					<div className="text-center">
 						<p className="text-lg font-medium text-primary">
-							With Credix AI, your capital is safe, and your returns are
-							guaranteed.
+							With Zelox AI, your capital is safe, and you can withdraw your
+							earnings anytime.
 						</p>
 					</div>
 				</div>

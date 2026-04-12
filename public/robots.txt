@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://credixhub.com/sitemap.xml
+Sitemap: https://zeloxai.com/sitemap.xml

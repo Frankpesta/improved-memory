@@ -85,7 +85,7 @@ const PortfolioPage = () => {
 	];
 
 	const handleLogin = () => {
-		window.location.href = "https://app.credixhub.com/login";
+		window.location.href = "https://app.zeloxai.com/login";
 	};
 
 	return (

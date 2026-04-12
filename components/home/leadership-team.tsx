@@ -28,7 +28,7 @@ const LeadershipSection = () => {
 			name: "Eva Engel",
 			title: "Co-Founder | PhD in Artificial Intelligence | Lead AI Developer",
 			description:
-				"Eva brings over a decade of experience in machine learning and deep neural networks. She played a key role in designing the core architecture of the AI trading BOT powering Credix Hub.",
+				"Eva brings over a decade of experience in machine learning and deep neural networks. She played a key role in designing the core architecture of the AI trading BOT powering Zelox AI.",
 			imagePath: "/w.jpg",
 		},
 		{
@@ -163,7 +163,7 @@ const BenefitsSection = () => {
 			<div className="space-y-5 md:space-y-6 lg:space-y-8">
 				<div className="text-center space-y-4">
 					<h2 className="text-3xl font-bold tracking-tight">
-						Why You Should Invest with Credix AI
+						Why You Should Invest with Zelox AI
 					</h2>
 				</div>
 

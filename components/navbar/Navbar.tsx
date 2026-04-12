@@ -8,10 +8,10 @@ import { ModeToggle } from "../ToggleTheme";
 
 const Navbar = () => {
 	const handleLogin = () => {
-		window.location.href = "https://app.credixhub.com/login";
+		window.location.href = "https://app.zeloxai.com/login";
 	};
 	const handleRegister = () => {
-		window.location.href = "https://app.credixhub.com/register";
+		window.location.href = "https://app.zeloxai.com/register";
 	};
 	return (
 		<header className="w-full border-b bg-white dark:bg-gray-800">
@@ -21,7 +21,7 @@ const Navbar = () => {
 						src={"/logo.png"}
 						width={100}
 						height={60}
-						alt="Credix AI Logo"
+						alt="Zelox AI Logo"
 					/>
 				</Link>
 

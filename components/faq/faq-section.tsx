@@ -11,9 +11,9 @@ import { Check, Mail, MessageCircle } from "lucide-react";
 const FAQAccordion = () => {
 	const faqs = [
 		{
-			question: "What is Credix AI?",
+			question: "What is Zelox AI?",
 			answer:
-				"Credix AI is an AI-powered trading platform that trades the crypto market on behalf of investors. Our highly trained AI BOT, with a 94%+ accuracy rate, executes trades daily, generating consistent returns for investors over a 90-day trading period.",
+				"Zelox AI is an AI-powered trading platform that trades the crypto market on behalf of investors. Our highly trained AI BOT, with a 94%+ accuracy rate, executes trades daily, generating consistent returns for investors over a 90-day trading period.",
 		},
 		{
 			question: "How does the AI BOT trading system work?",
@@ -104,7 +104,7 @@ const FAQAccordion = () => {
 						Withdrawals are processed instantly to your crypto wallet. Simply:
 					</p>
 					<ol className="list-decimal pl-5 space-y-1">
-						<li>Log into your Credix AI account.</li>
+						<li>Log into your Zelox AI account.</li>
 						<li>Go to the withdrawal section.</li>
 						<li>Enter your crypto wallet details.</li>
 						<li>Withdraw your profits anytime.</li>
@@ -113,9 +113,9 @@ const FAQAccordion = () => {
 			),
 		},
 		{
-			question: "Is Credix AI available worldwide?",
+			question: "Is Zelox AI available worldwide?",
 			answer:
-				"Yes! Credix AI is a global trading platform with over 250,000 users worldwide.",
+				"Yes! Zelox AI is a global trading platform with over 250,000 users worldwide.",
 		},
 		{
 			question: "Are there any hidden fees?",
@@ -133,7 +133,7 @@ const FAQAccordion = () => {
 				"We implement advanced security protocols, including encryption, two-factor authentication (2FA), and wallet security, to keep your account safe.",
 		},
 		{
-			question: "What makes Credix AI different from other trading platforms?",
+			question: "What makes Zelox AI different from other trading platforms?",
 			answer: (
 				<div className="space-y-2">
 					<ul className="space-y-2">
@@ -165,7 +165,7 @@ const FAQAccordion = () => {
 					<div className="space-y-2">
 						<div className="flex items-center">
 							<Mail className="w-4 h-4 mr-2 text-primary" />
-							<span>Email Support – support@credixhub.com</span>
+							<span>Email Support – support@zeloxai.com</span>
 						</div>
 						<div className="flex items-center">
 							<MessageCircle className="w-4 h-4 mr-2 text-primary" />

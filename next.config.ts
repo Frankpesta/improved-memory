@@ -7,7 +7,7 @@ const nextConfig = {
 		ignoreBuildErrors: true,
 	},
 	images: {
-		domains: ["app.credixhub.com"], // Add your image domains here
+		domains: ["zeloxai.com"], // Add your image domains here
 	},
 	experimental: {
 		webpackBuildWorker: true,

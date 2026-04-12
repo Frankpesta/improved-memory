@@ -11,11 +11,11 @@ import Blogs from "@/components/blogs";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export const metadata: Metadata = {
-	title: "Blog Articles | CredixAI Insights",
+	title: "Blog Articles | Zelox AI Insights",
 	description:
 		"Explore our collection of expert articles, insights, and analysis on the latest trends and topics.",
 	openGraph: {
-		title: "Blog Articles | CredixAI Insights",
+		title: "Blog Articles | Zelox AI Insights",
 		description:
 			"Explore our collection of expert articles, insights, and analysis on the latest trends and topics.",
 		type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 				url: "/logo.png",
 				width: 1200,
 				height: 630,
-				alt: "CredixAI Blog Articles",
+				alt: "Zelox AI Blog Articles",
 			},
 		],
 	},
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 // Fetch blogs with ISR
 async function fetchBlogs() {
 	try {
-		const response = await fetch("https://app.credixhub.com/api/blogs", {
+		const response = await fetch("https://zeloxai.com/api/blogs", {
 			next: { revalidate: 600 }, // Revalidate ten minutes
 		});
 
@@ -65,16 +65,16 @@ export default async function BlogsPage() {
 						__html: JSON.stringify({
 							"@context": "https://schema.org",
 							"@type": "CollectionPage",
-							name: "Blog Articles | CredixAI Insights",
+							name: "Blog Articles | Zelox AI Insights",
 							description:
 								"Explore our collection of expert articles, insights, and analysis on the latest trends and topics.",
-							url: "https://app.credixhub.com/blogs",
+							url: "https://zeloxai.com/blogs",
 							mainEntity: {
 								"@type": "ItemList",
 								itemListElement: blogs.map((blog: Blog, index: number) => ({
 									"@type": "ListItem",
 									position: index + 1,
-									url: `https://app.credixhub.com/blog/${blog.id}`,
+									url: `https://zeloxai.com/blog/${blog.id}`,
 									name: blog.title,
 								})),
 							},

@@ -184,7 +184,7 @@
 		@apply text-[12px] font-medium leading-[20px];
 	}
 
-	/* Brand gradient text (e.g. Credix AI) */
+	/* Brand gradient text (e.g. Zelox AI) */
 	.text-gradient-brand {
 		@apply bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 bg-clip-text text-transparent dark:from-primary-400 dark:via-primary-500 dark:to-primary-600;
 	}

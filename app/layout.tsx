@@ -12,29 +12,29 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://app.credixhub.com/api/blogs"),
+	metadataBase: new URL("https://zeloxai.com"),
 	title: {
-		default: "Credixai",
-		template: "%s | Credixai",
+		default: "Zelox AI",
+		template: "%s | Zelox AI",
 	},
 	description: "AI trading platform | Maximizing your profits",
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://credixhub.com/blogs",
-		siteName: "Credixai",
+		url: "https://zeloxai.com/blogs",
+		siteName: "Zelox AI",
 		images: [
 			{
 				url: "/logo.png",
 				width: 1200,
 				height: 630,
-				alt: "CredixAI Blog",
+				alt: "Zelox AI Blog",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "CredixAI | Ai powered trading at its best",
+		title: "Zelox AI | AI-powered trading at its best",
 		description:
 			"Discover expert insights, trends, and in-depth analysis on topics that matter to you.",
 		images: ["/logo.png"],
@@ -64,8 +64,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<link rel="preconnect" href="https://app.credixhub.com/api/blogs" />
-			<link rel="dns-prefetch" href="https://app.credixhub.com/api/bogs" />
+			<link rel="preconnect" href="https://zeloxai.com" />
+			<link rel="dns-prefetch" href="https://zeloxai.com" />
 			<body className={`${plusJakartaSans.variable} font-sans antialiased`}>
 				<ThemeProvider
 					attribute="class"

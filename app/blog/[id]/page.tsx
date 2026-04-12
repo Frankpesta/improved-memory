@@ -14,7 +14,7 @@ type Blog = {
 // This function tells Next.js which routes to pre-generate at build time
 export async function generateStaticParams() {
 	try {
-		const response = await fetch("https://app.credixhub.com/api/blogs", {
+		const response = await fetch("https://zeloxai.com/api/blogs", {
 			next: { revalidate: 600 },
 		});
 		const data = await response.json();
@@ -37,7 +37,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
 	try {
 		const response = await fetch(
-			`https://app.credixhub.com/api/blogs/${params.id}`,
+			`https://zeloxai.com/api/blogs/${params.id}`,
 			{
 				next: { revalidate: 600 },
 			}
@@ -65,13 +65,13 @@ export async function generateMetadata({
 			openGraph: {
 				title: blog.title,
 				description: description,
-				url: `https://credixhub.com/blog/${params.id}`,
+				url: `https://zeloxai.com/blog/${params.id}`,
 				type: "article",
 				publishedTime: blog.date || new Date().toISOString(),
-				authors: blog.author ? [blog.author] : "Credixai Team",
+				authors: blog.author ? [blog.author] : "Zelox AI Team",
 				images: [
 					{
-						url: `https://app.credixhub.com/assets/${blog.cover}`,
+						url: `https://zeloxai.com/assets/${blog.cover}`,
 						width: 1200,
 						height: 630,
 						alt: blog.title,
@@ -82,7 +82,7 @@ export async function generateMetadata({
 				card: "summary_large_image",
 				title: blog.title,
 				description: description,
-				images: [`https://app.credixhub.com/assets/${blog.cover}`],
+				images: [`https://zeloxai.com/assets/${blog.cover}`],
 			},
 		};
 	} catch (error) {
@@ -148,14 +148,14 @@ async function BlogPage({ params }: { params: { id: string } }) {
 						dateModified: blogData?.updatedAt || new Date().toISOString(),
 						author: {
 							"@type": "Person",
-							name: blogData?.author || "CredixAI Team",
+							name: blogData?.author || "Zelox AI Team",
 						},
 						publisher: {
 							"@type": "Organization",
-							name: "CredixAI",
+							name: "Zelox AI",
 							logo: {
 								"@type": "ImageObject",
-								url: "https://credixhub.com/logo.png",
+								url: "https://zeloxai.com/logo.png",
 							},
 						},
 						description: blogData?.details
@@ -163,7 +163,7 @@ async function BlogPage({ params }: { params: { id: string } }) {
 							.substring(0, 160),
 						mainEntityOfPage: {
 							"@type": "WebPage",
-							"@id": `https://credixhub.com/blog/${params.id}`,
+							"@id": `https://zeloxai.com/blog/${params.id}`,
 						},
 					}),
 				}}
@@ -175,7 +175,7 @@ async function BlogPage({ params }: { params: { id: string } }) {
 // Server-side data fetching function with ISR
 async function fetchBlogData(id: string) {
 	try {
-		const response = await fetch(`https://app.credixhub.com/api/blogs/${id}`, {
+		const response = await fetch(`https://zeloxai.com/api/blogs/${id}`, {
 			next: { revalidate: 600 },
 		});
 
@@ -194,7 +194,7 @@ async function fetchBlogData(id: string) {
 // Fetch related posts for internal linking
 // async function fetchRelatedPosts(currentId: string) {
 //   try {
-//     const response = await fetch(`https://app.credixhub.com/api/blogs`, {
+//     const response = await fetch(`https://zeloxai.com/api/blogs`, {
 //       next: { revalidate: 600 }
 //     });
 

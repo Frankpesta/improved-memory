@@ -21,7 +21,7 @@ const StatItem: React.FC<StatItemProps> = ({ value, label }) => (
 
 const HeroSection = () => {
 	const handleLogin = () => {
-		window.location.href = "https://app.credixhub.com/login";
+		window.location.href = "https://app.zeloxai.com/login";
 	};
 	return (
 		<div className="relative overflow-hidden bg-gradient-to-b from-neutral-50 to-neutral-100 dark:from-dark-300 dark:to-dark-400">
@@ -32,11 +32,11 @@ const HeroSection = () => {
 			<div className="relative container mx-auto px-4 py-8 md:py-12 lg:py-24">
 				<div className="max-w-7xl mx-auto">
 					<div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
-						{/* Left Content – second on mobile (order-2), first on desktop */}
-						<div className="space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1">
+						{/* Left Content – first on mobile and desktop */}
+						<div className="space-y-4 md:space-y-6 lg:space-y-8 order-1">
 							<div className="space-y-3 md:space-y-4 lg:space-y-6">
 								<h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-50">
-									Welcome to <span className="text-gradient-brand">Credix AI</span>
+									Welcome to <span className="text-gradient-brand">Zelox AI</span>
 								</h1>
 								<h2 className="text-2xl lg:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
 									The Future of AI-Driven Crypto Trading
@@ -59,7 +59,7 @@ const HeroSection = () => {
 							</div>
 
 							<p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-								At Credix AI, we have harnessed the power of artificial
+								At Zelox AI, we have harnessed the power of artificial
 								intelligence to transform trading into a seamless and
 								highly profitable experience for our investors. Our
 								state-of-the-art AI trading BOT, trained with vast market data,
@@ -123,8 +123,8 @@ const HeroSection = () => {
 							</div>
 						</div>
 
-						{/* Right column: hero image (first on mobile order-1), second on desktop */}
-						<div className="space-y-4 md:space-y-5 lg:space-y-6 order-1 lg:order-2">
+						{/* Right column: hero image below text on mobile */}
+						<div className="space-y-4 md:space-y-5 lg:space-y-6 order-2">
 							<div
 								className="relative rounded-2xl overflow-hidden p-[2px]"
 								style={{
@@ -137,7 +137,7 @@ const HeroSection = () => {
 									<div className="relative aspect-[4/3] w-full min-h-[200px]">
 										<Image
 											src="/assets/ai-hero.jpeg"
-											alt="AI-driven crypto trading – Credix AI"
+											alt="AI-driven crypto trading – Zelox AI"
 											fill
 											className="object-cover"
 											sizes="(max-width: 1024px) 100vw, 50vw"

@@ -16,7 +16,7 @@ const TermsAndConditionsPage: React.FC = () => {
 			id: "acceptance",
 			title: "1. Acceptance of Terms",
 			content:
-				"By using Credix AI, you acknowledge that you have read, understood, and agreed to these terms and conditions. If you do not agree, please refrain from using our services.",
+				"By using Zelox AI, you acknowledge that you have read, understood, and agreed to these terms and conditions. If you do not agree, please refrain from using our services.",
 		},
 		{
 			id: "eligibility",
@@ -124,7 +124,7 @@ const TermsAndConditionsPage: React.FC = () => {
 							account security.
 						</li>
 						<li>
-							Credix AI is not responsible for losses resulting from
+							Zelox AI is not responsible for losses resulting from
 							unauthorized access due to weak passwords or user negligence.
 						</li>
 					</ul>
@@ -156,7 +156,7 @@ const TermsAndConditionsPage: React.FC = () => {
 						</li>
 						<li className="flex items-start">
 							<span className="text-red-500 mr-2">🚫</span>
-							<span>Post false or misleading information about Credix AI.</span>
+							<span>Post false or misleading information about Zelox AI.</span>
 						</li>
 					</ul>
 					<p className="mt-2">
@@ -248,7 +248,7 @@ const TermsAndConditionsPage: React.FC = () => {
 				<div className="space-y-2">
 					<ul className="list-disc pl-5 space-y-1">
 						<li>
-							Credix AI is not liable for losses due to market volatility.
+							Zelox AI is not liable for losses due to market volatility.
 						</li>
 						<li>
 							We are not responsible for technical failures, hacks, or
@@ -289,7 +289,7 @@ const TermsAndConditionsPage: React.FC = () => {
 				<div className="space-y-2">
 					<ul className="list-disc pl-5 space-y-1">
 						<li>
-							Credix AI reserves the right to modify these terms at any time.
+							Zelox AI reserves the right to modify these terms at any time.
 						</li>
 						<li>
 							Updates will be posted on our website, and users are responsible
@@ -320,10 +320,10 @@ const TermsAndConditionsPage: React.FC = () => {
 					</p>
 					<p className="flex items-center">
 						<span className="mr-2">📩</span>
-						<span>Email: support@credixhub.com</span>
+						<span>Email: support@zeloxai.com</span>
 					</p>
 					<p className="mt-2">
-						By using Credix AI, you agree to these Terms and Conditions and
+						By using Zelox AI, you agree to these Terms and Conditions and
 						accept the responsibilities outlined above.
 					</p>
 				</div>
@@ -343,7 +343,7 @@ const TermsAndConditionsPage: React.FC = () => {
 				</CardHeader>
 				<CardContent>
 					<p>
-						Welcome to Credix AI. By accessing and using our website and
+						Welcome to Zelox AI. By accessing and using our website and
 						services, you agree to comply with the terms and conditions outlined
 						below. Please read them carefully before investing or using our
 						platform.

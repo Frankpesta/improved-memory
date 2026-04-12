@@ -1,4 +1,5 @@
 import EarningsGuarantee from "@/components/home/earnings-guarantee";
+import HomeIntroVideo from "@/components/home/home-intro-video";
 import HeroSection from "@/components/home/hero-section";
 import HowItWorks from "@/components/home/how-it-works";
 import CapitalProtectionStats from "@/components/home/in-numbers";
@@ -12,6 +13,7 @@ export default function Home() {
 	return (
 		<div>
 			<HeroSection />
+			<HomeIntroVideo />
 			<FeaturesSection />
 			<MissionVisionSection />
 			<TradingPlans />

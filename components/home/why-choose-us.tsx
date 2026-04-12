@@ -65,7 +65,7 @@ const FeaturesSection = () => {
 			icon: <Users className="h-6 w-6 text-primary-600" />,
 			title: "Trust & Transparency",
 			description:
-				"Credix AI is trusted by thousands of users worldwide.",
+				"Zelox AI is trusted by thousands of users worldwide.",
 		},
 	];
 
@@ -75,7 +75,7 @@ const FeaturesSection = () => {
 				<div className="max-w-7xl mx-auto">
 					<div className="text-center mb-6 md:mb-8 lg:mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50 mb-4">
-							Why Choose Credix AI?
+							Why Choose Zelox AI?
 						</h2>
 						<div className="w-20 h-1 bg-primary-600 mx-auto"></div>
 					</div>

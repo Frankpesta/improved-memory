@@ -90,8 +90,8 @@ const EarningsGuarantee = () => {
 
 								<div className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-lg border border-primary-100 dark:border-primary-800">
 									<p className="text-lg font-semibold text-primary-900 dark:text-primary-100">
-										With Credix AI, your capital is secure, and your profits are
-										guaranteed.
+										With Zelox AI, your capital is secure, and you can withdraw
+										your earnings anytime.
 									</p>
 								</div>
 							</div>

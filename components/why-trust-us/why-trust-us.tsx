@@ -122,7 +122,7 @@ const WhyTrustUs = () => {
 			title: "A Vision for Long-Term Success",
 			icon: ScanEye,
 			points: [
-				"At Credix AI, our mission is to:",
+				"At Zelox AI, our mission is to:",
 
 				"🚀 Revolutionize AI trading – Making passive income accessible to everyone.",
 				"🔒 Ensure investor security – Through insured tradings and risk-free trading strategies.",
@@ -154,7 +154,7 @@ const WhyTrustUs = () => {
 			location: "UK",
 			trading: "$10,000",
 			quote:
-				"Credix AI is the best AI trading platform I've used. The 2% daily return is steady, and I've already reinvested for another 90-day cycle!",
+				"Zelox AI is the best AI trading platform I've used. The 2% daily return is steady, and I've already reinvested for another 90-day cycle!",
 		},
 		{
 			name: "Carlos R.",
@@ -175,7 +175,7 @@ const WhyTrustUs = () => {
 			location: "Canada",
 			trading: "$15,000",
 			quote:
-				"I’ve tried other AI trading platforms, but Credix AI is the real deal. Withdrawals are fast, and the customer support is always there to help.",
+				"I’ve tried other AI trading platforms, but Zelox AI is the real deal. Withdrawals are fast, and the customer support is always there to help.",
 		},
 		{
 			name: "Hassan O.",
@@ -187,7 +187,7 @@ const WhyTrustUs = () => {
 	];
 
 	const handleLogin = () => {
-		window.location.href = "https://app.credixhub.com/login";
+		window.location.href = "https://app.zeloxai.com/login";
 	};
 
 	return (
