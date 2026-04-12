@@ -127,7 +127,7 @@ const HeroSection = () => {
 								At Zelox AI, we use artificial intelligence to support a clear,
 								streamlined trading experience. Our AI trading system is trained
 								on broad market data and is designed to execute trades with high
-								accuracy—helping you stay informed and in control of your
+								accuracy, helping you stay informed and in control of your
 								strategy.
 							</p>
 						</div>
@@ -179,26 +179,28 @@ const HeroSection = () => {
 								</Link>
 							</div>
 
-							<div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
-								<div className="p-6 rounded-xl bg-white dark:bg-dark-200 shadow-lg text-center sm:text-left">
-									<Bot className="h-12 w-12 text-primary-600 mb-4 mx-auto sm:mx-0" />
-									<h3 className="text-lg font-semibold mb-2">
+							<div className="grid grid-cols-2 gap-3 sm:gap-6 max-w-5xl mx-auto">
+								<div className="p-4 sm:p-6 rounded-xl bg-white dark:bg-dark-200 shadow-lg text-left">
+									<Bot className="h-10 w-10 sm:h-12 sm:w-12 text-primary-600 mb-3 sm:mb-4" />
+									<h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2">
 										AI-Powered Trading
 									</h3>
-									<p className="text-neutral-600 dark:text-neutral-400">
+									<p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
 										Advanced algorithms making smart decisions 24/7
 									</p>
 								</div>
-								<div className="p-6 rounded-xl bg-white dark:bg-dark-200 shadow-lg text-center sm:text-left">
-									<LineChart className="h-12 w-12 text-secondary-700 mb-4 mx-auto sm:mx-0" />
-									<h3 className="text-lg font-semibold mb-2">Daily Returns</h3>
-									<p className="text-neutral-600 dark:text-neutral-400">
+								<div className="p-4 sm:p-6 rounded-xl bg-white dark:bg-dark-200 shadow-lg text-left">
+									<LineChart className="h-10 w-10 sm:h-12 sm:w-12 text-secondary-700 mb-3 sm:mb-4" />
+									<h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2">
+										Daily Returns
+									</h3>
+									<p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
 										Consistent profits with high accuracy trading
 									</p>
 								</div>
 							</div>
-							<div className="p-6 rounded-xl bg-white dark:bg-dark-200 shadow-lg max-w-5xl mx-auto text-center sm:text-left">
-								<Shield className="h-12 w-12 text-accent-600 mb-4 mx-auto sm:mx-0" />
+							<div className="p-4 sm:p-6 rounded-xl bg-white dark:bg-dark-200 shadow-lg max-w-5xl mx-auto text-left">
+								<Shield className="h-10 w-10 sm:h-12 sm:w-12 text-accent-600 mb-3 sm:mb-4" />
 								<h3 className="text-lg font-semibold mb-2">
 									Secure & Reliable
 								</h3>
