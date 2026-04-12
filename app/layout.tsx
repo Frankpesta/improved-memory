@@ -69,7 +69,7 @@ export default function RootLayout({
 			<body className={`${plusJakartaSans.variable} font-sans antialiased`}>
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="system"
+					defaultTheme="light"
 					enableSystem
 					disableTransitionOnChange>
 					<Navbar />

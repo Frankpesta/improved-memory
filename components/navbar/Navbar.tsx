@@ -14,22 +14,29 @@ const Navbar = () => {
 		window.location.href = "https://app.zeloxai.com/register";
 	};
 	return (
-		<header className="w-full border-b bg-white dark:bg-gray-800">
-			<div className="wrapper flex items-center justify-between">
-				<Link href={"/"} className="w-52">
+		<header className="relative w-full border-b bg-white dark:bg-gray-800">
+			<div className="wrapper flex items-center justify-between gap-3 md:gap-4">
+				<Link
+					href={"/"}
+					className="relative z-10 w-28 shrink-0 md:w-52 flex items-center">
 					<Image
 						src={"/logo.png"}
 						width={100}
 						height={60}
 						alt="Zelox AI Logo"
+						className="h-10 w-auto md:h-[60px]"
 					/>
 				</Link>
 
-				<nav className="md:flex-between hidden w-full max-w-xs">
+				<span className="md:hidden pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-base sm:text-lg text-gradient-brand select-none whitespace-nowrap">
+					Zelox AI
+				</span>
+
+				<nav className="hidden md:flex flex-1 justify-center max-w-xs">
 					<NavItems closeSheet={() => {}} />
 				</nav>
 
-				<div className="flex w-full justify-end items-center  gap-3">
+				<div className="relative z-10 flex items-center justify-end gap-2 md:gap-3 shrink-0">
 					<ModeToggle />
 					<MobileNav />
 					<div className="hidden md:flex gap-3">

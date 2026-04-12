@@ -25,11 +25,11 @@ interface Benefit {
 const LeadershipSection = () => {
 	const leaders: LeadershipMember[] = [
 		{
-			name: "Eva Engel",
+			name: "Dr. Evelyn Garcia",
 			title: "Co-Founder | PhD in Artificial Intelligence | Lead AI Developer",
 			description:
-				"Eva brings over a decade of experience in machine learning and deep neural networks. She played a key role in designing the core architecture of the AI trading BOT powering Zelox AI.",
-			imagePath: "/w.jpg",
+				"Dr. Garcia brings over a decade of experience in machine learning and deep neural networks. She played a key role in designing the core architecture of the AI trading BOT powering Zelox AI.",
+			imagePath: "/assets/evelyn.jpeg",
 		},
 		{
 			name: "James Scott",
