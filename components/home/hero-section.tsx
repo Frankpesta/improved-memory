@@ -1,7 +1,7 @@
 "use client";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, LineChart, Shield, Bot, Check, Link2 } from "lucide-react";
+import { ArrowRight, LineChart, Shield, Bot } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { IntroVideoPlayer } from "@/components/home/intro-video-player";
@@ -38,25 +38,16 @@ const HeroSection = () => {
 
 	const videoSectionRef = useRef<HTMLElement>(null);
 	const videoRef = useRef<HTMLVideoElement>(null);
-	const [copied, setCopied] = useState(false);
 
-	const focusVideo = useCallback(() => {
-		const video = videoRef.current;
-		if (!video) return;
-		video.focus({ preventScroll: true });
-		void video.play().catch(() => {});
+	const scrollToVideo = useCallback((smooth: boolean) => {
+		videoSectionRef.current?.scrollIntoView({
+			behavior: smooth ? "smooth" : "auto",
+			block: "center",
+		});
+		requestAnimationFrame(() => {
+			videoRef.current?.focus({ preventScroll: true });
+		});
 	}, []);
-
-	const scrollToVideo = useCallback(
-		(smooth: boolean) => {
-			videoSectionRef.current?.scrollIntoView({
-				behavior: smooth ? "smooth" : "auto",
-				block: "center",
-			});
-			requestAnimationFrame(() => focusVideo());
-		},
-		[focusVideo]
-	);
 
 	useEffect(() => {
 		const onHashOrQuery = () => {
@@ -68,17 +59,6 @@ const HeroSection = () => {
 		window.addEventListener("hashchange", onHashOrQuery);
 		return () => window.removeEventListener("hashchange", onHashOrQuery);
 	}, [scrollToVideo]);
-
-	const copyShareLink = async () => {
-		const url = `${window.location.origin}${window.location.pathname}#${VIDEO_SECTION_ID}`;
-		try {
-			await navigator.clipboard.writeText(url);
-			setCopied(true);
-			window.setTimeout(() => setCopied(false), 2000);
-		} catch {
-			// ignore
-		}
-	};
 
 	return (
 		<div className="relative overflow-hidden bg-gradient-to-b from-neutral-50 to-neutral-100 dark:from-dark-300 dark:to-dark-400">
@@ -159,39 +139,11 @@ const HeroSection = () => {
 							className="order-3 lg:col-span-2 w-full py-2 lg:py-4"
 							aria-labelledby="zelox-video-heading">
 							<div className="max-w-5xl mx-auto">
-								<div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-4 md:mb-6">
-									<div className="text-center sm:text-left">
-										<h2
-											id="zelox-video-heading"
-											className="text-xl md:text-2xl lg:text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-2">
-											Watch this Quick Video to Understand How Zelox AI Works
-										</h2>
-										<p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-2xl">
-											Share the page with{" "}
-											<code className="text-xs px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-dark-300">
-												#zelox-video
-											</code>{" "}
-											in the link so others land here directly.
-										</p>
-									</div>
-									<Button
-										type="button"
-										variant="outline"
-										className="shrink-0 gap-2 self-center sm:self-auto"
-										onClick={copyShareLink}>
-										{copied ? (
-											<>
-												<Check className="h-4 w-4" />
-												Link copied
-											</>
-										) : (
-											<>
-												<Link2 className="h-4 w-4" />
-												Copy link to video
-											</>
-										)}
-									</Button>
-								</div>
+								<h2
+									id="zelox-video-heading"
+									className="text-xl md:text-2xl lg:text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-4 md:mb-6 text-center">
+									Watch this Quick Video to Understand How Zelox AI Works
+								</h2>
 								<div className="w-full overflow-hidden rounded-xl bg-black shadow-xl ring-1 ring-neutral-200/80 dark:ring-neutral-700">
 									<IntroVideoPlayer
 										ref={videoRef}

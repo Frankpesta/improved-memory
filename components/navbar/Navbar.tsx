@@ -28,7 +28,7 @@ const Navbar = () => {
 					/>
 				</Link>
 
-				<span className="md:hidden pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-base sm:text-lg text-gradient-brand select-none whitespace-nowrap">
+				<span className="lg:hidden pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-base sm:text-lg text-gradient-brand select-none whitespace-nowrap">
 					Zelox AI
 				</span>
 
