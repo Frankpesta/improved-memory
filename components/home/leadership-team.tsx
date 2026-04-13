@@ -29,7 +29,7 @@ const LeadershipSection = () => {
 			title: "Co-Founder | PhD in Artificial Intelligence | Lead AI Developer",
 			description:
 				"Dr. Garcia brings over a decade of experience in machine learning and deep neural networks. She played a key role in designing the core architecture of the AI trading BOT powering Zelox AI.",
-			imagePath: "/assets/evelyn.jpeg",
+			imagePath: "/evelyn.jpeg",
 		},
 		{
 			name: "James Scott",
