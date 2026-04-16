@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, User, Tag, Clock, Share2 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import parse from "html-react-parser";
+import { ZELOX_APP_ORIGIN } from "@/constants";
 
 interface Blog {
 	id: number;
@@ -41,7 +42,7 @@ export default function BlogDetail({
 		const fetchBlog = async () => {
 			try {
 				const response = await fetch(
-					`https://zeloxai.com/api/blogs/${id}`
+					`${ZELOX_APP_ORIGIN}/api/blogs/${id}`
 				);
 				const data = await response.json();
 				setBlog(data?.blog || null);
@@ -125,7 +126,9 @@ export default function BlogDetail({
 						"@context": "https://schema.org",
 						"@type": "BlogPosting",
 						headline: blog.title,
-						image: blog.cover,
+						...(blog.cover && {
+							image: `${ZELOX_APP_ORIGIN}/assets/${blog.cover}`,
+						}),
 						datePublished: blog.date || new Date().toISOString(),
 						dateModified: blog.updatedAt || new Date().toISOString(),
 						author: {
@@ -216,7 +219,7 @@ export default function BlogDetail({
 				{blog.cover && (
 					<figure className="mb-8 rounded-lg overflow-hidden">
 						<img
-							src={`https://zeloxai.com/assets/${blog.cover}`}
+							src={`${ZELOX_APP_ORIGIN}/assets/${blog.cover}`}
 							alt={`${blog.title} - Featured Image`}
 							className="w-full h-auto object-cover max-h-[500px]"
 							itemProp="image"

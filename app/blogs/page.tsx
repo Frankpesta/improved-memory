@@ -8,6 +8,7 @@ interface Blog {
 }
 import { Suspense } from "react";
 import Blogs from "@/components/blogs";
+import { ZELOX_APP_ORIGIN } from "@/constants";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export const metadata: Metadata = {
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
 // Fetch blogs with ISR
 async function fetchBlogs() {
 	try {
-		const response = await fetch("https://zeloxai.com/api/blogs", {
+		const response = await fetch(`${ZELOX_APP_ORIGIN}/api/blogs`, {
 			next: { revalidate: 600 }, // Revalidate ten minutes
 		});
 

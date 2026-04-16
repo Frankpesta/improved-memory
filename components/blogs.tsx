@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Loader2, BookOpen, ChevronRight, Calendar } from "lucide-react";
+import { ZELOX_APP_ORIGIN } from "@/constants";
 
 interface Blog {
 	id: number;
@@ -39,7 +40,7 @@ export default function Blogs({
 
 		const fetchBlogs = async () => {
 			try {
-				const response = await fetch("https://zeloxai.com/api/blogs");
+				const response = await fetch(`${ZELOX_APP_ORIGIN}/api/blogs`);
 				const data = await response.json();
 				setBlogs(data?.data || []);
 			} catch (error) {
@@ -83,7 +84,7 @@ export default function Blogs({
 								<Card className="overflow-hidden border border-border/40 transition-all duration-200 hover:shadow-md hover:border-primary-500/20 dark:hover:shadow-lg dark:hover:shadow-primary-500/5 dark:hover:border-primary-500/30 dark:bg-card h-full flex flex-col">
 									<div className="relative h-52 overflow-hidden border-b border-border/10 dark:border-border/20">
 										<img
-											src={`https://zeloxai.com/assets/${blog.cover}`}
+											src={`${ZELOX_APP_ORIGIN}/assets/${blog.cover}`}
 											alt={`Featured image for ${blog.title}`}
 											className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
 											loading="lazy"

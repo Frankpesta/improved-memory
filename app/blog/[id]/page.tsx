@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import BlogDetail from "@/components/blog-detail";
+import { ZELOX_APP_ORIGIN } from "@/constants";
 
 // Define the Blog type
 type Blog = {
@@ -14,7 +15,7 @@ type Blog = {
 // This function tells Next.js which routes to pre-generate at build time
 export async function generateStaticParams() {
 	try {
-		const response = await fetch("https://zeloxai.com/api/blogs", {
+		const response = await fetch(`${ZELOX_APP_ORIGIN}/api/blogs`, {
 			next: { revalidate: 600 },
 		});
 		const data = await response.json();
@@ -37,7 +38,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
 	try {
 		const response = await fetch(
-			`https://zeloxai.com/api/blogs/${params.id}`,
+			`${ZELOX_APP_ORIGIN}/api/blogs/${params.id}`,
 			{
 				next: { revalidate: 600 },
 			}
@@ -71,7 +72,7 @@ export async function generateMetadata({
 				authors: blog.author ? [blog.author] : "Zelox AI Team",
 				images: [
 					{
-						url: `https://zeloxai.com/assets/${blog.cover}`,
+						url: `${ZELOX_APP_ORIGIN}/assets/${blog.cover}`,
 						width: 1200,
 						height: 630,
 						alt: blog.title,
@@ -82,7 +83,7 @@ export async function generateMetadata({
 				card: "summary_large_image",
 				title: blog.title,
 				description: description,
-				images: [`https://zeloxai.com/assets/${blog.cover}`],
+				images: [`${ZELOX_APP_ORIGIN}/assets/${blog.cover}`],
 			},
 		};
 	} catch (error) {
@@ -143,7 +144,9 @@ async function BlogPage({ params }: { params: { id: string } }) {
 						"@context": "https://schema.org",
 						"@type": "BlogPosting",
 						headline: blogData?.title,
-						image: blogData?.cover,
+						...(blogData?.cover && {
+							image: `${ZELOX_APP_ORIGIN}/assets/${blogData.cover}`,
+						}),
 						datePublished: blogData?.date || new Date().toISOString(),
 						dateModified: blogData?.updatedAt || new Date().toISOString(),
 						author: {
@@ -175,7 +178,7 @@ async function BlogPage({ params }: { params: { id: string } }) {
 // Server-side data fetching function with ISR
 async function fetchBlogData(id: string) {
 	try {
-		const response = await fetch(`https://zeloxai.com/api/blogs/${id}`, {
+		const response = await fetch(`${ZELOX_APP_ORIGIN}/api/blogs/${id}`, {
 			next: { revalidate: 600 },
 		});
 
@@ -194,7 +197,7 @@ async function fetchBlogData(id: string) {
 // Fetch related posts for internal linking
 // async function fetchRelatedPosts(currentId: string) {
 //   try {
-//     const response = await fetch(`https://zeloxai.com/api/blogs`, {
+//     const response = await fetch(`${ZELOX_APP_ORIGIN}/api/blogs`, {
 //       next: { revalidate: 600 }
 //     });
 

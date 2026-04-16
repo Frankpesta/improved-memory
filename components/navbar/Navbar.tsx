@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import NavItems from "./NavItems";
 import MobileNav from "./MobileNav";
 import { ModeToggle } from "../ToggleTheme";
+import { GoogleTranslate } from "../google-translate";
 
 const Navbar = () => {
 	const handleLogin = () => {
@@ -37,6 +38,7 @@ const Navbar = () => {
 				</nav>
 
 				<div className="relative z-10 flex items-center justify-end gap-2 md:gap-3 shrink-0">
+					<GoogleTranslate />
 					<ModeToggle />
 					<MobileNav />
 					<div className="hidden md:flex gap-3">

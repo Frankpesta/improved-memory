@@ -80,7 +80,7 @@ export default function RootLayout({
 			<script
 				id="chatway"
 				async={true}
-				src="https://cdn.chatway.app/widget.js?id=MZ8gXTIFIiRE"></script>
+				src="https://cdn.chatway.app/widget.js?id=pb6IA6nPZebd"></script>
 		</html>
 	);
 }
