@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { GoogleTranslate } from "@/components/google-translate";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
 	variable: "--font-sans",
@@ -75,6 +76,7 @@ export default function RootLayout({
 					<Navbar />
 					{children}
 					<Footer />
+					<GoogleTranslate />
 				</ThemeProvider>
 			</body>
 			<script

@@ -60,15 +60,20 @@ export function GoogleTranslate() {
 
 	return (
 		<div
-			className="notranslate relative z-30 flex shrink-0 items-center gap-1.5 sm:gap-2"
-			title="Translate this page">
-			<Languages
-				className="h-4 w-4 shrink-0 text-slate-600 dark:text-slate-300 opacity-90"
-				aria-hidden
-			/>
+			className="notranslate google-translate-float pointer-events-auto fixed z-[99990] w-[min(18rem,calc(100vw-1.5rem))] overflow-visible rounded-2xl border border-slate-200/90 bg-white/95 p-3 shadow-lg backdrop-blur-sm dark:border-slate-600 dark:bg-slate-900/95"
+			style={{
+				left: "max(1rem, env(safe-area-inset-left, 0px))",
+				bottom: "max(1rem, env(safe-area-inset-bottom, 0px))",
+			}}
+			role="region"
+			aria-label="Translate this page">
+			<div className="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800 dark:text-slate-100">
+				<Languages className="h-4 w-4 shrink-0 opacity-90" aria-hidden />
+				<span>Language</span>
+			</div>
 			<div
 				id="google_translate_element"
-				className="google-translate-host flex min-h-9 items-center"
+				className="google-translate-host google-translate-host--float flex min-h-10 w-full items-center overflow-visible"
 			/>
 		</div>
 	);

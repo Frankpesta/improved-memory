@@ -281,3 +281,19 @@ body {
 	background-color: rgb(30 41 59) !important;
 	color: rgb(241 245 249) !important;
 }
+
+/* Floating panel (bottom-left): full-width select, never clip native dropdown */
+.google-translate-float {
+	isolation: isolate;
+}
+
+.google-translate-host--float {
+	min-width: 0 !important;
+	max-width: none !important;
+	width: 100% !important;
+	overflow: visible !important;
+}
+
+.google-translate-host--float .goog-te-combo {
+	max-width: none !important;
+}

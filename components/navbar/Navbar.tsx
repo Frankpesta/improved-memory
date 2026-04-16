@@ -5,7 +5,6 @@ import { Button } from "../ui/button";
 import NavItems from "./NavItems";
 import MobileNav from "./MobileNav";
 import { ModeToggle } from "../ToggleTheme";
-import { GoogleTranslate } from "../google-translate";
 
 const Navbar = () => {
 	const handleLogin = () => {
@@ -42,7 +41,6 @@ const Navbar = () => {
 				</nav>
 
 				<div className="relative z-20 flex min-w-0 flex-1 flex-nowrap items-center justify-end gap-2 sm:gap-2.5 md:z-10 md:flex-initial md:gap-3 md:border-l md:border-slate-200/80 md:pl-3 lg:pl-4 dark:md:border-slate-600/80">
-					<GoogleTranslate />
 					<ModeToggle />
 					<MobileNav />
 					<div className="hidden items-center gap-2 md:flex lg:gap-2.5">
