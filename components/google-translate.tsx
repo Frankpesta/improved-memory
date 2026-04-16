@@ -60,10 +60,10 @@ export function GoogleTranslate() {
 
 	return (
 		<div
-			className="notranslate flex items-center gap-2 shrink-0"
+			className="notranslate relative z-30 flex shrink-0 items-center gap-1.5 sm:gap-2"
 			title="Translate this page">
 			<Languages
-				className="hidden sm:block h-4 w-4 shrink-0 text-slate-600 dark:text-slate-300 opacity-90"
+				className="h-4 w-4 shrink-0 text-slate-600 dark:text-slate-300 opacity-90"
 				aria-hidden
 			/>
 			<div

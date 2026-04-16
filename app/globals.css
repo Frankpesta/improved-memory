@@ -221,21 +221,21 @@ body {
 .goog-te-banner-frame.skiptranslate {
 	display: none !important;
 }
-iframe.skiptranslate {
-	visibility: hidden !important;
-	height: 0 !important;
-	width: 0 !important;
-	margin: 0 !important;
-	padding: 0 !important;
-	border: none !important;
-}
+/* Do not target all iframe.skiptranslate — it can hide the translate control iframe */
 
 /* Google Translate inline widget: visible select, hide branding clutter, align with header */
 .google-translate-host {
 	position: relative;
 	z-index: 60;
-	min-width: 11rem;
-	max-width: 13.5rem;
+	min-width: 9rem;
+	max-width: 12rem;
+}
+
+@media (min-width: 640px) {
+	.google-translate-host {
+		min-width: 11rem;
+		max-width: 13.5rem;
+	}
 }
 
 .google-translate-host .goog-te-gadget {
