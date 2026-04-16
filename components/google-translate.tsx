@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { Languages } from "lucide-react";
 
 const SCRIPT_ID = "google-translate-script";
 
@@ -59,9 +60,16 @@ export function GoogleTranslate() {
 
 	return (
 		<div
-			id="google_translate_element"
-			className="notranslate min-h-[40px] flex items-center [&_.goog-te-gadget]:!text-transparent [&_.goog-te-gadget]:!leading-none [&_.goog-te-gadget-simple]:!border-0 [&_.goog-te-gadget-icon]:!hidden [&_.goog-te-combo]:!m-0 [&_.goog-te-combo]:!rounded-md [&_.goog-te-combo]:!border [&_.goog-te-combo]:!border-border [&_.goog-te-combo]:!bg-background [&_.goog-te-combo]:!px-2 [&_.goog-te-combo]:!py-1.5 [&_.goog-te-combo]:!text-sm [&_.goog-te-combo]:!text-foreground max-w-[160px] sm:max-w-[180px]"
-			aria-label="Translate this page"
-		/>
+			className="notranslate flex items-center gap-2 shrink-0"
+			title="Translate this page">
+			<Languages
+				className="hidden sm:block h-4 w-4 shrink-0 text-slate-600 dark:text-slate-300 opacity-90"
+				aria-hidden
+			/>
+			<div
+				id="google_translate_element"
+				className="google-translate-host flex min-h-9 items-center"
+			/>
+		</div>
 	);
 }
