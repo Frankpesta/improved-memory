@@ -5,6 +5,7 @@ import { ArrowRight, LineChart, Shield, Bot } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { IntroVideoPlayer } from "@/components/home/intro-video-player";
+import { ZELOX_APP_ORIGIN } from "@/constants";
 
 const VIDEO_SECTION_ID = "zelox-video";
 
@@ -32,8 +33,8 @@ const StatItem: React.FC<StatItemProps> = ({ value, label }) => (
 );
 
 const HeroSection = () => {
-	const handleLogin = () => {
-		window.location.href = "https://app.zeloxai.com/login";
+	const handleStartTrading = () => {
+		window.location.href = `${ZELOX_APP_ORIGIN}/register`;
 	};
 
 	const videoSectionRef = useRef<HTMLElement>(null);
@@ -163,7 +164,7 @@ const HeroSection = () => {
 
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
 								<Button
-									onClick={handleLogin}
+									onClick={handleStartTrading}
 									size="lg"
 									className="bg-primary-600 hover:bg-primary-700 text-white">
 									Start Trading Now

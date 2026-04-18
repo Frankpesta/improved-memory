@@ -2,7 +2,6 @@
 
 import { useLayoutEffect } from "react";
 import Script from "next/script";
-import { Languages } from "lucide-react";
 
 /** Do not include the page language (en) — Google’s widget misbehaves if it’s in this list */
 const INCLUDED_LANGS =
@@ -40,6 +39,33 @@ function mountTranslateWidget() {
 		},
 		"google_translate_element"
 	);
+
+	queueTranslateRowAlign();
+}
+
+/** Icon + label + native select on one row (Google’s SIMPLE layout omits the label). */
+function alignTranslateRow() {
+	const container = document.getElementById("google_translate_element");
+	if (!container) return;
+
+	const simple = container.querySelector<HTMLElement>(".goog-te-gadget-simple");
+	const combo = container.querySelector<HTMLElement>(".goog-te-combo");
+	if (!simple || !combo) return;
+
+	if (!simple.querySelector(".google-translate-inline-label")) {
+		const label = document.createElement("span");
+		label.className = "google-translate-inline-label notranslate";
+		label.textContent = "Select Language";
+		simple.insertBefore(label, combo);
+	}
+}
+
+function queueTranslateRowAlign() {
+	const run = () => alignTranslateRow();
+	run();
+	requestAnimationFrame(run);
+	setTimeout(run, 0);
+	setTimeout(run, 50);
 }
 
 export function GoogleTranslate() {
@@ -66,20 +92,16 @@ export function GoogleTranslate() {
 				}}
 			/>
 			<div
-				className="notranslate google-translate-float pointer-events-auto fixed z-[99990] w-[min(19rem,calc(100vw-1.5rem))] overflow-visible rounded-2xl border border-slate-200/90 bg-white p-3 shadow-lg dark:border-slate-600 dark:bg-slate-900"
+				className="notranslate google-translate-float pointer-events-auto fixed z-[99990] w-[min(22rem,calc(100vw-1.5rem))] overflow-visible bg-transparent p-0 shadow-none"
 				style={{
 					left: "max(1rem, env(safe-area-inset-left, 0px))",
 					bottom: "max(1rem, env(safe-area-inset-bottom, 0px))",
 				}}
 				role="region"
 				aria-label="Translate this page">
-				<div className="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800 dark:text-slate-100">
-					<Languages className="h-4 w-4 shrink-0 opacity-90" aria-hidden />
-					<span>Language</span>
-				</div>
 				<div
 					id="google_translate_element"
-					className="google-translate-slot min-h-[42px] w-full overflow-visible"
+					className="google-translate-slot flex min-h-[42px] w-full min-w-0 items-center overflow-visible"
 				/>
 			</div>
 		</>
