@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { PLAN_TIERS, formatPlanTrustPoint } from "@/constants/trading-plans";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -72,14 +73,7 @@ const WhyTrustUs = () => {
 		{
 			title: "Flexible & Profitable Trading Plans",
 			icon: DollarSignIcon,
-			points: [
-				"💰 $100 – $4,999 → 1% daily for 90 days",
-				"💰 $5,000 – $9,999 → 1.5% daily for 90 days",
-				"💰 $10,000 – $29,999 → 2% daily for 90 days",
-				"💰 $30,000 – $49,999 → 2.5% daily for 90 days",
-				"💰 $50,000 – $99,999 → 3% daily for 90 days",
-				"💰 $100,000+ → 4% daily for 90 days",
-			],
+			points: PLAN_TIERS.map(formatPlanTrustPoint),
 			gradient:
 				"from-secondary-200 to-secondary-400 dark:from-secondary-950/30 dark:to-secondary-950/30",
 		},
@@ -154,7 +148,7 @@ const WhyTrustUs = () => {
 			location: "UK",
 			trading: "$10,000",
 			quote:
-				"Zelox AI is the best AI trading platform I've used. The 2% daily return is steady, and I've already reinvested for another 90-day cycle!",
+				"Zelox AI is the best AI trading platform I've used. The 3% daily return is steady, and I've already reinvested for another 90-day cycle!",
 		},
 		{
 			name: "Carlos R.",
@@ -182,7 +176,7 @@ const WhyTrustUs = () => {
 			location: "UAE",
 			trading: "$100,000",
 			quote:
-				"The 4% daily return on my trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
+				"The 6% daily return on my trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
 		},
 	];
 

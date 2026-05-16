@@ -41,7 +41,7 @@ const FeaturesSection = () => {
 			icon: <TrendingUp className="h-6 w-6 text-primary-600" />,
 			title: "Daily Returns",
 			description:
-				"Earn between 1% to 4% daily, depending on your trading amount, for a period of 90 days.",
+				"Earn between 2% to 6% daily, depending on your trading amount, for a period of 90 days.",
 		},
 		{
 			icon: <Shield className="h-6 w-6 text-primary-600" />,

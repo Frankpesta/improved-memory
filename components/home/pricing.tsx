@@ -9,21 +9,12 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-
-interface PlanTier {
-	minTrading: number;
-	maxTrading: number;
-	dailyReturn: number;
-}
-
-const planTiers: PlanTier[] = [
-	{ minTrading: 100, maxTrading: 4999, dailyReturn: 1.0 },
-	{ minTrading: 5000, maxTrading: 9999, dailyReturn: 1.5 },
-	{ minTrading: 10000, maxTrading: 29999, dailyReturn: 2.0 },
-	{ minTrading: 30000, maxTrading: 49999, dailyReturn: 2.5 },
-	{ minTrading: 50000, maxTrading: 99999, dailyReturn: 3 },
-	{ minTrading: 100000, maxTrading: 1000000, dailyReturn: 4 },
-];
+import {
+	findPlanTier,
+	formatPlanRangeShort,
+	PLAN_TIERS,
+	type PlanTier,
+} from "@/constants/trading-plans";
 
 const handleLogin = () => {
 	window.location.href = "https://app.zeloxai.com/login";
@@ -43,9 +34,7 @@ const TradingPlanCard: React.FC<PlanTier> = ({
 				<DollarSign className="h-6 w-6 text-primary-600" />
 			</CardTitle>
 			<CardDescription>
-				{minTrading === 100000
-					? "$100K+"
-					: `$${minTrading.toLocaleString()} - $${maxTrading.toLocaleString()}`}
+				{formatPlanRangeShort({ minTrading, maxTrading, dailyReturn })}
 			</CardDescription>
 		</CardHeader>
 		<CardContent>
@@ -81,14 +70,12 @@ const TradingPlanCard: React.FC<PlanTier> = ({
 
 const ProfitCalculator: React.FC = () => {
 	const [trading, setTrading] = useState<number>(10000);
-	const [dailyReturn, setDailyReturn] = useState<number>(1.0);
+	const [dailyReturn, setDailyReturn] = useState<number>(3);
 	const [dailyProfit, setDailyProfit] = useState<number>(0);
 	const [totalProfit, setTotalProfit] = useState<number>(0);
 
 	useEffect(() => {
-		const tier = planTiers.find(
-			(tier) => trading >= tier.minTrading && trading <= tier.maxTrading
-		);
+		const tier = findPlanTier(trading);
 		if (tier) {
 			setDailyReturn(tier.dailyReturn);
 			const daily = (trading * tier.dailyReturn) / 100;
@@ -168,9 +155,9 @@ const TradingPlans = () => {
 						</p>
 					</div>
 
-					<div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8 lg:mb-12">
-						{planTiers.map((tier, index) => (
-							<TradingPlanCard key={index} {...tier} />
+					<div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 mb-6 md:mb-8 lg:mb-12">
+						{PLAN_TIERS.map((tier) => (
+							<TradingPlanCard key={tier.minTrading} {...tier} />
 						))}
 					</div>
 

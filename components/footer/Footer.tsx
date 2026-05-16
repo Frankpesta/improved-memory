@@ -65,6 +65,7 @@ const Footer = () => {
 	const { theme, setTheme } = useTheme();
 	const links = [
 		{ name: "Faq", href: "/faq" },
+		{ name: "Whitepaper", href: "/whitepaper" },
 		{ name: "Terms & Conditions", href: "/terms-and-conditions" },
 		{ name: "Privacy Policy", href: "/privacy-policy" },
 	];

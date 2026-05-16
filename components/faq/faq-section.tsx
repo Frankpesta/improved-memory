@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Mail, MessageCircle } from "lucide-react";
+import { PLAN_TIERS, formatPlanFaqLine } from "@/constants/trading-plans";
 
 const FAQAccordion = () => {
 	const faqs = [
@@ -30,16 +31,9 @@ const FAQAccordion = () => {
 						return of your full capital at the end of the cycle.
 					</p>
 					<ul className="space-y-2">
-						<li>$100 - $4,999 earns 1% daily for 90 days, plus capital.</li>
-						<li>$5,000 - $9,999 earns 1.5% daily for 90 days, plus capital.</li>
-						<li>$10,000 - $29,999 earns 2% daily for 90 days, plus capital.</li>
-						<li>
-							$30,000 - $49,999 earns 2.5% daily for 90 days, plus capital.
-						</li>
-						<li>$50,000 - $99,999 earns 3% daily for 90 days, plus capital.</li>
-						<li>
-							$100,000+ earns 4% daily for 90 days, plus capital.
-						</li>
+						{PLAN_TIERS.map((tier) => (
+							<li key={tier.minTrading}>{formatPlanFaqLine(tier)}</li>
+						))}
 					</ul>
 				</div>
 			),

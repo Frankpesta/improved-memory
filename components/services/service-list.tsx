@@ -14,12 +14,6 @@ import {
 } from "lucide-react";
 import TradingPlans from "../home/pricing";
 
-interface TradingPlan {
-	range: string;
-	daily: string;
-	duration: string;
-}
-
 const ServiceList = () => {
 	const services = [
 		{
