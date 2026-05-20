@@ -176,7 +176,7 @@ const WhyTrustUs = () => {
 			location: "UAE",
 			trading: "$100,000",
 			quote:
-				"The 6% daily return on my trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
+				"The 8% daily return on my trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
 		},
 	];
 

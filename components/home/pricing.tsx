@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Calculator, DollarSign, ArrowRight } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
 	Card,
@@ -20,21 +21,29 @@ const handleLogin = () => {
 	window.location.href = "https://app.zeloxai.com/login";
 };
 
-const TradingPlanCard: React.FC<PlanTier> = ({
-	minTrading,
-	maxTrading,
-	dailyReturn,
-}) => (
+const TradingPlanCard: React.FC<PlanTier> = (tier) => {
+	const { name, badge, minTrading, maxTrading, dailyReturn } = tier;
+	return (
 	<Card className="hover:shadow-lg transition-shadow">
 		<CardHeader>
-			<CardTitle className="flex items-center justify-between">
-				<span className="text-xl font-bold text-primary-600">
+			<div className="flex items-start justify-between gap-2">
+				<div className="space-y-1 min-w-0">
+					<CardTitle className="text-lg font-bold text-foreground leading-tight">
+						{name}
+					</CardTitle>
+					<Badge
+						variant="secondary"
+						className="bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/25">
+						{badge}
+					</Badge>
+				</div>
+				<DollarSign className="h-6 w-6 text-primary-600 shrink-0" />
+			</div>
+			<CardDescription className="pt-2">
+				<span className="block text-xl font-bold text-primary-600 mb-0.5">
 					{dailyReturn}% Daily
 				</span>
-				<DollarSign className="h-6 w-6 text-primary-600" />
-			</CardTitle>
-			<CardDescription>
-				{formatPlanRangeShort({ minTrading, maxTrading, dailyReturn })}
+				{formatPlanRangeShort(tier)}
 			</CardDescription>
 		</CardHeader>
 		<CardContent>
@@ -66,7 +75,8 @@ const TradingPlanCard: React.FC<PlanTier> = ({
 			</div>
 		</CardContent>
 	</Card>
-);
+	);
+};
 
 const ProfitCalculator: React.FC = () => {
 	const [trading, setTrading] = useState<number>(10000);

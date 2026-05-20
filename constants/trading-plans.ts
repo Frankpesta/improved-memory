@@ -1,16 +1,49 @@
 export interface PlanTier {
+	name: string;
+	badge: string;
 	minTrading: number;
 	/** `null` = no upper cap (e.g. $100,000+) */
 	maxTrading: number | null;
 	dailyReturn: number;
 }
 
+/** Bronze plan removed — five active tiers aligned with the platform. */
 export const PLAN_TIERS: PlanTier[] = [
-	{ minTrading: 100, maxTrading: 9999, dailyReturn: 2 },
-	{ minTrading: 10000, maxTrading: 29999, dailyReturn: 3 },
-	{ minTrading: 30000, maxTrading: 49999, dailyReturn: 4 },
-	{ minTrading: 50000, maxTrading: 99999, dailyReturn: 5 },
-	{ minTrading: 100000, maxTrading: null, dailyReturn: 6 },
+	{
+		name: "Starter Plan",
+		badge: "Novice",
+		minTrading: 100,
+		maxTrading: 4999,
+		dailyReturn: 2,
+	},
+	{
+		name: "Silver Plan",
+		badge: "Star",
+		minTrading: 5000,
+		maxTrading: 19999,
+		dailyReturn: 3,
+	},
+	{
+		name: "Gold Plan",
+		badge: "Pioneer",
+		minTrading: 20000,
+		maxTrading: 49999,
+		dailyReturn: 5,
+	},
+	{
+		name: "Diamond Plan",
+		badge: "Elite",
+		minTrading: 50000,
+		maxTrading: 99999,
+		dailyReturn: 6,
+	},
+	{
+		name: "Elite Plan",
+		badge: "Master",
+		minTrading: 100000,
+		maxTrading: null,
+		dailyReturn: 8,
+	},
 ];
 
 export const HIGHEST_PLAN_MIN = 100_000;
@@ -43,9 +76,9 @@ export function formatPlanRangeShort(tier: PlanTier): string {
 }
 
 export function formatPlanFaqLine(tier: PlanTier): string {
-	return `${formatPlanRange(tier)} earns ${tier.dailyReturn}% daily for 90 days, plus capital.`;
+	return `${tier.name} (${formatPlanRange(tier)}) earns ${tier.dailyReturn}% daily for 90 days, plus capital.`;
 }
 
 export function formatPlanTrustPoint(tier: PlanTier): string {
-	return `💰 ${formatPlanRange(tier)} → ${tier.dailyReturn}% daily for 90 days`;
+	return `💰 ${tier.name}: ${formatPlanRange(tier)} → ${tier.dailyReturn}% daily for 90 days`;
 }
