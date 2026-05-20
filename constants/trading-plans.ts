@@ -12,7 +12,7 @@ export const PLAN_TIERS: PlanTier[] = [
 	{
 		name: "Starter Plan",
 		badge: "Novice",
-		minTrading: 100,
+		minTrading: 10,
 		maxTrading: 4999,
 		dailyReturn: 2,
 	},
@@ -41,7 +41,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		name: "Elite Plan",
 		badge: "Master",
 		minTrading: 100000,
-		maxTrading: null,
+		maxTrading: 1_000_000,
 		dailyReturn: 8,
 	},
 ];
@@ -63,13 +63,13 @@ export function findPlanTier(amount: number): PlanTier | undefined {
 
 export function formatPlanRange(tier: PlanTier): string {
 	if (tier.maxTrading === null) {
-		return "$100,000+";
+		return `$${tier.minTrading.toLocaleString()}+`;
 	}
 	return `$${tier.minTrading.toLocaleString()} - $${tier.maxTrading.toLocaleString()}`;
 }
 
 export function formatPlanRangeShort(tier: PlanTier): string {
-	if (tier.minTrading >= HIGHEST_PLAN_MIN) {
+	if (tier.maxTrading === null && tier.minTrading >= HIGHEST_PLAN_MIN) {
 		return "$100K+";
 	}
 	return formatPlanRange(tier);

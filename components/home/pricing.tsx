@@ -110,7 +110,7 @@ const ProfitCalculator: React.FC = () => {
 						</label>
 						<input
 							type="number"
-							min="100"
+							min="10"
 							max="1000000"
 							value={trading}
 							onChange={(e) => setTrading(Number(e.target.value))}
