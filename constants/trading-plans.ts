@@ -12,9 +12,9 @@ export const PLAN_TIERS: PlanTier[] = [
 	{
 		name: "Starter Plan",
 		badge: "Novice",
-		minTrading: 10,
+		minTrading: 50,
 		maxTrading: 4999,
-		dailyReturn: 2,
+		dailyReturn: 3,
 	},
 	{
 		name: "Silver Plan",

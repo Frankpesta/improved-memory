@@ -3,7 +3,6 @@ import React, { useCallback, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, LineChart, Shield, Bot } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { IntroVideoPlayer } from "@/components/home/intro-video-player";
 import { ZELOX_APP_ORIGIN } from "@/constants";
 
@@ -68,30 +67,37 @@ const HeroSection = () => {
 
 			<div className="relative container mx-auto px-4 py-8 md:py-12 lg:py-24">
 				<div className="max-w-7xl mx-auto">
-					<div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start">
-						{/* Image + badge: first on mobile */}
-						<div className="space-y-4 md:space-y-5 lg:space-y-6 order-1 lg:order-2">
-							<div
-								className="relative rounded-2xl overflow-hidden p-[2px]"
-								style={{
-									background:
-										"linear-gradient(135deg, rgba(139, 92, 246, 0.6) 0%, rgba(59, 130, 246, 0.6) 100%)",
-									boxShadow:
-										"0 0 24px rgba(139, 92, 246, 0.25), 0 0 48px rgba(59, 130, 246, 0.15)",
-								}}>
-								<div className="rounded-2xl bg-background/40 dark:bg-background/20 backdrop-blur-sm overflow-hidden">
-									<div className="relative aspect-[4/3] w-full min-h-[200px]">
-										<Image
-											src="/assets/ai-hero.jpeg"
-											alt="AI-driven crypto trading – Zelox AI"
-											fill
-											className="object-cover"
-											sizes="(max-width: 1024px) 100vw, 50vw"
-											priority
-										/>
-									</div>
-								</div>
+					<div className="flex flex-col gap-8 md:gap-10 lg:gap-14 items-center">
+						{/* Hero text block */}
+						<div className="w-full max-w-4xl mx-auto text-center space-y-5 md:space-y-6 lg:space-y-8">
+							{/* Gift banner */}
+							<div className="inline-flex items-center gap-2 rounded-full border border-primary-500/30 dark:border-primary-400/30 bg-primary-500/5 dark:bg-primary-950/40 px-5 py-2.5 backdrop-blur-sm">
+								<span className="text-sm font-medium text-neutral-700 dark:text-primary-200">
+									🎁 Register Today and Get a Free{" "}
+									<span className="text-primary-600 dark:text-primary-400 font-semibold">
+										$10 Welcome Gift
+									</span>{" "}
+									Instantly
+								</span>
 							</div>
+
+							<h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-50 leading-tight">
+								The Future of{" "}
+								<span className="text-primary-600 dark:text-primary-400">
+									AI-Driven
+								</span>{" "}
+								Crypto Trading
+							</h1>
+
+							<p className="text-xl md:text-2xl text-neutral-700 dark:text-neutral-300 font-medium">
+								Your Gateway to{" "}
+								<span className="text-primary-600 dark:text-primary-400">
+									Smart, Profitable, and Secure
+								</span>{" "}
+								Crypto Trading
+							</p>
+
+							{/* Trusted badge */}
 							<div className="flex justify-center">
 								<div className="inline-flex items-center gap-3 rounded-full border border-primary-500/30 dark:border-primary-400/30 bg-primary-500/5 dark:bg-primary-950/40 px-6 py-3 backdrop-blur-sm">
 									<span className="h-2 w-2 rounded-full bg-primary-500 dark:bg-primary-400 shrink-0" />
@@ -100,67 +106,21 @@ const HeroSection = () => {
 									</span>
 								</div>
 							</div>
-						</div>
 
-						{/* Text column */}
-						<div className="space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1 text-center">
-							<div className="space-y-3 md:space-y-4 lg:space-y-6">
-								<h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-50">
-									The Future of AI-Driven Crypto Trading
-								</h1>
-								<p className="text-lg text-neutral-700 dark:text-neutral-300">
-									Your Gateway to Smart, Profitable, and Secure Crypto Trading
-								</p>
-							</div>
-
-							<div className="rounded-lg border border-primary-200/60 dark:border-primary-800/50 bg-primary-50/40 dark:bg-primary-950/30 backdrop-blur-sm px-4 py-2.5 inline-block mx-auto">
-								<p className="text-xs text-neutral-600 dark:text-primary-300/80 leading-snug text-center max-w-xl">
-									Developed and operated by{" "}
-									<span className="font-medium text-primary-700 dark:text-primary-400">
-										TOWER RESEARCH CAPITAL
-									</span>{" "}
-									a UK-registered research and technology company (Company Reg No.
-									06005750)
-								</p>
-							</div>
-
-							<p className="text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl mx-auto">
-								At Zelox AI, we use artificial intelligence to support a clear,
-								streamlined trading experience. Our AI trading system is trained
-								on broad market data and is designed to execute trades with high
-								accuracy, helping you stay informed and in control of your
-								strategy.
+							<p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-base md:text-lg max-w-3xl mx-auto">
+								Zelox AI helps crypto investors trade the cryptocurrency market
+								automatically using advanced artificial intelligence. Our AI
+								analyzes market opportunities{" "}
+								<span className="text-primary-600 dark:text-primary-400 font-semibold">
+									24/7
+								</span>
+								, executes trades without emotions, and delivers over{" "}
+								<span className="text-primary-600 dark:text-primary-400 font-semibold">
+									94% trade decision accuracy
+								</span>{" "}
+								in selected market conditions, helping investors trade smarter
+								while saving time.
 							</p>
-						</div>
-
-						{/* Video: full width row; under hero copy on mobile, below grid on desktop */}
-						<section
-							ref={videoSectionRef}
-							id={VIDEO_SECTION_ID}
-							className="order-3 lg:col-span-2 w-full py-2 lg:py-4"
-							aria-labelledby="zelox-video-heading">
-							<div className="max-w-5xl mx-auto">
-								<h2
-									id="zelox-video-heading"
-									className="text-xl md:text-2xl lg:text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-4 md:mb-6 text-center">
-									Watch this Quick Video to Understand How Zelox AI Works
-								</h2>
-								<div className="w-full overflow-hidden rounded-xl bg-black shadow-xl ring-1 ring-neutral-200/80 dark:ring-neutral-700">
-									<IntroVideoPlayer
-										ref={videoRef}
-										className="w-full h-auto max-h-[85vh] mx-auto outline-none"
-									/>
-								</div>
-							</div>
-						</section>
-
-						{/* Stats, CTA, feature cards */}
-						<div className="order-4 lg:col-span-2 space-y-4 md:space-y-6 lg:space-y-8 text-center">
-							<div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
-								<StatItem value="250K+" label="Active Users" />
-								<StatItem value="$1.3B+" label="Trading Volume" />
-								<StatItem value="94%" label="Trading Accuracy" />
-							</div>
 
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
 								<Button
@@ -178,6 +138,36 @@ const HeroSection = () => {
 										Learn More
 									</Button>
 								</Link>
+							</div>
+						</div>
+
+						{/* Video */}
+						<section
+							ref={videoSectionRef}
+							id={VIDEO_SECTION_ID}
+							className="w-full py-2 lg:py-4"
+							aria-labelledby="zelox-video-heading">
+							<div className="max-w-5xl mx-auto">
+								<h2
+									id="zelox-video-heading"
+									className="text-xl md:text-2xl lg:text-3xl font-bold text-neutral-900 dark:text-neutral-50 mb-4 md:mb-6 text-center">
+									Watch this Quick Video to Understand How Zelox AI Works
+								</h2>
+								<div className="w-full overflow-hidden rounded-xl bg-black shadow-xl ring-1 ring-neutral-200/80 dark:ring-neutral-700">
+									<IntroVideoPlayer
+										ref={videoRef}
+										className="w-full h-auto max-h-[85vh] mx-auto outline-none"
+									/>
+								</div>
+							</div>
+						</section>
+
+						{/* Stats, CTA, feature cards */}
+						<div className="w-full space-y-4 md:space-y-6 lg:space-y-8 text-center">
+							<div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+								<StatItem value="250K+" label="Active Users" />
+								<StatItem value="$1.3B+" label="Trading Volume" />
+								<StatItem value="94%" label="Trading Accuracy" />
 							</div>
 
 							<div className="grid grid-cols-2 gap-3 sm:gap-6 max-w-5xl mx-auto">
