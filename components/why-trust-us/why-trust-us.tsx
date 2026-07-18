@@ -64,7 +64,7 @@ const WhyTrustUs = () => {
 			icon: TrainTrack,
 			points: [
 				"📈 250K+ active users worldwide",
-				"✅ 90-day profitable cycles with consistent daily earnings",
+				"✅ Profitable trading cycles with consistent daily earnings",
 				"Our growing investor base and high retention rate prove that we are a trusted and profitable trading platform.",
 			],
 			gradient:
@@ -141,21 +141,21 @@ const WhyTrustUs = () => {
 			location: "USA",
 			trading: "$25,000",
 			quote:
-				"I started with $25,000, and in 90 days, I had earned over $11,000 in profits. The extra trading day guarantee gave me confidence in my trading. Withdrawals are smooth and fast!",
+				"I started with $25,000 on the Gold Plan, and in 60 days, I had earned thousands in profits. The extra trading day guarantee gave me confidence in my trading. Withdrawals are smooth and fast!",
 		},
 		{
 			name: "Sophia M.",
 			location: "UK",
-			trading: "$10,000",
+			trading: "$5,000",
 			quote:
-				"Zelox AI is the best AI trading platform I've used. The 3% daily return is steady, and I've already reinvested for another 90-day cycle!",
+				"Zelox AI is the best AI trading platform I've used. The Silver Plan's 4% daily return is steady, and I've already reinvested for another cycle!",
 		},
 		{
 			name: "Carlos R.",
 			location: "Spain",
 			trading: "$50,000",
 			quote:
-				"I was skeptical at first, but after receiving my first payout, I increased my trading to $50,000. Best decision ever – the returns are amazing!",
+				"I was skeptical at first, but after receiving my first payout, I increased my trading to the Diamond Plan at $50,000. Best decision ever – the returns are amazing!",
 		},
 		{
 			name: "Anita D.",
@@ -176,7 +176,7 @@ const WhyTrustUs = () => {
 			location: "UAE",
 			trading: "$100,000",
 			quote:
-				"The 8% daily return on my trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
+				"The 6% daily return on my Diamond Plan trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
 		},
 	];
 

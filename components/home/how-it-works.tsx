@@ -60,7 +60,7 @@ const HowItWorks = () => {
 			icon: <Wallet className="h-6 w-6 text-white" />,
 			title: "Earn & Withdraw Profits",
 			description:
-				"You receive your daily earnings directly in your account and can withdraw anytime after your 90-day cycle.",
+				"You receive your daily earnings directly in your account and can withdraw anytime after your plan's trading cycle.",
 		},
 	];
 

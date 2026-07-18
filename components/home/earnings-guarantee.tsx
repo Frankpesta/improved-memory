@@ -24,7 +24,7 @@ const EarningsGuarantee = () => {
 														Standard Period
 													</h3>
 													<p className="text-neutral-600 dark:text-neutral-400">
-														90 Days Trading Cycle
+														Standard Trading Cycle
 													</p>
 												</div>
 											</div>
@@ -82,10 +82,9 @@ const EarningsGuarantee = () => {
 								</p>
 
 								<p className="text-lg text-neutral-700 dark:text-neutral-300">
-									This means if you were supposed to earn for 90 days and there
-									was one unprofitable day, your trading period automatically
-									extends to 91 days, so you always receive the full expected
-									returns.
+									This means if your plan was for 30 days and there was one
+									unprofitable day, your trading period automatically extends
+									to 31 days, so you always receive the full expected returns.
 								</p>
 
 								<div className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-lg border border-primary-100 dark:border-primary-800">

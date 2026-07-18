@@ -14,7 +14,7 @@ const FAQAccordion = () => {
 		{
 			question: "What is Zelox AI?",
 			answer:
-				"Zelox AI is an AI-powered trading platform that trades the crypto market on behalf of investors. Our highly trained AI BOT, with a 94%+ accuracy rate, executes trades daily, generating consistent returns for investors over a 90-day trading period.",
+				"Zelox AI is an AI-powered trading platform that trades the crypto market on behalf of investors. Our highly trained AI BOT, with a 94%+ accuracy rate, executes trades daily, generating consistent returns for investors over their chosen plan's trading period.",
 		},
 		{
 			question: "How does the AI BOT trading system work?",
@@ -27,8 +27,8 @@ const FAQAccordion = () => {
 				<div className="space-y-4">
 					<p>
 						We offer multiple trading plans to suit different investor levels.
-						Each plan earns a fixed daily percentage for 90 days, plus the
-						return of your full capital at the end of the cycle.
+						Each plan earns a fixed daily percentage for its set duration, plus
+						the return of your full capital at the end of the cycle.
 					</p>
 					<ul className="space-y-2">
 						{PLAN_TIERS.map((tier) => (
@@ -41,7 +41,7 @@ const FAQAccordion = () => {
 		{
 			question: "What happens if the AI BOT has an unprofitable trading day?",
 			answer:
-				"If there is an unprofitable day, we add an extra trading day to ensure you never miss out on your earnings. This means if your plan was for 90 days, and one day was unprofitable, your plan will extend to 91 days, ensuring you still get the full profit as expected.",
+				"If there is an unprofitable day, we add an extra trading day to ensure you never miss out on your earnings. This means if your plan was for 30 days, and one day was unprofitable, your plan will extend to 31 days, ensuring you still get the full profit as expected.",
 		},
 		{
 			question: "How is my capital protected?",
@@ -65,9 +65,9 @@ const FAQAccordion = () => {
 			),
 		},
 		{
-			question: "Can I withdraw my profits before the 90-day period ends?",
+			question: "Can I withdraw my profits before my plan's period ends?",
 			answer:
-				"Yes, you can withdraw your daily earnings anytime. However, your initial capital is locked in until the end of the 90-day trading cycle, after which it is returned in full.",
+				"Yes, you can withdraw your daily earnings anytime. However, your initial capital is locked in until the end of your plan's trading cycle, after which it is returned in full.",
 		},
 		{
 			question: "How do I deposit funds?",
@@ -159,7 +159,7 @@ const FAQAccordion = () => {
 					<div className="space-y-2">
 						<div className="flex items-center">
 							<Mail className="w-4 h-4 mr-2 text-primary" />
-							<span>Email Support – support@zeloxai.com</span>
+							<span>Email Support – info@zeloxai.com</span>
 						</div>
 						<div className="flex items-center">
 							<MessageCircle className="w-4 h-4 mr-2 text-primary" />

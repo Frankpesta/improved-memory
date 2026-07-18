@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 const WEBSITE = "https://www.zeloxai.com";
-const SUPPORT_EMAIL = "support@zeloxai.com";
+const SUPPORT_EMAIL = "info@zeloxai.com";
 
 const sections = [
 	{ id: "disclaimer", title: "1. Disclaimer" },

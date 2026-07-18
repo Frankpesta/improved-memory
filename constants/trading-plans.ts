@@ -5,48 +5,45 @@ export interface PlanTier {
 	/** `null` = no upper cap (e.g. $100,000+) */
 	maxTrading: number | null;
 	dailyReturn: number;
+	durationDays: number;
 }
 
-/** Bronze plan removed — five active tiers aligned with the platform. */
 export const PLAN_TIERS: PlanTier[] = [
 	{
 		name: "Starter Plan",
 		badge: "Novice",
 		minTrading: 50,
-		maxTrading: 4999,
-		dailyReturn: 3,
+		maxTrading: 999,
+		dailyReturn: 2,
+		durationDays: 30,
 	},
 	{
 		name: "Silver Plan",
 		badge: "Star",
-		minTrading: 5000,
-		maxTrading: 19999,
+		minTrading: 1000,
+		maxTrading: 9999,
 		dailyReturn: 4,
+		durationDays: 45,
 	},
 	{
 		name: "Gold Plan",
 		badge: "Pioneer",
-		minTrading: 20000,
+		minTrading: 10000,
 		maxTrading: 49999,
 		dailyReturn: 5,
+		durationDays: 60,
 	},
 	{
 		name: "Diamond Plan",
 		badge: "Elite",
 		minTrading: 50000,
-		maxTrading: 99999,
+		maxTrading: 999999,
 		dailyReturn: 6,
-	},
-	{
-		name: "Elite Plan",
-		badge: "Master",
-		minTrading: 100000,
-		maxTrading: 1_000_000,
-		dailyReturn: 8,
+		durationDays: 90,
 	},
 ];
 
-export const HIGHEST_PLAN_MIN = 100_000;
+export const HIGHEST_PLAN_MIN = PLAN_TIERS[PLAN_TIERS.length - 1].minTrading;
 
 export const DAILY_RETURN_MIN = PLAN_TIERS[0].dailyReturn;
 export const DAILY_RETURN_MAX =
@@ -70,15 +67,15 @@ export function formatPlanRange(tier: PlanTier): string {
 
 export function formatPlanRangeShort(tier: PlanTier): string {
 	if (tier.maxTrading === null && tier.minTrading >= HIGHEST_PLAN_MIN) {
-		return "$100K+";
+		return `$${(tier.minTrading / 1000).toLocaleString()}K+`;
 	}
 	return formatPlanRange(tier);
 }
 
 export function formatPlanFaqLine(tier: PlanTier): string {
-	return `${tier.name} (${formatPlanRange(tier)}) earns ${tier.dailyReturn}% daily for 90 days, plus capital.`;
+	return `${tier.name} (${formatPlanRange(tier)}) earns ${tier.dailyReturn}% daily for ${tier.durationDays} days, plus capital.`;
 }
 
 export function formatPlanTrustPoint(tier: PlanTier): string {
-	return `💰 ${tier.name}: ${formatPlanRange(tier)} → ${tier.dailyReturn}% daily for 90 days`;
+	return `💰 ${tier.name}: ${formatPlanRange(tier)} → ${tier.dailyReturn}% daily for ${tier.durationDays} days`;
 }

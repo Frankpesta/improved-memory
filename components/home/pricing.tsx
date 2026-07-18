@@ -22,7 +22,7 @@ const handleLogin = () => {
 };
 
 const TradingPlanCard: React.FC<PlanTier> = (tier) => {
-	const { name, badge, minTrading, maxTrading, dailyReturn } = tier;
+	const { name, badge, minTrading, maxTrading, dailyReturn, durationDays } = tier;
 	return (
 	<Card className="hover:shadow-lg transition-shadow">
 		<CardHeader>
@@ -59,7 +59,7 @@ const TradingPlanCard: React.FC<PlanTier> = (tier) => {
 						<span className="text-neutral-600 dark:text-neutral-400">
 							Duration
 						</span>
-						<span className="font-semibold">90 Days</span>
+						<span className="font-semibold">{durationDays} Days</span>
 					</div>
 					<div className="flex justify-between">
 						<span className="text-neutral-600 dark:text-neutral-400">
@@ -80,7 +80,8 @@ const TradingPlanCard: React.FC<PlanTier> = (tier) => {
 
 const ProfitCalculator: React.FC = () => {
 	const [trading, setTrading] = useState<number>(10000);
-	const [dailyReturn, setDailyReturn] = useState<number>(3);
+	const [dailyReturn, setDailyReturn] = useState<number>(5);
+	const [durationDays, setDurationDays] = useState<number>(60);
 	const [dailyProfit, setDailyProfit] = useState<number>(0);
 	const [totalProfit, setTotalProfit] = useState<number>(0);
 
@@ -88,9 +89,10 @@ const ProfitCalculator: React.FC = () => {
 		const tier = findPlanTier(trading);
 		if (tier) {
 			setDailyReturn(tier.dailyReturn);
+			setDurationDays(tier.durationDays);
 			const daily = (trading * tier.dailyReturn) / 100;
 			setDailyProfit(daily);
-			setTotalProfit(daily * 90);
+			setTotalProfit(daily * tier.durationDays);
 		}
 	}, [trading]);
 
@@ -111,7 +113,7 @@ const ProfitCalculator: React.FC = () => {
 						<input
 							type="number"
 							min="10"
-							max="1000000"
+							max="999999"
 							value={trading}
 							onChange={(e) => setTrading(Number(e.target.value))}
 							className="w-full p-2 border rounded-md dark:bg-dark-300 dark:border-dark-100"
@@ -132,7 +134,7 @@ const ProfitCalculator: React.FC = () => {
 						</div>
 						<div className="p-4 bg-white dark:bg-dark-300 rounded-lg">
 							<div className="text-sm text-neutral-600 dark:text-neutral-400">
-								Total Profit (90 days)
+								Total Profit ({durationDays} days)
 							</div>
 							<div className="text-xl font-bold text-primary-600">
 								$
@@ -159,13 +161,13 @@ const TradingPlans = () => {
 						</h2>
 						<p className="max-w-3xl mx-auto text-neutral-600 dark:text-neutral-400">
 							At Zelox AI, we offer a range of trading plans designed to suit
-							all levels of investors. Your trading earns daily returns for 90
-							days, and at the end of the cycle, you receive your full capital
-							back along with your accumulated profits.
+							all levels of investors. Your trading earns daily returns for the
+							length of your plan, and at the end of the cycle, you receive
+							your full capital back along with your accumulated profits.
 						</p>
 					</div>
 
-					<div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 mb-6 md:mb-8 lg:mb-12">
+					<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-6 md:mb-8 lg:mb-12">
 						{PLAN_TIERS.map((tier) => (
 							<TradingPlanCard key={tier.minTrading} {...tier} />
 						))}

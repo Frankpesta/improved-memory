@@ -133,9 +133,9 @@ export default function TermsAndConditionsPage() {
 						You are responsible for safeguarding passwords, devices, and any
 						two-factor credentials. Notify us promptly at{" "}
 						<a
-							href="mailto:support@zeloxai.com"
+							href="mailto:info@zeloxai.com"
 							className="text-primary underline underline-offset-2">
-							support@zeloxai.com
+							info@zeloxai.com
 						</a>{" "}
 						if you suspect unauthorized access. We are not liable for losses caused
 						by your failure to secure your Account or by third-party actions outside
@@ -294,9 +294,9 @@ export default function TermsAndConditionsPage() {
 					<p>
 						Questions about these Terms:{" "}
 						<a
-							href="mailto:support@zeloxai.com"
+							href="mailto:info@zeloxai.com"
 							className="text-primary underline underline-offset-2">
-							support@zeloxai.com
+							info@zeloxai.com
 						</a>
 					</p>
 				</section>

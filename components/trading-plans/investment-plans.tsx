@@ -57,7 +57,7 @@ const TradingPlansProcess = () => {
 		},
 		{
 			icon: <DollarSign className="w-5 h-5" />,
-			title: "Receive your full capital at the end of 90 days",
+			title: "Receive your full capital at the end of your plan",
 			description: "Your initial trading is returned to you.",
 		},
 	];
