@@ -41,7 +41,7 @@ const FAQAccordion = () => {
 		{
 			question: "What happens if the AI BOT has an unprofitable trading day?",
 			answer:
-				"If there is an unprofitable day, we add an extra trading day to ensure you never miss out on your earnings. This means if your plan was for 30 days, and one day was unprofitable, your plan will extend to 31 days, ensuring you still get the full profit as expected.",
+				"If there is an unprofitable day, we add an extra trading day to ensure you never miss out on your earnings. This means if your plan was for 14 days, and one day was unprofitable, your plan will extend to 15 days, ensuring you still get the full profit as expected.",
 		},
 		{
 			question: "How is my capital protected?",

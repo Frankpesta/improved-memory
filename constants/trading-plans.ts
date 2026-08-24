@@ -15,7 +15,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		minTrading: 50,
 		maxTrading: 999,
 		dailyReturn: 2,
-		durationDays: 30,
+		durationDays: 14,
 	},
 	{
 		name: "Silver Plan",
@@ -23,7 +23,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		minTrading: 1000,
 		maxTrading: 9999,
 		dailyReturn: 4,
-		durationDays: 45,
+		durationDays: 14,
 	},
 	{
 		name: "Gold Plan",
@@ -31,7 +31,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		minTrading: 10000,
 		maxTrading: 49999,
 		dailyReturn: 5,
-		durationDays: 60,
+		durationDays: 14,
 	},
 	{
 		name: "Diamond Plan",
@@ -39,7 +39,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		minTrading: 50000,
 		maxTrading: 999999,
 		dailyReturn: 6,
-		durationDays: 90,
+		durationDays: 14,
 	},
 ];
 

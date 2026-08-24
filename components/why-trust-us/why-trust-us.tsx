@@ -141,7 +141,7 @@ const WhyTrustUs = () => {
 			location: "USA",
 			trading: "$25,000",
 			quote:
-				"I started with $25,000 on the Gold Plan, and in 60 days, I had earned thousands in profits. The extra trading day guarantee gave me confidence in my trading. Withdrawals are smooth and fast!",
+				"I started with $25,000 on the Gold Plan, and in 14 days, I had earned thousands in profits. The extra trading day guarantee gave me confidence in my trading. Withdrawals are smooth and fast!",
 		},
 		{
 			name: "Sophia M.",
@@ -176,7 +176,7 @@ const WhyTrustUs = () => {
 			location: "UAE",
 			trading: "$100,000",
 			quote:
-				"The 6% daily return on my Diamond Plan trading has been life-changing. I’ve already reinvested for another 90-day cycle!",
+				"The 6% daily return on my Diamond Plan trading has been life-changing. I’ve already reinvested for another 14-day cycle!",
 		},
 	];
 
