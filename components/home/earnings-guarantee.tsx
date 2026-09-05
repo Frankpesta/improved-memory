@@ -82,9 +82,9 @@ const EarningsGuarantee = () => {
 								</p>
 
 								<p className="text-lg text-neutral-700 dark:text-neutral-300">
-									This means if your plan was for 14 days and there was one
+									This means if your plan was for 90 days and there was one
 									unprofitable day, your trading period automatically extends
-									to 15 days, so you always receive the full expected returns.
+									to 91 days, so you always receive the full expected returns.
 								</p>
 
 								<div className="bg-primary-50 dark:bg-primary-900/20 p-6 rounded-lg border border-primary-100 dark:border-primary-800">
