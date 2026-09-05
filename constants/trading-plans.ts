@@ -6,6 +6,7 @@ export interface PlanTier {
 	maxTrading: number | null;
 	dailyReturn: number;
 	durationDays: number;
+	compounding: boolean;
 }
 
 export const PLAN_TIERS: PlanTier[] = [
@@ -16,6 +17,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		maxTrading: 999,
 		dailyReturn: 2,
 		durationDays: 14,
+		compounding: true,
 	},
 	{
 		name: "Silver Plan",
@@ -24,6 +26,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		maxTrading: 9999,
 		dailyReturn: 4,
 		durationDays: 14,
+		compounding: true,
 	},
 	{
 		name: "Gold Plan",
@@ -32,6 +35,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		maxTrading: 49999,
 		dailyReturn: 5,
 		durationDays: 14,
+		compounding: true,
 	},
 	{
 		name: "Diamond Plan",
@@ -40,6 +44,7 @@ export const PLAN_TIERS: PlanTier[] = [
 		maxTrading: 999999,
 		dailyReturn: 6,
 		durationDays: 14,
+		compounding: true,
 	},
 ];
 
@@ -73,9 +78,11 @@ export function formatPlanRangeShort(tier: PlanTier): string {
 }
 
 export function formatPlanFaqLine(tier: PlanTier): string {
-	return `${tier.name} (${formatPlanRange(tier)}) earns ${tier.dailyReturn}% daily for ${tier.durationDays} days, plus capital.`;
+	const compoundingText = tier.compounding ? ", compounding available" : "";
+	return `${tier.name} (${formatPlanRange(tier)}) earns ${tier.dailyReturn}% daily for ${tier.durationDays} days, plus capital${compoundingText}.`;
 }
 
 export function formatPlanTrustPoint(tier: PlanTier): string {
-	return `💰 ${tier.name}: ${formatPlanRange(tier)} → ${tier.dailyReturn}% daily for ${tier.durationDays} days`;
+	const compoundingText = tier.compounding ? " · Compounding: Yes" : "";
+	return `💰 ${tier.name}: ${formatPlanRange(tier)} → ${tier.dailyReturn}% daily for ${tier.durationDays} days${compoundingText}`;
 }

@@ -22,7 +22,7 @@ const handleLogin = () => {
 };
 
 const TradingPlanCard: React.FC<PlanTier> = (tier) => {
-	const { name, badge, minTrading, maxTrading, dailyReturn, durationDays } = tier;
+	const { name, badge, minTrading, maxTrading, dailyReturn, durationDays, compounding } = tier;
 	return (
 	<Card className="hover:shadow-lg transition-shadow">
 		<CardHeader>
@@ -66,6 +66,14 @@ const TradingPlanCard: React.FC<PlanTier> = (tier) => {
 							Capital Return
 						</span>
 						<span className="font-semibold">100%</span>
+					</div>
+					<div className="flex justify-between">
+						<span className="text-neutral-600 dark:text-neutral-400">
+							Compounding
+						</span>
+						<span className="font-semibold">
+							{compounding ? "Yes" : "No"}
+						</span>
 					</div>
 				</div>
 				<Button className="w-full" onClick={handleLogin}>
