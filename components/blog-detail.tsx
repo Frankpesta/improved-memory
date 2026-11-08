@@ -140,7 +140,7 @@ export default function BlogDetail({
 							name: "Your Blog Name",
 							logo: {
 								"@type": "ImageObject",
-								url: "https://zeloxai.com/logo.png",
+								url: "https://zeloxai.app/logo.png",
 							},
 						},
 						description: blog.details
@@ -148,7 +148,7 @@ export default function BlogDetail({
 							.substring(0, 160),
 						mainEntityOfPage: {
 							"@type": "WebPage",
-							"@id": `https://zeloxai.com/blog/${blog.id}`,
+							"@id": `https://zeloxai.app/blog/${blog.id}`,
 						},
 						keywords: keywords,
 					}),

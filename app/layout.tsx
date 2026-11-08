@@ -14,7 +14,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://zeloxai.com"),
+	metadataBase: new URL("https://zeloxai.app"),
 	title: {
 		default: "Zelox AI",
 		template: "%s | Zelox AI",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://zeloxai.com/blogs",
+		url: "https://zeloxai.app/blogs",
 		siteName: "Zelox AI",
 		images: [
 			{
@@ -66,8 +66,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<link rel="preconnect" href="https://zeloxai.com" />
-			<link rel="dns-prefetch" href="https://zeloxai.com" />
+			<link rel="preconnect" href="https://zeloxai.app" />
+			<link rel="dns-prefetch" href="https://zeloxai.app" />
 			<body className={`${plusJakartaSans.variable} font-sans antialiased`}>
 				<ThemeProvider
 					attribute="class"

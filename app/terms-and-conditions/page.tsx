@@ -33,9 +33,9 @@ export default function TermsAndConditionsPage() {
 			<p className="text-muted-foreground mb-8">
 				<strong>Effective date:</strong> April 12, 2026 · <strong>Website:</strong>{" "}
 				<a
-					href="https://zeloxai.com"
+					href="https://zeloxai.app"
 					className="text-primary underline underline-offset-2">
-					zeloxai.com
+					zeloxai.app
 				</a>
 			</p>
 
@@ -133,9 +133,9 @@ export default function TermsAndConditionsPage() {
 						You are responsible for safeguarding passwords, devices, and any
 						two-factor credentials. Notify us promptly at{" "}
 						<a
-							href="mailto:info@zeloxai.com"
+							href="mailto:support@zeloxai.app"
 							className="text-primary underline underline-offset-2">
-							info@zeloxai.com
+							support@zeloxai.app
 						</a>{" "}
 						if you suspect unauthorized access. We are not liable for losses caused
 						by your failure to secure your Account or by third-party actions outside
@@ -294,9 +294,9 @@ export default function TermsAndConditionsPage() {
 					<p>
 						Questions about these Terms:{" "}
 						<a
-							href="mailto:info@zeloxai.com"
+							href="mailto:support@zeloxai.app"
 							className="text-primary underline underline-offset-2">
-							info@zeloxai.com
+							support@zeloxai.app
 						</a>
 					</p>
 				</section>
