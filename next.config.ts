@@ -7,7 +7,7 @@ const nextConfig = {
 		ignoreBuildErrors: true,
 	},
 	images: {
-		domains: ["zeloxai.com", "app.zeloxai.com"],
+		domains: ["zeloxai.app", "app.zeloxai.app"],
 	},
 	experimental: {
 		webpackBuildWorker: true,

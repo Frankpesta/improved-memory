@@ -18,7 +18,7 @@ import {
 } from "@/constants/trading-plans";
 
 const handleLogin = () => {
-	window.location.href = "https://app.zeloxai.com/login";
+	window.location.href = "https://app.zeloxai.app/login";
 };
 
 const TradingPlanCard: React.FC<PlanTier> = (tier) => {

@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 		"Zelox AI whitepaper — overview of our algorithmic cryptocurrency trading system, architecture, risk framework, and development roadmap.",
 };
 
-const WEBSITE = "https://www.zeloxai.com";
-const SUPPORT_EMAIL = "info@zeloxai.com";
+const WEBSITE = "https://www.zeloxai.app";
+const SUPPORT_EMAIL = "support@zeloxai.app";
 
 const sections = [
 	{ id: "disclaimer", title: "1. Disclaimer" },

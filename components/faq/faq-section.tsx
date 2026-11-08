@@ -159,7 +159,7 @@ const FAQAccordion = () => {
 					<div className="space-y-2">
 						<div className="flex items-center">
 							<Mail className="w-4 h-4 mr-2 text-primary" />
-							<span>Email Support – info@zeloxai.com</span>
+							<span>Email Support – support@zeloxai.app</span>
 						</div>
 						<div className="flex items-center">
 							<MessageCircle className="w-4 h-4 mr-2 text-primary" />

@@ -8,10 +8,10 @@ import { ModeToggle } from "../ToggleTheme";
 
 const Navbar = () => {
 	const handleLogin = () => {
-		window.location.href = "https://app.zeloxai.com/login";
+		window.location.href = "https://app.zeloxai.app/login";
 	};
 	const handleRegister = () => {
-		window.location.href = "https://app.zeloxai.com/register";
+		window.location.href = "https://app.zeloxai.app/register";
 	};
 	return (
 		<header className="relative z-50 w-full overflow-visible border-b border-slate-200/90 bg-white dark:border-slate-700/90 dark:bg-gray-800">

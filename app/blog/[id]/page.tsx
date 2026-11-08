@@ -66,7 +66,7 @@ export async function generateMetadata({
 			openGraph: {
 				title: blog.title,
 				description: description,
-				url: `https://zeloxai.com/blog/${params.id}`,
+				url: `https://zeloxai.app/blog/${params.id}`,
 				type: "article",
 				publishedTime: blog.date || new Date().toISOString(),
 				authors: blog.author ? [blog.author] : "Zelox AI Team",
@@ -158,7 +158,7 @@ async function BlogPage({ params }: { params: { id: string } }) {
 							name: "Zelox AI",
 							logo: {
 								"@type": "ImageObject",
-								url: "https://zeloxai.com/logo.png",
+								url: "https://zeloxai.app/logo.png",
 							},
 						},
 						description: blogData?.details
@@ -166,7 +166,7 @@ async function BlogPage({ params }: { params: { id: string } }) {
 							.substring(0, 160),
 						mainEntityOfPage: {
 							"@type": "WebPage",
-							"@id": `https://zeloxai.com/blog/${params.id}`,
+							"@id": `https://zeloxai.app/blog/${params.id}`,
 						},
 					}),
 				}}

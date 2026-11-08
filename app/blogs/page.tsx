@@ -69,13 +69,13 @@ export default async function BlogsPage() {
 							name: "Blog Articles | Zelox AI Insights",
 							description:
 								"Explore our collection of expert articles, insights, and analysis on the latest trends and topics.",
-							url: "https://zeloxai.com/blogs",
+							url: "https://zeloxai.app/blogs",
 							mainEntity: {
 								"@type": "ItemList",
 								itemListElement: blogs.map((blog: Blog, index: number) => ({
 									"@type": "ListItem",
 									position: index + 1,
-									url: `https://zeloxai.com/blog/${blog.id}`,
+									url: `https://zeloxai.app/blog/${blog.id}`,
 									name: blog.title,
 								})),
 							},

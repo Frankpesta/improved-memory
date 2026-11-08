@@ -1,5 +1,5 @@
 /** Blog API and uploaded media (covers, etc.) */
-export const ZELOX_APP_ORIGIN = "https://app.zeloxai.com";
+export const ZELOX_APP_ORIGIN = "https://app.zeloxai.app";
 
 export const headerLinks = [
 	{ label: "Home", route: "/" },
